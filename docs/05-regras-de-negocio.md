@@ -10,7 +10,7 @@ Legenda: **[D]** base documental · **[H]** hipótese a validar com o NEI/DRI.
 | RN04 | Cada estudante pode ter **uma única manifestação ativa** por edital | H |
 | RN05 | A pré-elegibilidade é calculada pelos critérios cadastrados no edital | D |
 | RN06 | Critério de elegibilidade padrão: matrícula ativa, **30% a 70%** do curso concluído, **média ≥ 7,0** e **sem reprovações** (valores a confirmar; cada edital pode ter critérios próprios) | D / H |
-| RN07 | A pré-elegibilidade **não garante** aprovação; a decisão final cabe ao NEI/DRI | H |
+| RN07 | A pré-elegibilidade **não garante** aprovação; a decisão final exige elegibilidade verificada e parecer favorável de um analista do NEI/DRI | H |
 | RN08 | Estudantes não elegíveis podem consultar o edital, mas o sistema deve avisar o motivo da inelegibilidade | H |
 | RN09 | Apenas usuários NEI/DRI autorizados (ou o responsável designado) podem criar, alterar, publicar ou encerrar editais | H |
 | RN10 | Um edital não pode ser publicado sem **título, período de inscrição, critérios e lista de documentos** | H |
@@ -22,3 +22,5 @@ Legenda: **[D]** base documental · **[H]** hipótese a validar com o NEI/DRI.
 | RN16 | O uso de dados pessoais exige informar a finalidade ao usuário e respeitar a LGPD | D |
 | RN17 | Editais encerrados são mantidos em arquivo para consulta e relatórios, sem possibilidade de novas manifestações | H |
 | RN18 | Notificações de prazo são enviadas ao estudante com manifestação ou favorito nos prazos de 7 e 1 dia antes do encerramento (valores a confirmar) | H |
+| RN19 | Toda decisão do NEI/DRI de recusar ou considerar inelegível uma manifestação deve registrar justificativa | H |
+| RN20 | Oportunidade vinculada a convênio fora da vigência não pode receber novas manifestações, mesmo com período de inscrição aberto | H |

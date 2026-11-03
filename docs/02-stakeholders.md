@@ -11,13 +11,15 @@
 | S7 | Instituições parceiras e agências de fomento | Externo | Origem de editais e bolsas | Média | Baixo | Indireto (via NEI/DRI) |
 | S8 | Ex-intercambistas | Fonte de conhecimento | Relatar dificuldades reais do processo | Baixa | Alto | Entrevista |
 | S9 | Encarregado de dados (LGPD) | Regulatório | Conformidade no tratamento de dados | Alta | Baixo | Consulta às diretrizes |
+| S11 | Setor financeiro / bolsas | Usuário indireto | Informações orçamentárias e vigência das bolsas divulgadas | Baixa | Médio | Consulta pontual |
+| S12 | Estudante estrangeiro (incoming) | Usuário secundário | Consultar oportunidades e informações que se apliquem a quem é recebido pela Unifor | Baixa | Médio | Consulta documental |
 | S10 | Professor da disciplina | Avaliador | Validar método e entregas | Alta | Alto | Entregas por sprint |
 
 ## Matriz de influência × interesse
 - **Gerenciar de perto (alta/alta):** S2, S10
 - **Manter satisfeitos (alta influência, menor interesse):** S5, S6, S9
 - **Manter informados (menor influência, alto interesse):** S1, S8
-- **Monitorar:** S3, S4, S7
+- **Monitorar:** S3, S4, S7, S11, S12
 
 ## Potenciais conflitos de interesse **[H]**
 - NEI/DRI quer **controle e padronização** do cadastro; estudantes querem **informação rápida e simples**.
