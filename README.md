@@ -20,6 +20,9 @@ Projeto da disciplina **Requisitos e Modelagem de Sistemas** (Unifor, 2026.2) �
 | Backlog priorizado | [docs/06-backlog.md](docs/06-backlog.md) |
 | UML: casos de uso, componentes, implantação | [uml/diagramas.md](uml/diagramas.md) |
 
+## Status da entrega
+O professor Marcelo informou que as entrevistas com stakeholders **não precisam ser realizadas nesta etapa**. Os roteiros em [docs/03-entrevistas.md](docs/03-entrevistas.md) seguem prontos para quando forem liberadas; nesta sprint, a elicitação se apoiou em **análise documental** do material da disciplina (seção 3.2 do mesmo arquivo).
+
 ## Convenções
 - **[D]** base documental (material da disciplina), ainda a confirmar com o NEI/DRI.
 - **[H]** hipótese ainda não validada com stakeholders.
