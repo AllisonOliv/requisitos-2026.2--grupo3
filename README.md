@@ -5,8 +5,8 @@ Projeto da disciplina **Requisitos e Modelagem de Sistemas** (Unifor, 2026.2) �
 > **Problema investigado:** como tornar mais acessível e organizado o acompanhamento de editais, bolsas e oportunidades de mobilidade internacional?
 
 ## Equipe
-Allison de Oliveira Girão — 2612756
-Maria Rafaele Gomes de Araújo — 2618240
+- Allison de Oliveira Girão — 2612756
+- Maria Rafaele Gomes de Araújo — 2618240
 
 
 ## Sprint 1 (Milestone M1) — 20/10 a 02/11/2026
