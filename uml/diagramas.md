@@ -8,12 +8,12 @@ Os diagramas usam **Mermaid**, renderizado automaticamente pelo GitHub. O Mermai
 
 ```mermaid
 flowchart LR
-    EST(["👤 Estudante"])
-    NEI(["👤 Equipe NEI/DRI"])
-    COO(["👤 Coordenador de curso"])
-    ADM(["👤 Administrador"])
-    ACAD(["⚙️ Sistema Acadêmico"])
-    SSO(["⚙️ SSO Institucional"])
+    EST(["«ator» Estudante"])
+    NEI(["«ator» Equipe NEI/DRI"])
+    COO(["«ator» Coordenador de curso"])
+    ADM(["«ator» Administrador"])
+    ACAD(["«sistema externo» Sistema Acadêmico"])
+    SSO(["«sistema externo» SSO Institucional"])
 
     subgraph SIS["ConectaGlobal"]
         UC1(["UC01 Autenticar"])

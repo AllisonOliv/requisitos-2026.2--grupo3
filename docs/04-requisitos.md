@@ -3,12 +3,15 @@
 Legenda: **[D]** base documental · **[H]** hipótese a validar · **[C]** confirmado em entrevista.
 Prioridade (MoSCoW): **M** Must · **S** Should · **C** Could · **W** Won't (nesta fase).
 
+> **Nota de revisão:** RF01, RNF04 e RNF06 foram decompostos em subitens (ex. RF01.1) para que cada requisito seja atômico e verificável isoladamente, conforme IEEE 830. Os IDs originais foram mantidos para não quebrar a rastreabilidade com as seções 4.3, 5, 6 e `uml/diagramas.md`.
+
 ## 4.1 Requisitos Funcionais
 
 ### Gestão de editais e bolsas (NEI/DRI)
 | ID | Requisito | Prio. | Status |
 |---|---|---|---|
-| RF01 | O sistema deve permitir cadastrar um edital com título, tipo, destino/instituição, país, área, vagas, período de inscrição, descrição e anexos | M | D |
+| RF01 | O sistema deve permitir cadastrar um edital informando título, tipo, instituição/destino, país, área, número de vagas, período de inscrição e descrição | M | D |
+| RF01.1 | O sistema deve permitir anexar arquivos (ex.: edital em PDF) ao cadastro do edital | M | D |
 | RF02 | O sistema deve permitir editar, publicar, despublicar, encerrar e arquivar um edital | M | D |
 | RF03 | O sistema deve permitir cadastrar uma bolsa (fonte, valor/benefício, vigência), vinculada ou não a um edital | M | D |
 | RF04 | O sistema deve permitir definir, por edital, os critérios de elegibilidade (percentual concluído, média, reprovações, curso, idioma, outros) | M | D |
@@ -54,9 +57,12 @@ Prioridade (MoSCoW): **M** Must · **S** Should · **C** Could · **W** Won't (n
 | RNF01 | Usabilidade | O estudante deve conseguir encontrar uma oportunidade e iniciar a manifestação em no máximo 4 passos, e concluir o fluxo completo em até 10 minutos sem treinamento prévio | M | H |
 | RNF02 | Acessibilidade | A interface deve atender WCAG 2.1 nível AA | M | D |
 | RNF03 | Portabilidade | O sistema deve ser responsivo (celular iOS/Android, tablet, desktop) e compatível com as duas últimas versões de Chrome, Edge, Safari e Firefox | M | D |
-| RNF04 | Desempenho | Listagens e buscas devem responder em até 2 s em 95% das requisições, com até 500 usuários simultâneos; o painel do NEI/DRI deve suportar consultas sobre até 5.000 manifestações sem degradação perceptível | S | H |
+| RNF04 | Desempenho | Listagens e buscas devem responder em até 2 s em 95% das requisições, com até 500 usuários simultâneos | S | H |
+| RNF04.1 | Desempenho | O painel do NEI/DRI deve suportar consultas sobre até 5.000 manifestações sem degradação perceptível de tempo de resposta | S | H |
 | RNF05 | Disponibilidade | Disponibilidade mínima de 99% mensal, reforçada em períodos de inscrição | S | H |
-| RNF06 | Segurança | Comunicação via HTTPS/TLS 1.2 ou superior; dados pessoais sensíveis (ex.: média, percentual concluído, documentos) criptografados em repouso; controle de acesso por perfil; senhas nunca armazenadas pelo sistema (SSO) | M | H |
+| RNF06 | Segurança | Toda comunicação entre cliente e servidor deve usar HTTPS com TLS 1.2 ou superior | M | H |
+| RNF06.1 | Segurança | Dados pessoais sensíveis (ex.: média, percentual concluído, documentos) devem ser armazenados criptografados em repouso | M | H |
+| RNF06.2 | Segurança | O sistema não deve armazenar senhas de usuários; a autenticação é delegada ao provedor de SSO institucional (ver RF23) | M | H |
 | RNF07 | Privacidade (LGPD) | Dados pessoais devem ser tratados com base legal e consentimento explícito quando aplicável, finalidade definida, mínimo necessário, e possibilidade de solicitar exclusão, anonimização ou portabilidade | M | D |
 | RNF08 | Auditoria | Ações de criação, edição e mudança de status devem ser registradas com usuário e data/hora | S | H |
 | RNF09 | Interoperabilidade | O sistema deve expor/consumir dados por API REST para integrar com autenticação e sistema acadêmico | S | H |
