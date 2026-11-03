@@ -1,4 +1,4 @@
-# ConectaGlobal — Sistema de Gestão de Oportunidades Internacionais (GOI)
+# ConectaGlobal — Sistema de Gestão de Oportunidades Internacionais
 
 Projeto da disciplina **Requisitos e Modelagem de Sistemas** (Unifor, 2026.2) — Tema 3 do Eixo I (Internacionalização).
 

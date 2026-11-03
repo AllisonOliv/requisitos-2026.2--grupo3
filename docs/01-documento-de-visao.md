@@ -1,4 +1,4 @@
-# 1. Documento de Visão — ConectaGlobal (GOI)
+# 1. Documento de Visão — ConectaGlobal
 
 ## 1.1 Contexto
 A Unifor mantém convênios com mais de 140 instituições em 30 países **[D]**. As oportunidades de mobilidade (editais, bolsas, vagas em parceiras) envolvem prazos, critérios de elegibilidade e documentação que variam de uma oportunidade para outra. A divulgação e o acompanhamento desses itens tendem a ser dispersos (site, e-mail, redes sociais, atendimento presencial) **[H]**.
@@ -19,7 +19,7 @@ A Unifor mantém convênios com mais de 140 instituições em 30 países **[D]**
 | | |
 |---|---|
 | **Para** | estudantes de graduação da Unifor interessados em mobilidade internacional e a equipe do NEI/DRI |
-| **O** | ConectaGlobal (GOI) |
+| **O** | ConectaGlobal |
 | **É um** | sistema web responsivo de gestão de oportunidades internacionais |
 | **Que** | centraliza editais, bolsas, critérios, prazos, documentos e manifestações de interesse |
 | **Diferente de** | um processo baseado em informações dispersas (site, e-mail, murais, redes sociais) **[H]** |

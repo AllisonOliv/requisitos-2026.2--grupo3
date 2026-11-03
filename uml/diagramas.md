@@ -15,7 +15,7 @@ flowchart LR
     ACAD(["⚙️ Sistema Acadêmico"])
     SSO(["⚙️ SSO Institucional"])
 
-    subgraph SIS["ConectaGlobal (GOI)"]
+    subgraph SIS["ConectaGlobal"]
         UC1(["UC01 Autenticar"])
         UC2(["UC02 Buscar e filtrar oportunidades"])
         UC3(["UC03 Consultar detalhe da oportunidade"])
@@ -154,11 +154,11 @@ flowchart TB
     subgraph NUV["Nó: Infraestrutura de Hospedagem (nuvem ou data center)"]
         LB["Balanceador de carga / Proxy reverso<br/>HTTPS (TLS 1.2+)"]
         subgraph CL["Cluster de Aplicação"]
-            APP1["Servidor de Aplicação 01<br/>Artefato: goi-api"]
-            APP2["Servidor de Aplicação 02<br/>Artefato: goi-api"]
+            APP1["Servidor de Aplicação 01<br/>Artefato: conectaglobal-api"]
+            APP2["Servidor de Aplicação 02<br/>Artefato: conectaglobal-api"]
         end
         JOB["Agendador de tarefas<br/>(prazos e notificações)"]
-        DBS[("Servidor de Banco de Dados<br/>Artefato: goi-db")]
+        DBS[("Servidor de Banco de Dados<br/>Artefato: conectaglobal-db")]
         STO[("Armazenamento de documentos")]
         BKP[("Backup diário")]
     end
