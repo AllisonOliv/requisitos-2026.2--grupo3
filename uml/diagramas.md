@@ -1,13 +1,10 @@
-# Descrição dos Diagramas UML
+# Descrição dos diagramas UML
 
-## 1. Casos de Uso
-O diagrama apresenta quatro atores: Estudante, Gestor de oportunidades, Avaliador e Administrador. O estudante consulta oportunidades, verifica requisitos, registra candidatura, gerencia documentos e acompanha o andamento. O gestor cadastra e mantém oportunidades e consulta relatórios. O avaliador analisa candidaturas. O administrador gerencia usuários e perfis.
+## Casos de uso
+Representa Estudante, Equipe do NEI, Coordenador de curso, Professor, Estudante estrangeiro recebido, Ex-intercambista e Administrador do sistema. O núcleo contempla consulta de oportunidades, autoavaliação, candidatura, acompanhamento, gestão de oportunidades e convênios, análise de candidaturas e relatórios. Também são representados preparação e recursos colaborativos/pós-intercâmbio.
 
-## 2. Componentes
-A aplicação é organizada em interface web, autenticação/controle de acesso, gestão de oportunidades, consulta/elegibilidade, gestão de candidaturas, documentos, notificações e relatórios. Os módulos persistem dados no banco de dados. O módulo de documentos utiliza armazenamento próprio para arquivos.
+## Componentes
+A solução é dividida em interface web/mobile, autenticação e autorização, gestão de oportunidades, elegibilidade, candidaturas, documentos, notificações, relatórios, preparação e colaboração, apoiados por persistência de dados.
 
-## 3. Implantação
-A implantação conceitual contém o navegador do usuário, o ambiente que hospeda a aplicação web e o ambiente de dados, com banco de dados e armazenamento de documentos. A comunicação entre navegador e aplicação ocorre por HTTPS em uma implantação real.
-
-## 4. Consistência
-Os diagramas refletem os requisitos RF-01 a RF-13 e os casos de uso UC-01 a UC-13. Não foram representados sistemas externos nem integração com a DRI, pois não fazem parte do escopo definido.
+## Implantação
+Representa dispositivos dos usuários, aplicação web/API e banco de dados. O desenho é lógico e conceitual, sem assumir infraestrutura institucional ou integrações externas específicas.

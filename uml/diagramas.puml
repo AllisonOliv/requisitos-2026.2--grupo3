@@ -1,31 +1,41 @@
 @startuml
 left to right direction
 skinparam packageStyle rectangle
+skinparam shadowing false
+
 actor "Estudante" as Estudante
-actor "Gestor de oportunidades" as Gestor
-actor "Avaliador" as Avaliador
-actor "Administrador" as Admin
+actor "Equipe do NEI" as NEI
+actor "Coordenador de curso" as Coordenador
+actor "Professor" as Professor
+actor "Estudante estrangeiro
+recebido" as Incoming
+actor "Ex-intercambista" as Alumni
+actor "Administrador
+do sistema" as Admin
 
 rectangle "ConectaGlobal" {
   usecase "Consultar oportunidades" as UC01
-  usecase "Pesquisar e filtrar
- oportunidades" as UC02
-  usecase "Consultar detalhes" as UC03
-  usecase "Consultar requisitos
-e documentos" as UC04
-  usecase "Registrar candidatura" as UC05
-  usecase "Gerenciar documentos
-da candidatura" as UC06
-  usecase "Acompanhar candidatura" as UC07
-  usecase "Consultar notificações" as UC08
-  usecase "Cadastrar oportunidade" as UC09
-  usecase "Manter e publicar
-oportunidade" as UC10
-  usecase "Analisar candidatura" as UC11
-  usecase "Gerar relatórios" as UC12
-  usecase "Gerenciar usuários
-e perfis" as UC13
+  usecase "Filtrar oportunidades" as UC02
+  usecase "Consultar detalhes e requisitos" as UC03
+  usecase "Realizar autoavaliação" as UC04
+  usecase "Consultar recursos de preparação" as UC05
+  usecase "Registrar candidatura" as UC06
+  usecase "Organizar documentos" as UC07
+  usecase "Acompanhar candidatura" as UC08
+  usecase "Gerenciar oportunidades e editais" as UC09
+  usecase "Gerenciar convênios e bolsas" as UC10
+  usecase "Analisar candidaturas" as UC11
+  usecase "Atualizar status" as UC12
+  usecase "Gerenciar notificações" as UC13
+  usecase "Consultar relatórios" as UC14
+  usecase "Compartilhar relatos" as UC15
+  usecase "Participar de mentoria" as UC16
+  usecase "Participar de Tandem" as UC17
+  usecase "Consultar eventos e fórum" as UC18
+  usecase "Consultar recursos de integração" as UC19
+  usecase "Gerenciar usuários e permissões" as UC20
 }
+
 Estudante --> UC01
 Estudante --> UC02
 Estudante --> UC03
@@ -34,58 +44,85 @@ Estudante --> UC05
 Estudante --> UC06
 Estudante --> UC07
 Estudante --> UC08
-Gestor --> UC09
-Gestor --> UC10
-Gestor --> UC12
-Avaliador --> UC11
-Admin --> UC13
+NEI --> UC09
+NEI --> UC10
+NEI --> UC11
+NEI --> UC12
+NEI --> UC13
+NEI --> UC14
+Coordenador --> UC11
+Coordenador --> UC08
+Professor --> UC18
+Incoming --> UC19
+Incoming --> UC17
+Alumni --> UC15
+Alumni --> UC16
+Alumni --> UC17
+Estudante --> UC16
+Estudante --> UC17
+Estudante --> UC18
+Admin --> UC20
+
+UC06 .> UC07 : <<include>>
+UC11 .> UC12 : <<include>>
 @enduml
 
 @startuml
 skinparam componentStyle rectangle
-package "ConectaGlobal — Aplicação Web" {
-  [Interface Web] as UI
-  [Autenticação e Controle
- de Acesso] as AUTH
-  [Gestão de Oportunidades] as OPORT
-  [Consulta e Elegibilidade] as ELIG
-  [Gestão de Candidaturas] as CAND
+skinparam shadowing false
+
+package "ConectaGlobal" {
+  [Interface Web/Mobile] as UI
+  [Autenticação e Autorização] as AUTH
+  [Serviço de Oportunidades] as OPORT
+  [Serviço de Convênios e Bolsas] as CONV
+  [Serviço de Elegibilidade] as ELEG
+  [Serviço de Candidaturas] as CAND
   [Gestão de Documentos] as DOC
-  [Notificações] as NOTIF
-  [Relatórios] as REPORT
+  [Serviço de Notificações] as NOTIF
+  [Relatórios Gerenciais] as REL
+  [Preparação e Conteúdos] as PREP
+  [Módulo Colaborativo e Pós-intercâmbio] as COL
   database "Banco de Dados" as DB
-  folder "Repositório de Documentos" as STORE
 }
+
 UI --> AUTH
 UI --> OPORT
-UI --> ELIG
+UI --> ELEG
 UI --> CAND
-UI --> DOC
-UI --> NOTIF
-UI --> REPORT
-OPORT --> DB
-ELIG --> DB
-CAND --> DB
-AUTH --> DB
-DOC --> DB
-DOC --> STORE
-NOTIF --> DB
-REPORT --> DB
+UI --> PREP
+UI --> COL
+OPORT --> CONV
+CAND --> ELEG
+CAND --> DOC
 CAND --> NOTIF
+CAND --> REL
+OPORT --> DB
+CONV --> DB
+ELEG --> DB
+CAND --> DB
+DOC --> DB
+NOTIF --> DB
+REL --> DB
+PREP --> DB
+COL --> DB
 @enduml
 
 @startuml
-node "Dispositivo do usuário" as CLIENT {
-  artifact "Navegador Web" as BROWSER
+skinparam shadowing false
+
+node "Dispositivo do usuário
+(Navegador / Aplicativo)" as CLIENT {
+  artifact "Interface ConectaGlobal"
 }
-node "Ambiente de aplicação" as APPHOST {
-  artifact "Aplicação ConectaGlobal" as WEBAPP
+
+node "Ambiente de aplicação" as APP {
+  artifact "Aplicação Web"
+  artifact "API / Serviços de negócio"
 }
-node "Ambiente de dados" as DATAHOST {
-  database "Banco de Dados" as DATABASE
-  node "Armazenamento de documentos" as FILES
-}
-BROWSER --> WEBAPP : HTTPS
-WEBAPP --> DATABASE : acesso a dados
-WEBAPP --> FILES : leitura/gravação autorizada
+
+database "Servidor de banco de dados" as DB
+
+CLIENT --> APP : HTTPS
+APP --> DB : Conexão segura
 @enduml

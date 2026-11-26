@@ -3,7 +3,7 @@
 Projeto acadêmico da disciplina **Requisitos e Modelagem de Sistemas — Unifor, 2026.2**.
 
 ## Objetivo
-O ConectaGlobal é uma proposta autoral de sistema para centralizar a divulgação e a gestão de oportunidades internacionais, permitindo que estudantes consultem oportunidades, verifiquem requisitos, manifestem interesse e acompanhem suas solicitações. Também contempla funções de gestão das oportunidades e análise das manifestações recebidas.
+Especificar um sistema web/mobile de apoio à gestão da mobilidade acadêmica internacional, centralizando oportunidades, preparação dos estudantes, candidaturas, acompanhamento e atividades relacionadas à internacionalização.
 
 ## Organização
 | Artefato | Arquivo |
@@ -17,21 +17,26 @@ O ConectaGlobal é uma proposta autoral de sistema para centralizar a divulgaç�
 | Casos de uso | [07-casos-de-uso.md](docs/07-casos-de-uso.md) |
 | Glossário | [08-glossario.md](docs/08-glossario.md) |
 | Fontes e decisões | [09-fontes-e-decisoes.md](docs/09-fontes-e-decisoes.md) |
-| Diagramas PlantUML | [diagramas.puml](uml/diagramas.puml) |
-| Orientações UML | [README.md](uml/README.md) |
-| Descrição textual dos diagramas | [diagramas.md](uml/diagramas.md) |
+| Diagramas UML (PlantUML) | [diagramas.puml](uml/diagramas.puml) |
+| Guia dos diagramas | [README.md](uml/README.md) |
+| Descrição dos diagramas | [diagramas.md](uml/diagramas.md) |
 
-## Escopo
-O sistema é um projeto acadêmico autoral. Seu escopo, seus atores, suas funcionalidades e suas regras são decisões de projeto documentadas pela equipe. Materiais públicos sobre internacionalização foram consultados apenas para contextualizar o domínio e apoiar a compreensão de modalidades e requisitos que podem existir em oportunidades internacionais.
+## Escopo de referência
+A proposta contempla os módulos do estudante, de gestão (NEI), pós-intercâmbio e colaborativo. O NEI é preservado como ator organizacional previsto na documentação-base do projeto. As funcionalidades específicas estão descritas como proposta acadêmica e deverão ser detalhadas na SRS da P2.
 
-A DRI não é parte integrante do sistema: não é ator, stakeholder, componente, serviço integrado ou responsável pelo ConectaGlobal. O material da DRI será utilizado posteriormente como **referência visual** durante a elaboração das telas, quando for útil observar padrões de organização, navegação e apresentação de conteúdo.
+## Critério de documentação
+- **Informação da documentação-base:** conteúdo presente no material de projeto fornecido para a disciplina.
+- **Decisão de modelagem:** detalhamento adotado para tornar requisitos e modelos verificáveis.
+- **Ponto a detalhar na P2:** informação que precisa de especificação mais precisa, sem ser apresentada como fato institucional validado.
 
-## Critério de leitura
-- **Referência documental:** informação encontrada em material consultado; não significa que seja regra universal.
-- **Decisão de projeto:** comportamento proposto para o ConectaGlobal.
-- **Hipótese acadêmica:** premissa adotada para modelar o sistema, que não representa processo institucional oficialmente validado.
+Não são declaradas entrevistas, aprovações institucionais ou integrações técnicas que não tenham sido realizadas ou confirmadas.
 
-Não foram realizadas entrevistas nem validações institucionais. Nenhum resultado de entrevista ou aprovação externa é afirmado neste repositório.
+## Referências de trabalho
+- Material de projeto de extensão — Internacionalização, Requisitos e Modelagem de Sistemas, Unifor, 2026.2.
+- Propostas de Projetos de Sistemas — Internacionalização e ENADE, Unifor, 2026.2.
+- Repositório LAPIS: https://github.com/marcelobezerra-dotcom/Lapis-unifor
+
+A DRI não é ator nem sistema integrado nesta modelagem. Seu portal poderá ser consultado posteriormente como referência de interface, quando forem elaborados os wireframes e o protótipo.
 
 ## Evolução para a P2
-A documentação da P1 constitui a base para a P2: especificação de requisitos (SRS), revisão da consistência entre requisitos e UML, e construção de wireframes/protótipo navegável. Alterações futuras devem preservar a rastreabilidade entre requisitos, regras, casos de uso e modelos.
+A P1 estabelece a visão, os interessados, requisitos iniciais, regras, backlog, casos de uso e modelos UML. A P2 deverá detalhar a SRS, revisar a rastreabilidade e desenvolver wireframes e protótipo navegável.

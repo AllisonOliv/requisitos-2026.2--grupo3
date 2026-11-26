@@ -1,34 +1,32 @@
-# Partes Interessadas e Atores — ConectaGlobal
+# Partes interessadas e atores — ConectaGlobal
 
 ## 1. Partes interessadas
-| ID | Parte interessada | Expectativa/interesse | Influência no projeto |
-|---|---|---|---|
-| ST-01 | Estudantes | Encontrar oportunidades, conhecer requisitos, enviar solicitações e acompanhar o andamento. | Alta |
-| ST-02 | Gestores de oportunidades | Manter oportunidades, prazos, critérios e documentos atualizados. | Alta |
-| ST-03 | Avaliadores | Analisar solicitações e registrar atualizações de situação. | Média/alta |
-| ST-04 | Administrador do sistema | Controlar usuários, perfis e permissões. | Média |
-| ST-05 | Equipe de desenvolvimento | Definir, modelar, implementar e documentar o produto acadêmico. | Alta |
-| ST-06 | Docente | Avaliar a qualidade dos artefatos e a evolução da solução. | Alta |
 
-Os grupos e papéis são abstrações adotadas para o projeto. Não representam atribuição oficial de uma unidade institucional.
+| ID | Parte interessada | Interesse / participação |
+|---|---|---|
+| ST-01 | Estudantes da Unifor | Encontrar oportunidades, preparar candidaturas e acompanhar mobilidade. |
+| ST-02 | Núcleo de Estratégias Internacionais (NEI) | Gerenciar oportunidades, convênios, bolsas e candidaturas. |
+| ST-03 | Coordenadores de curso | Acompanhar aspectos acadêmicos dos estudantes em mobilidade. |
+| ST-04 | Professores | Apoiar cooperação internacional e orientação acadêmica. |
+| ST-05 | Estudantes estrangeiros recebidos | Acessar recursos de integração e informações para incoming students. |
+| ST-06 | Ex-intercambistas | Compartilhar experiências e apoiar mentoria. |
+| ST-07 | Equipe do projeto | Especificar e modelar a solução acadêmica. |
+| ST-08 | Docente da disciplina | Acompanhar a qualidade dos artefatos e entregas. |
 
 ## 2. Atores do sistema
-| ID | Ator | Objetivo | Principais casos de uso |
+
+| ID | Ator | Tipo | Responsabilidade no sistema |
 |---|---|---|---|
-| AT-01 | Estudante | Consultar oportunidades, registrar candidatura e acompanhar solicitações próprias. | UC-01 a UC-06 |
-| AT-02 | Gestor de oportunidades | Criar e manter oportunidades e acompanhar o fluxo de solicitações. | UC-07, UC-08, UC-10, UC-11 |
-| AT-03 | Avaliador | Analisar solicitações e atualizar seu status. | UC-09 |
-| AT-04 | Administrador | Gerenciar usuários e perfis de acesso. | UC-12 |
+| AT-01 | Estudante | Primário | Consultar oportunidades, autoavaliar elegibilidade, preparar e acompanhar candidatura. |
+| AT-02 | Equipe do NEI | Primário | Administrar oportunidades, convênios, bolsas, candidaturas, notificações e relatórios. |
+| AT-03 | Coordenador de curso | Secundário | Consultar informações de acompanhamento e apoiar a mobilidade do estudante. |
+| AT-04 | Professor | Secundário | Participar de atividades e orientações acadêmicas relacionadas à internacionalização. |
+| AT-05 | Estudante estrangeiro recebido | Primário | Consultar informações e participar de recursos de integração. |
+| AT-06 | Ex-intercambista | Primário | Publicar relatos e participar de mentoria e colaboração. |
+| AT-07 | Administrador do sistema | Primário | Gerenciar contas, perfis e parâmetros técnicos. |
 
-## 3. Responsabilidades e limites
-- O estudante só consulta e altera suas próprias solicitações, respeitando o estado do processo.
-- O gestor mantém os dados das oportunidades e pode consultar as solicitações relacionadas conforme permissão.
-- O avaliador registra análise e atualização de status, sem administrar parâmetros gerais.
-- O administrador gerencia acesso e perfis, sem substituir a decisão de avaliação.
-- A equipe do projeto define os papéis para fins acadêmicos; sua nomenclatura poderá ser refinada na SRS, sem alterar a separação de responsabilidades.
-
-## 4. Premissas
-1. Cada usuário autenticado possui um perfil que determina suas permissões.
-2. Uma oportunidade publicada pode receber candidaturas dentro do prazo configurado.
-3. A análise é realizada por usuário autorizado.
-4. Não se pressupõe integração com sistemas externos.
+## 3. Observações
+- O **NEI** é preservado como ator porque consta expressamente na documentação-base do projeto, inclusive no módulo de gestão.
+- Atores secundários não iniciam necessariamente o fluxo principal, mas fornecem apoio ou informação em funcionalidades específicas.
+- Atores poderão ser refinados na P2 sem eliminar os papéis definidos na proposta-base.
+- A DRI não é listada como ator ou parte interessada do produto nesta modelagem.

@@ -2,19 +2,21 @@
 
 | Termo | Definição |
 |---|---|
-| Oportunidade internacional | Possibilidade de participação em atividade, programa ou experiência acadêmica internacional. |
-| Modalidade | Categoria da oportunidade, como mobilidade acadêmica, intercâmbio, estágio ou programa específico. |
-| Destino | Instituição, país ou local associado à oportunidade. |
-| Edital/chamada | Documento ou conjunto de informações que apresenta condições, prazos e critérios de uma oportunidade. |
-| Critério de elegibilidade | Condição que o interessado deve atender para se candidatar ou participar. |
-| Elegibilidade informativa | Indicação baseada nos critérios cadastrados; não equivale a aprovação ou seleção. |
-| Candidatura | Registro de interesse formal de um estudante em uma oportunidade no ConectaGlobal. |
-| Solicitação | Registro de candidatura e seus dados associados no sistema. |
-| Documento exigido | Arquivo ou comprovante solicitado para uma candidatura. |
-| Status | Situação atual de uma oportunidade ou candidatura no fluxo do sistema. |
-| Histórico | Registro cronológico de eventos e alterações de status. |
-| Gestor de oportunidades | Usuário autorizado a cadastrar e manter oportunidades. |
-| Avaliador | Usuário autorizado a analisar candidaturas e registrar atualizações. |
-| Notificação | Aviso apresentado ao usuário sobre evento relevante do sistema. |
-| Perfil de acesso | Conjunto de permissões associado a um usuário. |
-| Rastreabilidade | Capacidade de relacionar necessidades, requisitos, regras, casos de uso e testes. |
+| Mobilidade acadêmica internacional | Período de estudos ou atividade acadêmica realizado em instituição ou país diferente do de origem. |
+| Oportunidade internacional | Programa, edital, intercâmbio, bolsa ou modalidade de mobilidade disponível para candidatura. |
+| Edital | Documento que apresenta condições, critérios, prazos e etapas de uma seleção. |
+| Convênio | Acordo de cooperação entre instituições. |
+| Instituição parceira | Instituição estrangeira ou organização relacionada a uma oportunidade. |
+| Bolsa | Benefício financeiro associado a uma oportunidade, conforme condições próprias. |
+| Elegibilidade | Atendimento aos critérios exigidos para participação em determinada oportunidade. |
+| Autoavaliação | Verificação preliminar realizada pelo estudante com base nos critérios cadastrados. |
+| Candidatura | Registro de interesse e informações do estudante para participar de uma oportunidade. |
+| Manifestação de interesse | Registro inicial do interesse do estudante em uma oportunidade. |
+| Status da candidatura | Situação atual do processo, com histórico de alterações. |
+| Portfólio digital | Conjunto organizado de informações e documentos do estudante relacionados à mobilidade. |
+| Incoming student | Estudante estrangeiro recebido pela instituição. |
+| Ex-intercambista | Estudante que já participou de mobilidade internacional. |
+| Tandem | Atividade de troca e prática de idiomas entre participantes. |
+| NEI | Núcleo de Estratégias Internacionais, ator organizacional identificado na documentação-base do projeto. |
+| Mentoria | Apoio oferecido por participante experiente a estudante interessado em mobilidade. |
+| Aproveitamento de créditos | Processo acadêmico de análise de estudos realizados durante a mobilidade. |

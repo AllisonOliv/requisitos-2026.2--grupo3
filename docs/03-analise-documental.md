@@ -1,36 +1,41 @@
-# Análise Documental e Elicitação
+# Análise documental e elicitação — ConectaGlobal
 
 ## 1. Objetivo
-Registrar as fontes consultadas para compreender o domínio de oportunidades internacionais e a metodologia de engenharia de requisitos. A análise documental apoia decisões de projeto, mas não substitui entrevistas ou validação com usuários.
+Registrar as fontes utilizadas para compreender o problema e estabelecer a base da proposta de Gestão de Oportunidades Internacionais.
 
-## 2. Fontes consultadas
-| ID | Fonte | Uso no projeto |
+## 2. Fontes analisadas
+
+| ID | Fonte | Contribuição |
 |---|---|---|
-| AD-01 | Repositório LAPIS — Unifor | Referência metodológica para visão, requisitos, casos de uso e rastreabilidade. |
-| AD-02 | Materiais e orientações da disciplina Requisitos e Modelagem de Sistemas | Referência para entregáveis e evolução entre P1 e P2. |
-| AD-03 | Portal público da DRI/Unifor | Referência contextual sobre apresentação de oportunidades e informações de internacionalização. |
-| AD-04 | Manual de Boas Práticas de Internacionalização (Unifor, 2026) | Referência contextual para terminologia e exemplos de modalidades e requisitos. |
+| AD-01 | Material de Projeto de Extensão — Internacionalização, Unifor, 2026.2 | Define contexto, objetivo geral, módulos, público-alvo e funcionalidades propostas. |
+| AD-02 | Propostas de Projetos de Sistemas — Internacionalização e ENADE, Unifor, 2026.2 | Apresenta a proposta de Gestão de Oportunidades Internacionais, incluindo editais, bolsas, requisitos, prazos, documentos e manifestações de interesse. |
+| AD-03 | Repositório LAPIS | Referência metodológica para estruturação dos artefatos, requisitos e casos de uso. |
 
-## 3. Observações documentais
-A consulta a materiais públicos relacionados à internacionalização demonstra que oportunidades podem apresentar modalidades, instituições de destino, períodos, critérios de participação, documentação e etapas próprias. Esses elementos ajudam a estruturar os campos e conceitos do domínio no ConectaGlobal.
+## 3. Evidências extraídas da documentação-base
+- **EV-01:** a solução proposta deve apoiar a gestão da mobilidade acadêmica internacional.
+- **EV-02:** o módulo do estudante prevê portal de oportunidades com filtros por país, área e duração.
+- **EV-03:** o módulo do estudante prevê autoavaliação de elegibilidade, preparação em idiomas, cultura e planejamento financeiro.
+- **EV-04:** o módulo de gestão (NEI) prevê gestão de convênios, painel de candidaturas, notificações, bolsas e relatórios.
+- **EV-05:** o módulo pós-intercâmbio prevê relatos, aproveitamento de créditos e rede de ex-participantes para mentoria.
+- **EV-06:** o módulo colaborativo prevê Tandem, eventos, workshops, palestras e fórum de dúvidas.
+- **EV-07:** a proposta de Gestão de Oportunidades Internacionais contempla cadastro e divulgação de editais, bolsas, requisitos, prazos, documentação e acompanhamento de manifestações de interesse.
+- **EV-08:** a documentação-base identifica estudantes, NEI, coordenadores e estudantes estrangeiros como públicos envolvidos.
 
-Os materiais consultados não permitem concluir que exista um processo interno único aplicável a todas as oportunidades, nem que todos os critérios sejam universais. Por isso, o projeto prevê que requisitos, prazos e documentos sejam associados individualmente a cada oportunidade.
+## 4. Técnicas e limites da elicitação
+A documentação-base fornecida foi utilizada como fonte principal nesta revisão. Não foram acrescentados resultados fictícios de entrevistas, questionários ou observações. Quando a documentação sugere que entrevistas com o NEI e questionários com estudantes seriam técnicas de elicitação, isso é tratado como orientação metodológica do material, não como atividade já executada.
 
-## 4. Limitações da elicitação
-- Não foram realizadas entrevistas, questionários ou observações com usuários.
-- Não foram obtidas informações de processos internos, sistemas privados ou integrações institucionais.
-- Não se afirma que os fluxos modelados correspondam a procedimentos oficiais de qualquer setor.
-- Os fluxos de candidatura, análise e atualização de status são decisões de projeto para fins acadêmicos.
+## 5. Interpretação
+As fontes sustentam uma solução mais ampla do que um catálogo informativo. O produto proposto cobre gestão de oportunidades e candidaturas, preparação, acompanhamento e colaboração. Os detalhes operacionais que não estão especificados nas fontes foram registrados como decisões de modelagem ou pontos a detalhar na P2.
 
-## 5. Decisões derivadas
-| ID | Decisão de projeto | Justificativa |
+## 6. Uso das referências visuais
+A DRI não é fonte para definir atores, escopo funcional ou integração do ConectaGlobal. Seu portal será consultado na etapa de wireframes/protótipo somente como referência visual de organização e apresentação de informações, conforme orientação do projeto.
+
+## 7. Rastreabilidade inicial
+| Evidência | Necessidade | Funcionalidades relacionadas |
 |---|---|---|
-| DP-01 | Cada oportunidade possui seus próprios critérios e documentos. | Evita tratar condições específicas como regras universais. |
-| DP-02 | O estudante pode registrar interesse/candidatura e acompanhar o status. | Atende à proposta original de gestão de oportunidades, indo além de um catálogo. |
-| DP-03 | A análise e a atualização de status são realizadas por perfil autorizado. | Mantém controle e rastreabilidade do fluxo. |
-| DP-04 | A indicação de elegibilidade é informativa. | Critérios cadastrados não garantem aprovação ou seleção. |
-| DP-05 | O sistema terá gestão de oportunidades, candidaturas, documentos, notificações e relatórios em níveis compatíveis com o escopo acadêmico. | Materializa a visão autoral do produto. |
-| DP-06 | Não será considerada integração obrigatória com a DRI ou outros sistemas externos. | Nenhuma integração é necessária para definir o produto nesta etapa. |
-
-## 6. Relação com a P2
-A P2 deverá detalhar os requisitos em formato SRS, revisar a consistência dos modelos UML e produzir wireframes/protótipo. A interface poderá consultar o portal da DRI como referência visual, sem transformar esse portal em dependência funcional ou fonte de requisitos obrigatórios.
+| EV-02, EV-07 | NEC-01 | RF-01, RF-02 |
+| EV-03 | NEC-02, NEC-06 | RF-03, RF-04, RF-05 |
+| EV-04, EV-07 | NEC-05 | RF-06 a RF-10 |
+| EV-05 | NEC-07 | RF-13, RF-14 |
+| EV-06 | NEC-07 | RF-15 a RF-17 |
+| EV-04 | NEC-08 | RF-11, RF-12 |
