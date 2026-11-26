@@ -7,33 +7,25 @@ actor "Estudante" as Estudante
 actor "Equipe do NEI" as NEI
 actor "Coordenador de curso" as Coordenador
 actor "Professor" as Professor
-actor "Estudante estrangeiro
-recebido" as Incoming
+actor "Estudante estrangeiro\nrecebido" as Incoming
 actor "Ex-intercambista" as Alumni
-actor "Administrador
-do sistema" as Admin
+actor "Administrador\ndo sistema" as Admin
 
 rectangle "ConectaGlobal" {
   usecase "Consultar oportunidades" as UC01
-  usecase "Filtrar oportunidades" as UC02
-  usecase "Consultar detalhes e requisitos" as UC03
-  usecase "Realizar autoavaliação" as UC04
+  usecase "Verificar elegibilidade inicial" as UC02
+  usecase "Registrar candidatura" as UC03
+  usecase "Acompanhar candidatura" as UC04
   usecase "Consultar recursos de preparação" as UC05
-  usecase "Registrar candidatura" as UC06
-  usecase "Organizar documentos" as UC07
-  usecase "Acompanhar candidatura" as UC08
-  usecase "Gerenciar oportunidades e editais" as UC09
-  usecase "Gerenciar convênios e bolsas" as UC10
-  usecase "Analisar candidaturas" as UC11
-  usecase "Atualizar status" as UC12
-  usecase "Gerenciar notificações" as UC13
-  usecase "Consultar relatórios" as UC14
-  usecase "Compartilhar relatos" as UC15
-  usecase "Participar de mentoria" as UC16
-  usecase "Participar de Tandem" as UC17
-  usecase "Consultar eventos e fórum" as UC18
-  usecase "Consultar recursos de integração" as UC19
-  usecase "Gerenciar usuários e permissões" as UC20
+  usecase "Gerenciar oportunidades" as UC06
+  usecase "Gerenciar convênios e bolsas" as UC07
+  usecase "Analisar candidaturas" as UC08
+  usecase "Gerenciar notificações" as UC09
+  usecase "Consultar relatórios gerenciais" as UC10
+  usecase "Compartilhar relatos e participar de mentoria" as UC11
+  usecase "Participar de atividades colaborativas" as UC12
+  usecase "Consultar recursos de integração" as UC13
+  usecase "Gerenciar usuários e permissões" as UC14
 }
 
 Estudante --> UC01
@@ -41,30 +33,21 @@ Estudante --> UC02
 Estudante --> UC03
 Estudante --> UC04
 Estudante --> UC05
-Estudante --> UC06
-Estudante --> UC07
-Estudante --> UC08
+Estudante --> UC11
+Estudante --> UC12
+NEI --> UC06
+NEI --> UC07
+NEI --> UC08
 NEI --> UC09
 NEI --> UC10
-NEI --> UC11
-NEI --> UC12
-NEI --> UC13
-NEI --> UC14
-Coordenador --> UC11
 Coordenador --> UC08
-Professor --> UC18
-Incoming --> UC19
-Incoming --> UC17
-Alumni --> UC15
-Alumni --> UC16
-Alumni --> UC17
-Estudante --> UC16
-Estudante --> UC17
-Estudante --> UC18
-Admin --> UC20
+Professor --> UC12
+Incoming --> UC13
+Incoming --> UC12
+Alumni --> UC11
+Alumni --> UC12
+Admin --> UC14
 
-UC06 .> UC07 : <<include>>
-UC11 .> UC12 : <<include>>
 @enduml
 
 @startuml
@@ -111,18 +94,17 @@ COL --> DB
 @startuml
 skinparam shadowing false
 
-node "Dispositivo do usuário
-(Navegador / Aplicativo)" as CLIENT {
+node "Dispositivo do usuário\n(Navegador / Aplicativo)" as CLIENT {
   artifact "Interface ConectaGlobal"
 }
 
-node "Ambiente de aplicação" as APP {
+node "Ambiente de aplicação proposto" as APP {
   artifact "Aplicação Web"
   artifact "API / Serviços de negócio"
 }
 
-database "Servidor de banco de dados" as DB
+database "Servidor de banco de dados proposto" as DB
 
-CLIENT --> APP : HTTPS
-APP --> DB : Conexão segura
+CLIENT --> APP : HTTPS (proposto)
+APP --> DB : conexão segura (proposta)
 @enduml

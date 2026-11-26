@@ -1,10 +1,11 @@
 # Diagramas UML — ConectaGlobal
 
-O arquivo `diagramas.puml` contém os diagramas em PlantUML:
-1. Diagrama de Casos de Uso.
-2. Diagrama de Componentes.
-3. Diagrama de Implantação.
+Os diagramas representam a proposta acadêmica e devem permanecer consistentes com os atores e requisitos documentados.
 
-Os diagramas representam a proposta acadêmica descrita nos documentos da P1. O NEI aparece como ator do módulo de gestão. A DRI não aparece como ator, componente ou nó externo.
+- `diagramas.puml`: casos de uso, componentes e implantação.
+- O ator Equipe do NEI é mantido.
+- A DRI não aparece como ator, componente ou nó de implantação.
+- Não há sistema externo integrado confirmado; o diagrama de implantação representa apenas o ambiente lógico proposto.
+- Os diagramas devem ser revisados junto aos requisitos e aos casos de uso na P2.
 
-Para visualizar, utilize PlantUML ou uma extensão compatível com seu editor. Ao alterar requisitos ou atores, atualize os diagramas e confira a rastreabilidade com `docs/04-requisitos.md` e `docs/07-casos-de-uso.md`.
+O LAPIS orienta rastreabilidade e especificação de requisitos; os diagramas UML seguem a notação UML/PlantUML.

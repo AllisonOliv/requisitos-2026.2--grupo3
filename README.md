@@ -1,42 +1,48 @@
 # ConectaGlobal — Sistema de Gestão de Oportunidades Internacionais
 
-Projeto acadêmico da disciplina **Requisitos e Modelagem de Sistemas — Unifor, 2026.2**.
+Projeto acadêmico — Requisitos e Modelagem de Sistemas, Unifor, 2026.2.
 
-## Objetivo
-Especificar um sistema web/mobile de apoio à gestão da mobilidade acadêmica internacional, centralizando oportunidades, preparação dos estudantes, candidaturas, acompanhamento e atividades relacionadas à internacionalização.
+## Organização dos artefatos
 
-## Organização
 | Artefato | Arquivo |
 |---|---|
-| Documento de Visão | [01-documento-de-visao.md](docs/01-documento-de-visao.md) |
-| Stakeholders e atores | [02-stakeholders.md](docs/02-stakeholders.md) |
-| Análise documental | [03-analise-documental.md](docs/03-analise-documental.md) |
-| Requisitos funcionais e não funcionais | [04-requisitos.md](docs/04-requisitos.md) |
-| Regras de negócio | [05-regras-de-negocio.md](docs/05-regras-de-negocio.md) |
-| Backlog priorizado | [06-backlog.md](docs/06-backlog.md) |
-| Casos de uso | [07-casos-de-uso.md](docs/07-casos-de-uso.md) |
-| Glossário | [08-glossario.md](docs/08-glossario.md) |
-| Fontes e decisões | [09-fontes-e-decisoes.md](docs/09-fontes-e-decisoes.md) |
-| Diagramas UML (PlantUML) | [diagramas.puml](uml/diagramas.puml) |
-| Guia dos diagramas | [README.md](uml/README.md) |
-| Descrição dos diagramas | [diagramas.md](uml/diagramas.md) |
+| Visão da Demanda — LAPIS v2.1 | `docs/01-visao-da-demanda.md` |
+| Partes interessadas e atores | `docs/02-partes-interessadas-e-atores.md` |
+| Análise documental e elicitação | `docs/03-analise-documental-e-elicitação.md` |
+| Requisitos funcionais | `docs/04-requisitos-funcionais.md` |
+| Requisitos não funcionais — estrutura LAPIS | `docs/05-requisitos-nao-funcionais.md` |
+| Regras de negócio — estrutura LAPIS | `docs/06-regras-de-negocio.md` |
+| Backlog priorizado | `docs/07-backlog.md` |
+| Especificação de casos de uso — estrutura LAPIS | `docs/08-casos-de-uso.md` |
+| Glossário — estrutura LAPIS | `docs/09-glossario.md` |
+| Fontes, premissas e decisões | `docs/10-fontes-e-decisoes.md` |
+| Diagramas UML | `uml/diagramas.puml` |
+| Guia dos diagramas | `uml/README.md` |
 
-## Escopo de referência
-A proposta contempla os módulos do estudante, de gestão (NEI), pós-intercâmbio e colaborativo. O NEI é preservado como ator organizacional previsto na documentação-base do projeto. As funcionalidades específicas estão descritas como proposta acadêmica e deverão ser detalhadas na SRS da P2.
+## Padrão metodológico
 
-## Critério de documentação
-- **Informação da documentação-base:** conteúdo presente no material de projeto fornecido para a disciplina.
-- **Decisão de modelagem:** detalhamento adotado para tornar requisitos e modelos verificáveis.
-- **Ponto a detalhar na P2:** informação que precisa de especificação mais precisa, sem ser apresentada como fato institucional validado.
+Os artefatos de requisitos foram reorganizados conforme o processo e os templates disponíveis no repositório LAPIS:
+https://github.com/marcelobezerra-dotcom/Lapis-unifor
 
-Não são declaradas entrevistas, aprovações institucionais ou integrações técnicas que não tenham sido realizadas ou confirmadas.
+A Visão da Demanda segue as 12 seções do template LAPIS v2.1. Casos de uso, regras de negócio, requisitos não funcionais e glossário seguem as estruturas correspondentes do LAPIS. Backlog e UML são artefatos complementares e mantêm rastreabilidade com os requisitos.
 
-## Referências de trabalho
-- Material de projeto de extensão — Internacionalização, Requisitos e Modelagem de Sistemas, Unifor, 2026.2.
-- Propostas de Projetos de Sistemas — Internacionalização e ENADE, Unifor, 2026.2.
-- Repositório LAPIS: https://github.com/marcelobezerra-dotcom/Lapis-unifor
+## Escopo preservado
 
-A DRI não é ator nem sistema integrado nesta modelagem. Seu portal poderá ser consultado posteriormente como referência de interface, quando forem elaborados os wireframes e o protótipo.
+A proposta mantém os quatro módulos identificados na documentação-base:
+1. Estudante;
+2. Gestão (NEI);
+3. Pós-intercâmbio;
+4. Colaborativo.
 
-## Evolução para a P2
-A P1 estabelece a visão, os interessados, requisitos iniciais, regras, backlog, casos de uso e modelos UML. A P2 deverá detalhar a SRS, revisar a rastreabilidade e desenvolver wireframes e protótipo navegável.
+O NEI permanece como ator. A DRI não é ator, parte interessada, integração nem fonte de requisitos do produto: será consultada somente como referência visual quando forem elaboradas as telas.
+
+## Critério de confiabilidade
+
+- Conteúdo da documentação-base é identificado como fonte do projeto.
+- Detalhamentos necessários à modelagem são decisões acadêmicas de especificação.
+- Informações não confirmadas permanecem como hipótese, pendência ou “A definir”.
+- Não são declaradas entrevistas, validações institucionais, aprovações ou integrações não realizadas.
+
+## P2
+
+A SRS deve detalhar os requisitos e critérios verificáveis, revisar a consistência entre requisitos e UML e apresentar wireframes/protótipo navegável. A DRI poderá orientar somente a linguagem visual e a organização das telas.
