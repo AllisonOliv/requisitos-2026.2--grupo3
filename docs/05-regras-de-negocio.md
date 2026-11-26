@@ -1,34 +1,43 @@
-# Regras de Negócio e Regras de Informação — ConectaGlobal
+# Regras de Negócio — ConectaGlobal
 
-## 1. Convenções
-As regras abaixo se dividem em:
-- **RI (regra institucional documentada):** transcrição fiel ou síntese de fonte pública institucional.
-- **RP (regra do produto):** decisão adotada para o comportamento do ConectaGlobal acadêmico; não representa política institucional.
+As regras abaixo são decisões de projeto para o funcionamento proposto do ConectaGlobal. Não devem ser interpretadas como normas oficiais de uma instituição.
 
-## 2. Regras institucionais documentadas
-
-| ID | Regra | Descrição | Fonte |
-|---|---|---|---|
-| RI-01 | O estudante deve estar regularmente matriculado | A página DRI lista matrícula regular como condição de participação no programa de mobilidade descrito. | DRI — Apoio ao Estudante |
-| RI-02 | A integralização curricular deve estar entre 30% e 70% | A página DRI informa mínimo de 30% e máximo de 70% no momento da candidatura. | DRI — Apoio ao Estudante |
-| RI-03 | A PMG deve ser igual ou superior a 7,0 | Critério publicado para o programa de mobilidade descrito. | DRI — Apoio ao Estudante |
-| RI-04 | O estudante não deve possuir disciplinas reprovadas | Critério publicado para o programa descrito. | DRI — Apoio ao Estudante |
-| RI-05 | O estudante deve comprovar proficiência exigida | O nível de idioma depende do país e da instituição de destino, conforme informação do programa. | DRI — Apoio ao Estudante |
-| RI-06 | A mobilidade depende de instituição parceira/conveniada | O regulamento descreve convênio prévio para mobilidade discente, com condições específicas e exceções previstas. | Manual DRI 2026 |
-| RI-07 | A seleção não garante a aceitação no destino | A página informa que a realização da mobilidade depende também da aceitação da instituição de destino. | DRI — Apoio ao Estudante |
-| RI-08 | A duração e os documentos seguem o programa aplicável | A página informa duração usual de seis meses a um ano e apresenta documentos/providências; o edital e o programa específico prevalecem. | DRI — Apoio ao Estudante |
-
-## 3. Regras do produto
-
-| ID | Regra | Descrição |
+## 1. Regras gerais
+| ID | Regra | Origem |
 |---|---|---|
-| RP-01 | O sistema deve identificar a fonte de cada informação | Toda informação sobre critérios, documentos ou etapas deve exibir link da fonte e data de consulta. |
-| RP-02 | O sistema não deve universalizar critérios | Critérios de mobilidade não podem ser aplicados automaticamente a Top España, dupla titulação ou outros programas sem fonte específica. |
-| RP-03 | O sistema deve encaminhar à fonte oficial | Para inscrição, dúvidas específicas ou confirmação de regras vigentes, o sistema deve direcionar à DRI ou ao edital oficial. |
-| RP-04 | O sistema não deve simular aprovação | O ConectaGlobal não calcula elegibilidade oficial nem promete seleção/aceitação. |
-| RP-05 | O sistema não deve coletar documentos pessoais | Checklist é apenas informativo; documentos são tratados pelos canais oficiais aplicáveis. |
-| RP-06 | O conteúdo deve indicar sua natureza | Conteúdo do protótipo deve ser identificado como informativo e acadêmico, não oficial. |
-| RP-07 | O conteúdo desatualizado deve ser sinalizado | Quando a equipe não puder confirmar a vigência da informação, o sistema deve mostrar aviso para consultar a fonte oficial, sem apresentar a informação como atual. |
+| RN-01 | Toda oportunidade deve possuir título, descrição, modalidade, destino ou abrangência, prazo e situação antes de ser publicada. | Decisão de projeto |
+| RN-02 | Uma oportunidade em rascunho não aparece na consulta pública dos estudantes. | Decisão de projeto |
+| RN-03 | Somente usuários com perfil de gestor podem cadastrar, editar, publicar, suspender ou encerrar oportunidades. | Decisão de projeto |
+| RN-04 | Cada oportunidade pode possuir critérios de elegibilidade e documentos específicos. | Decisão de projeto |
+| RN-05 | O sistema não deve aplicar um único conjunto de critérios a todas as oportunidades. | Decisão de projeto |
+| RN-06 | O estudante só pode registrar candidatura para oportunidade publicada e dentro do prazo de inscrição. | Decisão de projeto |
+| RN-07 | O estudante pode consultar e alterar apenas suas próprias candidaturas, respeitadas as permissões e o estado do processo. | Decisão de projeto |
+| RN-08 | Uma candidatura deve estar vinculada a exatamente um estudante e a uma oportunidade. | Decisão de projeto |
+| RN-09 | O sistema deve impedir o envio de uma segunda candidatura ativa do mesmo estudante para a mesma oportunidade, salvo se a candidatura anterior tiver sido cancelada conforme regra definida. | Decisão de projeto |
+| RN-10 | A indicação de compatibilidade com critérios é informativa e não representa aprovação, classificação ou garantia de seleção. | Decisão de projeto |
+| RN-11 | Somente avaliadores ou gestores autorizados podem atualizar o status de uma candidatura após o envio. | Decisão de projeto |
+| RN-12 | Toda mudança de status deve registrar o novo estado, a data e o usuário responsável. | Decisão de projeto |
+| RN-13 | Documentos de candidatura devem ser acessíveis somente ao estudante titular e aos perfis autorizados para análise/gestão. | Decisão de projeto |
+| RN-14 | O encerramento de uma oportunidade impede novas candidaturas, mas preserva o histórico das candidaturas já registradas. | Decisão de projeto |
+| RN-15 | Notificações devem ser geradas para eventos relevantes, como confirmação de candidatura e alteração de status. | Decisão de projeto |
+| RN-16 | Relatórios devem apresentar dados agregados e respeitar as permissões do usuário solicitante. | Decisão de projeto |
 
-## 4. Observações de aplicação
-Os critérios RI-01 a RI-05 são apresentados pela página de Apoio ao Estudante para o programa de mobilidade ali descrito. Não devem ser convertidos em filtro eliminatório universal para todos os programas. O edital ou regulamento específico prevalece quando aplicável.
+## 2. Fluxo de status proposto
+Estados iniciais sugeridos:
+1. **Rascunho:** oportunidade ainda não publicada.
+2. **Publicada:** disponível para consulta e candidatura dentro do prazo.
+3. **Suspensa:** temporariamente indisponível para novas candidaturas.
+4. **Encerrada:** prazo/processo encerrado.
+
+Status de candidatura propostos:
+1. **Enviada**
+2. **Em análise**
+3. **Pendente de documentação**
+4. **Aprovada**
+5. **Não aprovada**
+6. **Cancelada**
+
+A transição entre estados deve ser controlada por permissões e registrada no histórico. Na P2, a equipe deverá especificar quais transições são permitidas.
+
+## 3. Regras contextuais
+Materiais de referência sobre internacionalização apresentam critérios que podem variar conforme modalidade, oportunidade e instituição de destino. Por esse motivo, tais critérios não são fixados como regra global do ConectaGlobal: devem ser cadastrados no contexto da oportunidade correspondente.

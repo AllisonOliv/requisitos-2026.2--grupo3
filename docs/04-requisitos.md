@@ -1,54 +1,55 @@
-# Especificação de Requisitos — ConectaGlobal
+# Requisitos — ConectaGlobal
 
 ## 1. Convenções
 - **RF:** requisito funcional.
 - **RNF:** requisito não funcional.
-- **Fonte:** identificador AD em `docs/03-analise-documental.md` ou DP em `docs/09-fontes-e-decisoes.md`.
-- **Prioridade:** Must/Should/Could, definida pela equipe para o escopo acadêmico.
-- Os requisitos descrevem o ConectaGlobal proposto; não são requisitos oficiais da Unifor.
+- Prioridade: **Alta**, **Média** ou **Baixa**.
+- Os requisitos são decisões de projeto acadêmico e serão detalhados na SRS da P2.
 
-## 2. Requisitos Funcionais
-
-| ID | Requisito | Descrição verificável | Origem | Prioridade |
-|---|---|---|---|---|
-| RF-01 | Exibir catálogo de programas | O sistema deve apresentar os programas cadastrados com nome, categoria e resumo. | AD-02, DP-01 | Must |
-| RF-02 | Pesquisar programas | O sistema deve permitir busca textual por nome e descrição. | DP-01 | Should |
-| RF-03 | Filtrar programas | O sistema deve permitir filtrar por categoria/modalidade cadastrada. | AD-02, DP-01 | Should |
-| RF-04 | Exibir detalhes do programa | O sistema deve apresentar descrição, público-alvo, modalidade e informações disponíveis. | AD-02 | Must |
-| RF-05 | Exibir critérios publicados | O sistema deve apresentar os critérios associados à fonte e ao programa correspondente, sem generalizar critérios de um programa para outros. | AD-04, DP-02 | Must |
-| RF-06 | Exibir documentos e providências | O sistema deve apresentar a lista informativa de documentos/providências descritos pela fonte oficial. | AD-05 | Must |
-| RF-07 | Exibir etapas e próximos passos | O sistema deve apresentar as etapas publicadas e destacar quando o estudante deve procurar a DRI. | AD-03 | Must |
-| RF-08 | Encaminhar para fonte oficial | O sistema deve disponibilizar links externos para a página DRI, edital ou contato correspondente. | AD-01, AD-10 | Must |
-| RF-09 | Exibir aviso sobre seleção | O sistema deve informar que a aprovação na seleção não garante a aceitação pela instituição de destino, quando aplicável ao programa descrito. | AD-06 | Must |
-| RF-10 | Exibir fonte e data de consulta | Cada página de conteúdo deve apresentar a fonte e a data em que a equipe consultou a fonte. | DP-03 | Must |
-| RF-11 | Manter conteúdo do protótipo | O responsável editorial do protótipo deve poder cadastrar, editar, publicar e retirar conteúdo demonstrativo. | DP-04 | Could |
-| RF-12 | Exibir perguntas frequentes | O sistema deve apresentar perguntas e respostas informativas baseadas nas páginas oficiais. | AD-03 a AD-06 | Should |
-
-## 3. Requisitos Não Funcionais
-
-| ID | Categoria LAPIS | Requisito | Verificação |
+## 2. Requisitos funcionais
+| ID | Requisito | Prioridade | Caso de uso |
 |---|---|---|---|
-| RNF-01 | Capacidade de interação | Navegação e rótulos devem ser escritos em português claro, com termos consistentes com o glossário. | Revisão textual e teste de tarefas |
-| RNF-02 | Acessibilidade | Componentes do protótipo devem possuir contraste, hierarquia, rótulos e alternativas textuais adequados; adotar WCAG 2.2 AA como referência de projeto, sem declarar certificação. | Checklist e inspeção manual |
-| RNF-03 | Flexibilidade/compatibilidade | As telas devem adaptar-se a viewport móvel e desktop. | Inspeção em larguras de referência |
-| RNF-04 | Segurança/privacidade | O escopo não deve solicitar nem armazenar dados pessoais, documentos ou credenciais do estudante. | Inspeção das telas e fluxos |
-| RNF-05 | Adequação funcional | Conteúdo exibido deve possuir link para a fonte pública e data de consulta. | Conferência de todos os registros |
-| RNF-06 | Manutenibilidade | Conteúdo deve ser estruturado de modo que descrição, critérios, documentos e links possam ser atualizados independentemente do layout. | Inspeção do modelo de conteúdo |
-| RNF-07 | Compatibilidade | Links externos devem abrir a página de destino correspondente e indicar que o usuário está saindo do ConectaGlobal. | Teste de links |
-| RNF-08 | Confiabilidade da informação | Quando houver divergência entre resumo do protótipo e fonte oficial, o usuário deve ser orientado a seguir o edital/regulamento vigente. | Inspeção de conteúdo e teste de cenário |
+| RF-01 | O sistema deve permitir consultar a lista de oportunidades publicadas e disponíveis. | Alta | UC-01 |
+| RF-02 | O sistema deve permitir pesquisar e filtrar oportunidades por modalidade, destino, área, prazo e situação. | Alta | UC-02 |
+| RF-03 | O sistema deve exibir os detalhes de uma oportunidade, incluindo descrição, destino, período, prazos e situação. | Alta | UC-03 |
+| RF-04 | O sistema deve exibir os critérios de elegibilidade e os documentos exigidos para cada oportunidade. | Alta | UC-04 |
+| RF-05 | O sistema deve permitir que o estudante registre uma manifestação de interesse/candidatura em oportunidade publicada e dentro do prazo. | Alta | UC-05 |
+| RF-06 | O sistema deve permitir anexar, consultar e substituir documentos de uma candidatura, respeitando as permissões e o prazo. | Alta | UC-06 |
+| RF-07 | O sistema deve permitir ao estudante consultar o status e o histórico de sua candidatura. | Alta | UC-07 |
+| RF-08 | O sistema deve registrar notificações sobre confirmação de envio e mudanças relevantes no status da candidatura. | Média | UC-08 |
+| RF-09 | O sistema deve permitir ao gestor cadastrar uma oportunidade com descrição, modalidade, destino, período, prazo, critérios e documentos. | Alta | UC-09 |
+| RF-10 | O sistema deve permitir ao gestor editar, publicar, suspender e encerrar oportunidades. | Alta | UC-10 |
+| RF-11 | O sistema deve permitir ao avaliador consultar candidaturas e registrar análise e atualização de status. | Alta | UC-11 |
+| RF-12 | O sistema deve disponibilizar relatórios básicos de oportunidades e candidaturas por período e situação. | Média | UC-12 |
+| RF-13 | O sistema deve permitir ao administrador cadastrar, ativar, desativar e atribuir perfis a usuários. | Média | UC-13 |
 
-Não foram fixadas metas de disponibilidade, carga, latência, TLS, backup ou integração, pois o projeto não tem infraestrutura de produção definida.
-
-## 4. Rastreabilidade
-
-| Necessidade | Requisitos | Casos de uso |
+## 3. Requisitos não funcionais
+| ID | Requisito | Prioridade |
 |---|---|---|
-| NEC-01 | RF-01, RF-02, RF-03 | CDU-01, CDU-02 |
-| NEC-02 | RF-04 | CDU-03 |
-| NEC-03 | RF-05 | CDU-03 |
-| NEC-04 | RF-06, RF-07, RF-09 | CDU-03, CDU-04 |
-| NEC-05 | RF-08 | CDU-04 |
-| NEC-06 | RF-10, RF-11 | CDU-05 |
+| RNF-01 | A interface deve utilizar linguagem clara e consistente em português. | Alta |
+| RNF-02 | A interface deve ser responsiva para uso em computadores, tablets e celulares. | Alta |
+| RNF-03 | A navegação deve manter padrões consistentes de menus, formulários, mensagens e ações. | Alta |
+| RNF-04 | O sistema deve restringir o acesso a funções e dados conforme o perfil do usuário. | Alta |
+| RNF-05 | A comunicação com o sistema deve utilizar conexão protegida (HTTPS) quando implantado em ambiente real. | Alta |
+| RNF-06 | Senhas não devem ser armazenadas em texto puro; devem utilizar mecanismo seguro de hash quando houver autenticação própria. | Alta |
+| RNF-07 | O sistema deve validar campos obrigatórios, formatos e limites antes de salvar dados. | Alta |
+| RNF-08 | O sistema deve apresentar mensagens de erro compreensíveis, sem expor detalhes técnicos ou dados sensíveis. | Média |
+| RNF-09 | Documentos e dados pessoais devem ser acessíveis somente a usuários autorizados. | Alta |
+| RNF-10 | As principais páginas de consulta devem apresentar conteúdo em tempo de resposta adequado ao uso interativo, com meta de até 3 segundos em condições normais de teste. | Média |
+| RNF-11 | O sistema deve registrar operações relevantes de gestão e alteração de status para permitir rastreabilidade. | Média |
+| RNF-12 | A interface deve observar boas práticas de acessibilidade, incluindo contraste, identificação de campos e navegação por teclado. | Média |
 
-## 5. Exclusões explícitas
-Não existem RFs para candidatura, análise de candidatura, mudança de status, notificações institucionais, leitura de dados acadêmicos, autenticação SSO ou gestão de convênios. Esses processos não serão inferidos a partir de páginas meramente informativas.
+## 4. Rastreabilidade resumida
+| Necessidade | Requisitos |
+|---|---|
+| NEC-01 — Localizar oportunidades | RF-01, RF-02 |
+| NEC-02 — Compreender condições | RF-03, RF-04 |
+| NEC-03 — Registrar candidatura | RF-05, RF-06 |
+| NEC-04 — Acompanhar andamento | RF-07, RF-08 |
+| NEC-05 — Manter oportunidades | RF-09, RF-10 |
+| NEC-06 — Analisar solicitações | RF-11 |
+| NEC-07 — Consultar indicadores | RF-12 |
+| NEC-08 — Controlar acesso | RF-13, RNF-04, RNF-09 |
+
+## 5. Observações para a SRS
+Na P2, cada requisito deverá receber descrição detalhada, entradas, saídas, regras aplicáveis, condições de aceitação e prioridade confirmada. A equipe deverá decidir no protótipo quais operações serão funcionais e quais serão simuladas, sem alterar silenciosamente o escopo documentado.

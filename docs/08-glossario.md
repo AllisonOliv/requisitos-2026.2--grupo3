@@ -1,17 +1,20 @@
 # Glossário — ConectaGlobal
 
-| Termo/Sigla | Definição | Fonte/observação |
-|---|---|---|
-| DRI | Diretoria de Relações Internacionais da Unifor. | Portal DRI e Manual 2026 |
-| NEI | Núcleo de Estratégias Internacionais, denominação histórica convertida em DRI em janeiro de 2026 conforme Manual 2026. | Manual DRI 2026 |
-| Mobilidade acadêmica | Deslocamento temporário de estudante para realizar atividades acadêmicas em instituição parceira, conforme programa e convênio aplicáveis. | DRI — Apoio ao Estudante e Manual 2026 |
-| Dupla titulação | Modalidade de cooperação acadêmica mencionada pela DRI. Condições dependem do programa específico. | Portal DRI |
-| Buddy Program | Programa listado pela DRI entre as iniciativas para estudantes. | DRI — Apoio ao Estudante |
-| EducationUSA | Escritório/serviço de orientação sobre estudos nos Estados Unidos mencionado no portal DRI. | DRI — Apoio ao Estudante |
-| Top España | Programa de bolsas/imersão cultural na Espanha divulgado pela DRI; condições seguem edital próprio. | DRI — Apoio ao Estudante e edital específico |
-| PMG | Performance Média Global, indicador acadêmico citado pela DRI nos critérios de mobilidade. | DRI — Apoio ao Estudante |
-| IES | Instituição de Ensino Superior. | Uso acadêmico |
-| Instituição parceira | Instituição estrangeira com acordo ou convênio aplicável à mobilidade. | Manual DRI 2026 |
-| Edital | Documento oficial que estabelece regras, critérios, vagas, prazos e procedimentos de uma seleção específica. | Uso documental |
-| Pré-elegibilidade | Expressão não utilizada como decisão oficial neste projeto; o ConectaGlobal não calcula nem garante elegibilidade. | Decisão de escopo |
-| Fonte oficial | Página, edital, regulamento ou contato publicado pela Unifor/DRI que prevalece sobre resumo do protótipo. | Regra RP-01 |
+| Termo | Definição |
+|---|---|
+| Oportunidade internacional | Possibilidade de participação em atividade, programa ou experiência acadêmica internacional. |
+| Modalidade | Categoria da oportunidade, como mobilidade acadêmica, intercâmbio, estágio ou programa específico. |
+| Destino | Instituição, país ou local associado à oportunidade. |
+| Edital/chamada | Documento ou conjunto de informações que apresenta condições, prazos e critérios de uma oportunidade. |
+| Critério de elegibilidade | Condição que o interessado deve atender para se candidatar ou participar. |
+| Elegibilidade informativa | Indicação baseada nos critérios cadastrados; não equivale a aprovação ou seleção. |
+| Candidatura | Registro de interesse formal de um estudante em uma oportunidade no ConectaGlobal. |
+| Solicitação | Registro de candidatura e seus dados associados no sistema. |
+| Documento exigido | Arquivo ou comprovante solicitado para uma candidatura. |
+| Status | Situação atual de uma oportunidade ou candidatura no fluxo do sistema. |
+| Histórico | Registro cronológico de eventos e alterações de status. |
+| Gestor de oportunidades | Usuário autorizado a cadastrar e manter oportunidades. |
+| Avaliador | Usuário autorizado a analisar candidaturas e registrar atualizações. |
+| Notificação | Aviso apresentado ao usuário sobre evento relevante do sistema. |
+| Perfil de acesso | Conjunto de permissões associado a um usuário. |
+| Rastreabilidade | Capacidade de relacionar necessidades, requisitos, regras, casos de uso e testes. |

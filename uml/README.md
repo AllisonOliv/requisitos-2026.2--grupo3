@@ -1,12 +1,10 @@
 # Diagramas UML — ConectaGlobal
 
-Os diagramas são escritos em PlantUML, usando a notação específica de casos de uso, componentes e implantação. Eles representam o escopo acadêmico descrito nos documentos, não arquitetura aprovada pela Unifor.
+O arquivo `diagramas.puml` contém três diagramas PlantUML:
+1. Diagrama de Casos de Uso.
+2. Diagrama de Componentes.
+3. Diagrama de Implantação.
 
-Para visualizar, copie cada bloco `@startuml ... @enduml` para https://www.plantuml.com/plantuml/ ou abra `diagramas.puml` em ferramenta compatível.
+Os diagramas representam a proposta autoral descrita nos documentos da P1. Eles não pressupõem integração com a DRI ou com sistemas institucionais externos.
 
-Diagramas incluídos:
-1. Casos de Uso.
-2. Componentes.
-3. Implantação.
-
-Atores e casos de uso devem permanecer consistentes com `docs/02-stakeholders.md` e `docs/07-casos-de-uso.md`.
+Para visualizar, copie o conteúdo de `diagramas.puml` para um renderizador PlantUML ou utilize uma extensão compatível no editor de sua preferência. Na P2, os diagramas devem ser revisados junto à SRS e ao protótipo.

@@ -1,61 +1,91 @@
 @startuml
 left to right direction
 skinparam packageStyle rectangle
-actor "Estudante da Unifor" as Estudante
-actor "Responsável editorial\n(do protótipo acadêmico)" as Editor
-actor "Portal oficial da DRI" as DRI
+actor "Estudante" as Estudante
+actor "Gestor de oportunidades" as Gestor
+actor "Avaliador" as Avaliador
+actor "Administrador" as Admin
 
 rectangle "ConectaGlobal" {
-  usecase "Consultar Catálogo\nde Programas" as UC01
-  usecase "Pesquisar e Filtrar\nProgramas" as UC02
-  usecase "Consultar Detalhes\ne Critérios" as UC03
-  usecase "Consultar Próximos Passos\ne Acessar Canal Oficial" as UC04
-  usecase "Manter Conteúdo\nInformativo do Protótipo" as UC05
+  usecase "Consultar oportunidades" as UC01
+  usecase "Pesquisar e filtrar
+ oportunidades" as UC02
+  usecase "Consultar detalhes" as UC03
+  usecase "Consultar requisitos
+e documentos" as UC04
+  usecase "Registrar candidatura" as UC05
+  usecase "Gerenciar documentos
+da candidatura" as UC06
+  usecase "Acompanhar candidatura" as UC07
+  usecase "Consultar notificações" as UC08
+  usecase "Cadastrar oportunidade" as UC09
+  usecase "Manter e publicar
+oportunidade" as UC10
+  usecase "Analisar candidatura" as UC11
+  usecase "Gerar relatórios" as UC12
+  usecase "Gerenciar usuários
+e perfis" as UC13
 }
 Estudante --> UC01
 Estudante --> UC02
 Estudante --> UC03
 Estudante --> UC04
-Editor --> UC05
-DRI --> UC04 : link externo / fonte
-UC02 ..> UC01 : <<extend>>
-UC03 ..> UC01 : <<extend>>
+Estudante --> UC05
+Estudante --> UC06
+Estudante --> UC07
+Estudante --> UC08
+Gestor --> UC09
+Gestor --> UC10
+Gestor --> UC12
+Avaliador --> UC11
+Admin --> UC13
 @enduml
 
 @startuml
 skinparam componentStyle rectangle
-actor "Estudante" as Estudante
-component "Interface Web" as UI
-component "Catálogo e Pesquisa" as Catalogo
-component "Detalhes e Conteúdo" as Conteudo
-component "Referências e Links Oficiais" as Links
-database "Repositório de Conteúdo\nacadêmico" as DB
-component "Portal DRI\n(externo)" as DRI
-
-Estudante --> UI
-UI --> Catalogo
-UI --> Conteudo
-Catalogo --> DB
-Conteudo --> DB
-Conteudo --> Links
-Links ..> DRI : navegação externa\nsem API
+package "ConectaGlobal — Aplicação Web" {
+  [Interface Web] as UI
+  [Autenticação e Controle
+ de Acesso] as AUTH
+  [Gestão de Oportunidades] as OPORT
+  [Consulta e Elegibilidade] as ELIG
+  [Gestão de Candidaturas] as CAND
+  [Gestão de Documentos] as DOC
+  [Notificações] as NOTIF
+  [Relatórios] as REPORT
+  database "Banco de Dados" as DB
+  folder "Repositório de Documentos" as STORE
+}
+UI --> AUTH
+UI --> OPORT
+UI --> ELIG
+UI --> CAND
+UI --> DOC
+UI --> NOTIF
+UI --> REPORT
+OPORT --> DB
+ELIG --> DB
+CAND --> DB
+AUTH --> DB
+DOC --> DB
+DOC --> STORE
+NOTIF --> DB
+REPORT --> DB
+CAND --> NOTIF
 @enduml
 
 @startuml
-node "Dispositivo do estudante" {
-  artifact "Navegador Web" as Browser
+node "Dispositivo do usuário" as CLIENT {
+  artifact "Navegador Web" as BROWSER
 }
-node "Ambiente de demonstração\n(ConectaGlobal)" {
-  node "Hospedagem do protótipo" {
-    artifact "Aplicação Web" as App
-    database "Conteúdo demonstrativo" as DB
-  }
+node "Ambiente de aplicação" as APPHOST {
+  artifact "Aplicação ConectaGlobal" as WEBAPP
 }
-cloud "Internet" as Internet
-node "Portal oficial da DRI" as DRI
-
-Browser --> Internet
-Internet --> App
-App --> DB
-Browser ..> DRI : abre link externo
+node "Ambiente de dados" as DATAHOST {
+  database "Banco de Dados" as DATABASE
+  node "Armazenamento de documentos" as FILES
+}
+BROWSER --> WEBAPP : HTTPS
+WEBAPP --> DATABASE : acesso a dados
+WEBAPP --> FILES : leitura/gravação autorizada
 @enduml

@@ -1,43 +1,36 @@
-# Análise Documental e Elicitação — ConectaGlobal
+# Análise Documental e Elicitação
 
-## 1. Método e limite
-A elicitação foi realizada por análise de fontes públicas institucionais e documentos da disciplina. Não houve entrevista, questionário, observação do processo interno ou validação com a DRI. Nenhum resultado de participante foi inventado.
+## 1. Objetivo
+Registrar as fontes consultadas para compreender o domínio de oportunidades internacionais e a metodologia de engenharia de requisitos. A análise documental apoia decisões de projeto, mas não substitui entrevistas ou validação com usuários.
 
-## 2. Fontes analisadas
-1. Portal DRI — página inicial.
-2. DRI — Apoio ao Estudante.
-3. DRI — Contatos.
-4. DRI — Convênios.
-5. Manual de Boas Práticas de Internacionalização, Unifor, 2026.
-6. Materiais da disciplina e enunciado do Tema 3.
-7. Repositório LAPIS Unifor, templates e guia de casos de uso.
+## 2. Fontes consultadas
+| ID | Fonte | Uso no projeto |
+|---|---|---|
+| AD-01 | Repositório LAPIS — Unifor | Referência metodológica para visão, requisitos, casos de uso e rastreabilidade. |
+| AD-02 | Materiais e orientações da disciplina Requisitos e Modelagem de Sistemas | Referência para entregáveis e evolução entre P1 e P2. |
+| AD-03 | Portal público da DRI/Unifor | Referência contextual sobre apresentação de oportunidades e informações de internacionalização. |
+| AD-04 | Manual de Boas Práticas de Internacionalização (Unifor, 2026) | Referência contextual para terminologia e exemplos de modalidades e requisitos. |
 
-URLs, achados e limites estão em `docs/09-fontes-e-decisoes.md`.
+## 3. Observações documentais
+A consulta a materiais públicos relacionados à internacionalização demonstra que oportunidades podem apresentar modalidades, instituições de destino, períodos, critérios de participação, documentação e etapas próprias. Esses elementos ajudam a estruturar os campos e conceitos do domínio no ConectaGlobal.
 
-## 3. Achados documentais confirmados
+Os materiais consultados não permitem concluir que exista um processo interno único aplicável a todas as oportunidades, nem que todos os critérios sejam universais. Por isso, o projeto prevê que requisitos, prazos e documentos sejam associados individualmente a cada oportunidade.
 
-| ID | Achado | Fonte | Uso no projeto |
-|---|---|---|---|
-| AD-01 | A DRI possui portal institucional próprio e divulga ações de internacionalização | Portal DRI | Fonte principal |
-| AD-02 | A DRI apresenta modalidades como intercâmbio, dupla titulação, Buddy Program, EducationUSA, Top España e ações | DRI — Apoio ao Estudante | Categorias do catálogo |
-| AD-03 | A página descreve um primeiro contato do interessado com a DRI e processo seletivo semestral específico | DRI — Apoio ao Estudante | Orientação de próximos passos; sem candidatura dentro do sistema |
-| AD-04 | A página lista critérios de mobilidade: matrícula regular, 30% a 70% de integralização, PMG >= 7, idioma exigido e ausência de reprovações, entre outros | DRI — Apoio ao Estudante | Apresentar como critérios publicados para o programa descrito, com ressalva de edital |
-| AD-05 | A página lista documentos e providências como passaporte, formulários, recomendação, carta de motivação, CV e histórico | DRI — Apoio ao Estudante | Checklist informativo |
-| AD-06 | A aprovação na seleção não garante a realização da mobilidade, pois depende da aceitação da instituição de destino | DRI — Apoio ao Estudante | Aviso essencial |
-| AD-07 | A DRI organiza-se em Coordenação, Apoio Discente, Apoio Docente e Convênios/Projetos de Fomento | Manual DRI 2026 | Stakeholders institucionais |
-| AD-08 | O Manual informa a conversão do NEI em DRI em janeiro de 2026, pela Portaria FEQ 01/2026 | Manual DRI 2026 | Atualização da nomenclatura |
-| AD-09 | A mobilidade discente depende de convênio prévio, conforme regulamento, ressalvadas condições específicas como Free Mover | Manual DRI 2026 | Regra informativa com referência ao regulamento |
-| AD-10 | O site disponibiliza contatos da DRI | DRI — Contatos | Link de encaminhamento |
+## 4. Limitações da elicitação
+- Não foram realizadas entrevistas, questionários ou observações com usuários.
+- Não foram obtidas informações de processos internos, sistemas privados ou integrações institucionais.
+- Não se afirma que os fluxos modelados correspondam a procedimentos oficiais de qualquer setor.
+- Os fluxos de candidatura, análise e atualização de status são decisões de projeto para fins acadêmicos.
 
-## 4. Limitações documentais
-- Páginas e regulamentos públicos não descrevem todos os procedimentos internos, responsáveis operacionais, permissões ou sistemas usados.
-- Os critérios apresentados na página de apoio não devem ser automaticamente aplicados a todos os programas especiais, bolsas ou editais.
-- O conteúdo do site pode mudar; a fonte oficial deve prevalecer sobre o resumo do protótipo.
-- Não foi obtido acesso a APIs ou sistemas internos.
-- Não foi comprovado que a DRI tenha necessidade de substituir seu portal atual.
+## 5. Decisões derivadas
+| ID | Decisão de projeto | Justificativa |
+|---|---|---|
+| DP-01 | Cada oportunidade possui seus próprios critérios e documentos. | Evita tratar condições específicas como regras universais. |
+| DP-02 | O estudante pode registrar interesse/candidatura e acompanhar o status. | Atende à proposta original de gestão de oportunidades, indo além de um catálogo. |
+| DP-03 | A análise e a atualização de status são realizadas por perfil autorizado. | Mantém controle e rastreabilidade do fluxo. |
+| DP-04 | A indicação de elegibilidade é informativa. | Critérios cadastrados não garantem aprovação ou seleção. |
+| DP-05 | O sistema terá gestão de oportunidades, candidaturas, documentos, notificações e relatórios em níveis compatíveis com o escopo acadêmico. | Materializa a visão autoral do produto. |
+| DP-06 | Não será considerada integração obrigatória com a DRI ou outros sistemas externos. | Nenhuma integração é necessária para definir o produto nesta etapa. |
 
-## 5. Técnicas não realizadas
-Entrevistas, questionários e observação direta não foram realizados. O projeto não apresenta resultados de pesquisa com usuários. Os testes da P2 serão testes acadêmicos de navegação e compreensão do protótipo, não validação institucional.
-
-## 6. Decisões de elicitação
-A equipe delimitou o sistema a consulta informativa e encaminhamento à fonte oficial. Essa decisão evita inventar um fluxo interno de candidatura ou gestão de manifestações que não esteja descrito nas fontes públicas.
+## 6. Relação com a P2
+A P2 deverá detalhar os requisitos em formato SRS, revisar a consistência dos modelos UML e produzir wireframes/protótipo. A interface poderá consultar o portal da DRI como referência visual, sem transformar esse portal em dependência funcional ou fonte de requisitos obrigatórios.
