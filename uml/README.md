@@ -1,7 +1,7 @@
 # Diagramas — ConectaGlobal
 
 - [`diagramas.md`](diagramas.md): versão ilustrada em Mermaid, com ícones, cores e organização por módulos, para visualização direta no GitHub.
-- [`diagramas.puml`](diagramas.puml): fonte PlantUML dos diagramas formais.
+- [`diagramas.puml`](diagramas.puml): fonte PlantUML dos três diagramas, também organizada visualmente com ícones, cores e agrupamentos.
 
 Os dois arquivos representam a mesma proposta e devem permanecer consistentes com os atores e casos de uso documentados.
 
@@ -9,3 +9,4 @@ Os dois arquivos representam a mesma proposta e devem permanecer consistentes co
 - A DRI não aparece como ator, componente ou nó de implantação; é apenas referência visual para telas.
 - Não há sistema externo integrado confirmado.
 - A implantação representa somente um ambiente lógico proposto.
+- Os identificadores CDU seguem a numeração da especificação em `docs/08-casos-de-uso.md`.

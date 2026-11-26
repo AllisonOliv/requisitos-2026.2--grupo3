@@ -1,31 +1,54 @@
-@startuml
+' ConectaGlobal — diagramas UML com apresentação ilustrada
+' Ícones são recursos visuais; atores, funcionalidades e relações seguem a documentação.
+
+@startuml ConectaGlobal_Casos_de_Uso
 left to right direction
-skinparam packageStyle rectangle
 skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #EAF2FF
+  BorderColor #3976C8
+  FontColor #17365D
+}
+skinparam actor {
+  BorderColor #3976C8
+  FontColor #17365D
+}
 
-actor "Estudante" as Estudante
-actor "Equipe do NEI" as NEI
-actor "Coordenador de curso" as Coordenador
-actor "Professor" as Professor
-actor "Estudante estrangeiro\nrecebido" as Incoming
-actor "Ex-intercambista" as Alumni
-actor "Administrador\ndo sistema" as Admin
+actor "🎓 Estudante" as Estudante
+actor "🏢 Equipe do NEI" as NEI
+actor "🧑‍🏫 Coordenador de curso" as Coordenador
+actor "👩‍🏫 Professor" as Professor
+actor "🌎 Estudante estrangeiro\nrecebido" as Incoming
+actor "🧳 Ex-intercambista" as Alumni
+actor "⚙️ Administrador\ndo sistema" as Admin
 
-rectangle "ConectaGlobal" {
-  usecase "Consultar oportunidades" as UC01
-  usecase "Verificar elegibilidade inicial" as UC02
-  usecase "Registrar candidatura" as UC03
-  usecase "Acompanhar candidatura" as UC04
-  usecase "Consultar recursos de preparação" as UC05
-  usecase "Gerenciar oportunidades" as UC06
-  usecase "Gerenciar convênios e bolsas" as UC07
-  usecase "Analisar candidaturas" as UC08
-  usecase "Gerenciar notificações" as UC09
-  usecase "Consultar relatórios gerenciais" as UC10
-  usecase "Compartilhar relatos e participar de mentoria" as UC11
-  usecase "Participar de atividades colaborativas" as UC12
-  usecase "Consultar recursos de integração" as UC13
-  usecase "Gerenciar usuários e permissões" as UC14
+rectangle "🌐 ConectaGlobal — Sistema de Gestão de Oportunidades Internacionais" {
+  package "🎓 Módulo do Estudante" #EAF2FF {
+    usecase "🔎 Consultar oportunidades" as UC01
+    usecase "📝 Verificar elegibilidade inicial" as UC02
+    usecase "📨 Registrar candidatura" as UC03
+    usecase "📍 Acompanhar candidatura" as UC04
+    usecase "📚 Consultar recursos de preparação" as UC05
+  }
+  package "🏢 Módulo de Gestão — NEI" #FFF1DF {
+    usecase "📢 Gerenciar oportunidades" as UC06
+    usecase "🤝 Gerenciar convênios e bolsas" as UC07
+    usecase "📋 Analisar candidaturas" as UC08
+    usecase "🔔 Gerenciar notificações" as UC09
+    usecase "📊 Consultar relatórios gerenciais" as UC10
+  }
+  package "🌍 Pós-intercâmbio e colaboração" #E9F7EF {
+    usecase "💬 Compartilhar relatos e\nparticipar de mentoria" as UC11
+    usecase "🤝 Participar de atividades\ncolaborativas" as UC12
+    usecase "🧭 Consultar recursos de integração" as UC13
+  }
+  package "🛠️ Administração" #F0EAFE {
+    usecase "🔐 Gerenciar usuários e permissões" as UC14
+  }
 }
 
 Estudante --> UC01
@@ -47,26 +70,44 @@ Incoming --> UC12
 Alumni --> UC11
 Alumni --> UC12
 Admin --> UC14
-
 @enduml
 
-@startuml
-skinparam componentStyle rectangle
+@startuml ConectaGlobal_Componentes
 skinparam shadowing false
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam component {
+  BackgroundColor #EAF7F0
+  BorderColor #39865B
+  FontColor #174B30
+}
+skinparam database {
+  BackgroundColor #FFF1DF
+  BorderColor #C77B20
+  FontColor #653B0B
+}
 
-package "ConectaGlobal" {
-  [Interface Web/Mobile] as UI
-  [Autenticação e Autorização] as AUTH
-  [Serviço de Oportunidades] as OPORT
-  [Serviço de Convênios e Bolsas] as CONV
-  [Serviço de Elegibilidade] as ELEG
-  [Serviço de Candidaturas] as CAND
-  [Gestão de Documentos] as DOC
-  [Serviço de Notificações] as NOTIF
-  [Relatórios Gerenciais] as REL
-  [Preparação e Conteúdos] as PREP
-  [Módulo Colaborativo e Pós-intercâmbio] as COL
-  database "Banco de Dados" as DB
+package "🌐 ConectaGlobal" {
+  package "📱 Camada de apresentação" #E8F2FF {
+    component "🖥️ Interface Web/Mobile" as UI
+  }
+  package "⚙️ Serviços da aplicação" #EAF7F0 {
+    component "🔐 Autenticação e Autorização" as AUTH
+    component "🌐 Serviço de Oportunidades" as OPORT
+    component "🤝 Serviço de Convênios e Bolsas" as CONV
+    component "✅ Serviço de Elegibilidade" as ELEG
+    component "📨 Serviço de Candidaturas" as CAND
+    component "📁 Gestão de Documentos" as DOC
+    component "🔔 Serviço de Notificações" as NOTIF
+    component "📊 Relatórios Gerenciais" as REL
+    component "📚 Preparação e Conteúdos" as PREP
+    component "💬 Módulo Colaborativo e Pós-intercâmbio" as COL
+  }
+  package "🗄️ Persistência" #FFF1DF {
+    database "🗃️ Banco de Dados" as DB
+  }
 }
 
 UI --> AUTH
@@ -91,20 +132,35 @@ PREP --> DB
 COL --> DB
 @enduml
 
-@startuml
+@startuml ConectaGlobal_Implantacao
 skinparam shadowing false
-
-node "Dispositivo do usuário\n(Navegador / Aplicativo)" as CLIENT {
-  artifact "Interface ConectaGlobal"
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam node {
+  BackgroundColor #E8F2FF
+  BorderColor #3676C8
+  FontColor #17365D
+}
+skinparam artifact {
+  BackgroundColor #EAF7F0
+  BorderColor #39865B
+  FontColor #174B30
+}
+skinparam database {
+  BackgroundColor #FFF1DF
+  BorderColor #C77B20
+  FontColor #653B0B
 }
 
-node "Ambiente de aplicação proposto" as APP {
-  artifact "Aplicação Web"
-  artifact "API / Serviços de negócio"
+node "👤 Dispositivo do usuário\n(Navegador / Aplicativo)" as CLIENT #E8F2FF {
+  artifact "🌐 Interface ConectaGlobal"
 }
+node "☁️ Ambiente de aplicação proposto" as APP #EAF7F0 {
+  artifact "🖥️ Aplicação Web"
+  artifact "⚙️ API / Serviços de negócio"
+}
+database "🗃️ Servidor de banco de dados proposto" as DB
 
-database "Servidor de banco de dados proposto" as DB
-
-CLIENT --> APP : HTTPS (proposto)
-APP --> DB : conexão segura (proposta)
+CLIENT --> APP : 🔒 HTTPS (proposto)
+APP --> DB : 🔐 conexão segura (proposta)
 @enduml
