@@ -1,11 +1,11 @@
-# Diagramas UML — ConectaGlobal
+# Diagramas — ConectaGlobal
 
-Os diagramas representam a proposta acadêmica e devem permanecer consistentes com os atores e requisitos documentados.
+- [`diagramas.md`](diagramas.md): versão ilustrada em Mermaid, com ícones, cores e organização por módulos, para visualização direta no GitHub.
+- [`diagramas.puml`](diagramas.puml): fonte PlantUML dos diagramas formais.
 
-- `diagramas.puml`: casos de uso, componentes e implantação.
-- O ator Equipe do NEI é mantido.
-- A DRI não aparece como ator, componente ou nó de implantação.
-- Não há sistema externo integrado confirmado; o diagrama de implantação representa apenas o ambiente lógico proposto.
-- Os diagramas devem ser revisados junto aos requisitos e aos casos de uso na P2.
+Os dois arquivos representam a mesma proposta e devem permanecer consistentes com os atores e casos de uso documentados.
 
-O LAPIS orienta rastreabilidade e especificação de requisitos; os diagramas UML seguem a notação UML/PlantUML.
+- O ator **Equipe do NEI** é mantido.
+- A DRI não aparece como ator, componente ou nó de implantação; é apenas referência visual para telas.
+- Não há sistema externo integrado confirmado.
+- A implantação representa somente um ambiente lógico proposto.
