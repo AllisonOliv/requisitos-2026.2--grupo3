@@ -6,18 +6,18 @@ Projeto acadêmico — Requisitos e Modelagem de Sistemas, Unifor, 2026.2.
 
 | Artefato | Arquivo |
 |---|---|
-| Visão da Demanda — LAPIS v2.1 | `docs/01-visao-da-demanda.md` |
-| Partes interessadas e atores | `docs/02-partes-interessadas-e-atores.md` |
-| Análise documental e elicitação | `docs/03-analise-documental-e-elicitação.md` |
-| Requisitos funcionais | `docs/04-requisitos-funcionais.md` |
-| Requisitos não funcionais — estrutura LAPIS | `docs/05-requisitos-nao-funcionais.md` |
-| Regras de negócio — estrutura LAPIS | `docs/06-regras-de-negocio.md` |
-| Backlog priorizado | `docs/07-backlog.md` |
-| Especificação de casos de uso — estrutura LAPIS | `docs/08-casos-de-uso.md` |
-| Glossário — estrutura LAPIS | `docs/09-glossario.md` |
-| Fontes, premissas e decisões | `docs/10-fontes-e-decisoes.md` |
-| Diagramas UML | `uml/diagramas.puml` |
-| Guia dos diagramas | `uml/README.md` |
+| Visão da Demanda — LAPIS v2.1 | [Abrir documento](docs/01-visao-da-demanda.md) |
+| Partes interessadas e atores | [Abrir documento](docs/02-partes-interessadas-e-atores.md) |
+| Análise documental e elicitação | [Abrir documento](docs/03-analise-documental-e-elicitação.md) |
+| Requisitos funcionais | [Abrir documento](docs/04-requisitos-funcionais.md) |
+| Requisitos não funcionais — estrutura LAPIS | [Abrir documento](docs/05-requisitos-nao-funcionais.md) |
+| Regras de negócio — estrutura LAPIS | [Abrir documento](docs/06-regras-de-negocio.md) |
+| Backlog priorizado | [Abrir documento](docs/07-backlog.md) |
+| Especificação de casos de uso — estrutura LAPIS | [Abrir documento](docs/08-casos-de-uso.md) |
+| Glossário — estrutura LAPIS | [Abrir documento](docs/09-glossario.md) |
+| Fontes, premissas e decisões | [Abrir documento](docs/10-fontes-e-decisoes.md) |
+| Diagramas UML | [Abrir arquivo PlantUML](uml/diagramas.puml) |
+| Guia dos diagramas | [Abrir guia](uml/README.md) |
 
 ## Padrão metodológico
 

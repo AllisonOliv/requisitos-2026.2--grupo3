@@ -1,223 +1,258 @@
 # Visão da Demanda (VD) — ConectaGlobal
 
+> **Versão do template:** 2.1 (proposta revisada) | **Aplicação:** processo de requisitos LAPIS, etapa de Elicitação, com refinamento nas etapas de Especificação e Validação.
+
 ## Identificação e Histórico
 
 | Campo | Informação |
-|---|---|
+| --- | --- |
 | Nome e identificador da demanda | ConectaGlobal — Sistema de Gestão de Oportunidades Internacionais |
 | Tipo | Novo sistema — proposta acadêmica |
-| Sistema ou produto relacionado | Não se aplica; solução proposta |
-| Área solicitante | Demanda acadêmica da disciplina, baseada nos materiais de internacionalização da Unifor |
-| Responsável pela elaboração | Allison de Oliveira Girão e Maria Rafaele Gomes de Araújo |
-| Responsável pela validação | A definir; não há validação institucional registrada |
-| Situação do documento | Em revisão acadêmica |
-| Versão e data | 1.1 — 26/11/2026 |
+| Sistema ou produto relacionado | Não se aplica — solução proposta |
+| Área solicitante | Demanda acadêmica da disciplina Requisitos e Modelagem de Sistemas — Unifor |
+| Responsável pela elaboração | Allison de Oliveira Girão e Maria Rafaele Gomes de Araújo — equipe acadêmica |
+| Responsável pela validação | A definir — não há validação institucional registrada |
+| Situação do documento | Em revisão acadêmica para continuidade à P2 |
+| Versão e data | 1.2 — 26/11/2026 |
 
 | Data | Versão | Descrição da alteração | Autor |
-|---|---|---|---|
-| 26/11/2026 | 1.1 | Reestruturação conforme template Visão da Demanda LAPIS v2.1; preservação do escopo e explicitação de pendências. | Equipe do projeto |
+| --- | --- | --- | --- |
+| 26/11/2026 | 1.2 | Reorganização do conteúdo conforme a estrutura do template Visão da Demanda LAPIS v2.1, preservando o escopo acadêmico e explicitando fontes e pendências. | Allison de Oliveira Girão e Maria Rafaele Gomes de Araújo |
 
 ## 1. Objetivo
 
-Propor um sistema de gestão de oportunidades internacionais que apoie estudantes na descoberta, preparação e candidatura a experiências de mobilidade acadêmica e apoie a equipe do NEI na administração de oportunidades, convênios, bolsas e candidaturas.
+Especificar uma solução web/mobile para apoiar a gestão da mobilidade acadêmica internacional, tornando mais acessível e organizado o ciclo de oportunidades, preparação, candidatura, acompanhamento e atividades pós-intercâmbio, atendendo estudantes e apoiando a equipe do Núcleo de Estratégias Internacionais (NEI).
 
 ## 2. Contexto, Problema e Descrição Sumária da Demanda
 
-- **Situação atual:** os materiais acadêmicos fornecidos apresentam a necessidade de organizar a divulgação e a gestão de oportunidades internacionais, incluindo editais, bolsas, requisitos, prazos, documentos e manifestações de interesse. O processo institucional atual não foi observado diretamente nesta etapa.
-- **Problema ou oportunidade:** existe oportunidade de centralizar informações e apoiar o acompanhamento das oportunidades e candidaturas em um ambiente organizado.
-- **Públicos afetados e impactos:** estudantes interessados em mobilidade, equipe do NEI, coordenadores, professores, estudantes estrangeiros recebidos e ex-intercambistas.
-- **Evidências disponíveis:** material de Projeto de Extensão — Internacionalização e documento de Propostas de Projetos de Sistemas — Internacionalização e ENADE, ambos fornecidos para a disciplina.
-- **Descrição sumária da demanda:** especificar uma solução com módulos de estudante, gestão (NEI), pós-intercâmbio e colaboração, incluindo consulta e gestão de oportunidades, elegibilidade preliminar, candidatura, acompanhamento, preparação e troca de experiências.
-
-A descrição representa uma proposta acadêmica e não afirma que o processo institucional tenha sido validado com o setor responsável.
+- **Situação atual:** a documentação-base da proposta acadêmica apresenta atividades relacionadas à divulgação de oportunidades internacionais, editais, bolsas, requisitos, prazos, documentos, candidaturas e acompanhamento. O processo institucional atualmente praticado não foi observado diretamente nem confirmado com o setor responsável nesta etapa.
+- **Problema ou oportunidade:** estudantes precisam localizar oportunidades, compreender critérios, preparar documentos e acompanhar candidaturas. A equipe do NEI precisa apoiar a gestão de oportunidades, convênios, bolsas e candidaturas. A proposta busca reunir essas capacidades em um ambiente organizado.
+- **Públicos afetados e impactos:** estudantes interessados em mobilidade internacional, equipe do NEI, coordenadores de curso, professores envolvidos em cooperação internacional, estudantes estrangeiros recebidos e ex-participantes de mobilidade. Os impactos institucionais efetivos ainda dependem de validação com os responsáveis.
+- **Evidências disponíveis:** documentação acadêmica fornecida para a disciplina, incluindo o material de Projeto de Extensão — Internacionalização e o documento Propostas de Projetos de Sistemas — Internacionalização e ENADE, ambos da Unifor, 2026.2. Não foram realizadas entrevistas ou observações institucionais confirmadas para esta versão.
+- **Descrição sumária da demanda:** propor um sistema web/mobile com módulos de estudante, gestão (NEI), pós-intercâmbio e colaboração, contemplando consulta e gestão de oportunidades, autoavaliação inicial de elegibilidade, preparação, organização documental, candidatura, acompanhamento, relatos, mentoria, Tandem, eventos e fórum.
 
 ## 3. Proposta de Valor e Sucesso da Demanda
 
 | Benefício esperado | Indicador ou evidência | Resultado desejado | Como e quando avaliar |
-|---|---|---|---|
-| Centralizar oportunidades | Existência de catálogo com oportunidades publicadas | Oportunidades consultáveis em um único ambiente | Verificação funcional do protótipo |
-| Facilitar entendimento dos requisitos | Exibição de critérios, prazos e documentos por oportunidade | Estudante consegue localizar as informações necessárias | Teste de usabilidade futuro |
-| Apoiar candidaturas | Registro, checklist e histórico de candidatura | Candidato acompanha suas etapas e pendências | Testes dos casos de uso |
-| Apoiar a gestão do NEI | Cadastro e painel de candidaturas | Equipe consegue manter oportunidades e acompanhar registros | Testes funcionais |
-| Incentivar integração | Recursos de relatos, mentoria, Tandem e eventos | Participantes encontram recursos de colaboração | Avaliação do protótipo |
+| --- | --- | --- | --- |
+| Centralizar oportunidades, editais, bolsas e destinos | Disponibilidade de catálogo com oportunidades cadastradas e consultáveis | Informações de oportunidades reunidas em um único ambiente | Verificação funcional do protótipo e dos casos de uso |
+| Facilitar o entendimento dos requisitos | Exibição de critérios, prazos e documentos por oportunidade | Estudante consegue localizar as informações necessárias para avaliar uma oportunidade | Teste de usabilidade futuro |
+| Apoiar a preparação e a candidatura | Disponibilidade de recursos de preparação, checklist e registro de candidatura | Estudante consegue organizar sua preparação e consultar suas pendências | Testes dos casos de uso |
+| Apoiar o acompanhamento das candidaturas | Disponibilidade de situação e histórico da candidatura | Estudante consegue consultar o andamento registrado | Verificação funcional do protótipo |
+| Apoiar a gestão do NEI | Recursos de cadastro de oportunidades, gestão de candidaturas e relatórios | Equipe autorizada consegue manter informações e acompanhar registros | Testes funcionais da solução proposta |
+| Incentivar integração e troca de experiências | Disponibilidade de relatos, mentoria, Tandem, eventos e fórum | Participantes encontram recursos de colaboração e integração | Avaliação futura do protótipo e dos recursos previstos |
 
-Metas quantitativas e linhas de base: **A definir**, pois não há dados institucionais validados.
+Metas quantitativas e linhas de base: **A definir**. Não há dados institucionais validados para estabelecer valores ou metas nesta etapa.
 
 ## 4. Partes Interessadas
 
 | Parte interessada | Papel e interesse | Responsabilidade | Representante |
-|---|---|---|---|
-| Estudantes da Unifor | Encontrar oportunidades e acompanhar candidaturas | Utilizar os recursos de consulta, preparação e candidatura | A definir |
-| Núcleo de Estratégias Internacionais (NEI) | Gerenciar oportunidades, convênios, bolsas e candidaturas | Atuar na gestão do conteúdo e dos processos previstos | A definir |
-| Coordenadores de curso | Apoiar aspectos acadêmicos da mobilidade | Participação conforme fluxo a detalhar | A definir |
-| Professores | Apoiar cooperação e orientação acadêmica | Participação em atividades relacionadas à internacionalização | A definir |
-| Estudantes estrangeiros recebidos | Acessar informações e recursos de integração | Utilizar recursos destinados a incoming students | A definir |
-| Ex-intercambistas | Compartilhar experiências e apoiar mentoria | Participar dos recursos pós-intercâmbio | A definir |
-| Equipe do projeto | Elaborar e modelar a proposta | Produzir os artefatos acadêmicos | Allison de Oliveira Girão e Maria Rafaele Gomes de Araújo |
-| Docente da disciplina | Acompanhar a entrega acadêmica | Avaliar os artefatos conforme critérios da disciplina | Conforme disciplina |
+| --- | --- | --- | --- |
+| Estudantes interessados em mobilidade internacional | Público que busca oportunidades e deseja preparar e acompanhar candidaturas | Utilizar os recursos de consulta, preparação e candidatura previstos | A definir |
+| Núcleo de Estratégias Internacionais (NEI) | Área relacionada à gestão de oportunidades, convênios, bolsas e candidaturas | Participar da definição e futura validação das informações e regras institucionais | A definir |
+| Coordenadores de curso | Interessados nos aspectos acadêmicos da mobilidade dos estudantes | Apoiar aspectos acadêmicos conforme fluxo e permissões a definir | A definir |
+| Professores envolvidos em cooperação internacional | Interessados em orientação e atividades acadêmicas internacionais | Participar das atividades previstas conforme permissões a definir | A definir |
+| Estudantes estrangeiros recebidos pela Unifor | Público interessado em informações e recursos de integração | Utilizar os recursos destinados a incoming students | A definir |
+| Ex-participantes de mobilidade | Público interessado em compartilhar experiências e apoiar outros estudantes | Participar de relatos, rede e mentoria | A definir |
+| Equipe acadêmica do projeto | Responsável pela elaboração da proposta e dos artefatos | Especificar, modelar e revisar a solução acadêmica | Allison de Oliveira Girão e Maria Rafaele Gomes de Araújo |
+| Docente da disciplina | Responsável pelo acompanhamento e avaliação acadêmica | Avaliar os artefatos conforme os critérios da disciplina | A definir conforme disciplina |
 
 ## 5. Usuários e Atores Externos
 
-| ID | Usuário, sistema ou dispositivo | Objetivo ou papel na interação | Contexto de uso relevante |
-|---|---|---|---|
-| AT-01 | Estudante | Consultar oportunidades, verificar elegibilidade, preparar e acompanhar candidatura | Acesso web/mobile |
-| AT-02 | Equipe do NEI | Gerenciar oportunidades, convênios, bolsas, candidaturas, notificações e relatórios | Perfil de gestão autorizado |
-| AT-03 | Coordenador de curso | Apoiar e consultar aspectos acadêmicos da mobilidade | Acesso conforme permissões a definir |
-| AT-04 | Professor | Participar de orientação e atividades acadêmicas internacionais | Acesso conforme funcionalidade |
-| AT-05 | Estudante estrangeiro recebido | Consultar recursos de integração e participar de atividades | Incoming student |
-| AT-06 | Ex-intercambista | Publicar relatos e participar de mentoria/colaboração | Usuário participante |
-| AT-07 | Administrador do sistema | Gerenciar usuários, perfis e parâmetros técnicos | Perfil administrativo |
+Descrevem-se os perfis humanos que interagem com a solução proposta. Não há sistema externo confirmado nesta etapa.
 
-Não foram confirmados sistemas externos integrados. A DRI não é ator nem sistema externo do produto.
+| ID | Usuário, sistema ou dispositivo | Objetivo ou papel na interação | Contexto de uso relevante |
+| --- | --- | --- | --- |
+| AT-01 | Estudante | Consultar oportunidades, verificar requisitos, realizar autoavaliação inicial, preparar e acompanhar candidatura | Acesso web/mobile; consulta de oportunidades e informações da própria candidatura |
+| AT-02 | Equipe do NEI | Gerenciar oportunidades, convênios, bolsas, candidaturas, comunicações e relatórios | Perfil de gestão autorizado |
+| AT-03 | Coordenador de curso | Apoiar aspectos acadêmicos da mobilidade e acompanhar informações pertinentes | Acesso conforme permissões e fluxo a definir |
+| AT-04 | Professor | Participar de ações de cooperação, orientação e atividades internacionais | Acesso conforme funcionalidade e permissões a definir |
+| AT-05 | Estudante estrangeiro recebido | Consultar informações e recursos de integração destinados a incoming students | Acesso aos recursos de integração |
+| AT-06 | Ex-intercambista | Compartilhar relatos de experiência e participar de mentoria | Acesso aos recursos pós-intercâmbio e colaborativos |
+| AT-07 | Administrador do sistema | Manter contas, perfis e parâmetros técnicos da solução | Perfil administrativo; responsabilidades detalhadas na especificação |
+
+A DRI não é ator, parte interessada, sistema externo ou integração desta demanda. É considerada somente referência visual para a etapa de concepção das telas, sem atribuição de responsabilidade sobre o produto.
 
 ## 6. Escopo e Entregas Previstas
 
-### 6.1 Incluído na demanda
+### 6.1. Incluído na demanda
 
 **Módulo do estudante**
-- Portal de oportunidades com filtros por país, área e duração.
-- Consulta de detalhes, requisitos, prazos, benefícios e documentos.
-- Autoavaliação inicial de elegibilidade.
-- Central de preparação sobre idiomas, cultura e planejamento financeiro.
-- Portfólio/documentos e acompanhamento de candidatura.
+- Portal unificado de oportunidades internacionais, com filtros por país, área e duração.
+- Consulta de detalhes, requisitos, prazos, benefícios e documentos das oportunidades.
+- Autoavaliação inicial de elegibilidade, sem substituir análise oficial.
+- Central de preparação com recursos sobre idiomas, cultura e planejamento financeiro.
+- Portfólio digital, organização de documentos e consulta de pendências.
+- Registro e acompanhamento da candidatura.
 
 **Módulo de gestão (NEI)**
-- Gestão de instituições parceiras e convênios.
-- Cadastro, edição, publicação, suspensão e encerramento de editais, oportunidades e bolsas.
+- Gestão de convênios e instituições parceiras.
+- Cadastro, edição e divulgação de editais, oportunidades e bolsas.
 - Painel de candidaturas e apoio à análise.
-- Atualização de status e notificações.
-- Relatórios sobre candidaturas, perfis e destinos procurados.
+- Atualização de situação e gestão de notificações.
+- Relatórios sobre perfil dos candidatos e destinos procurados.
 
 **Módulo pós-intercâmbio**
-- Relatos de experiência.
-- Rede de ex-participantes e mentoria.
-- Informações relacionadas ao aproveitamento de créditos, sem presumir integração automática.
+- Publicação de relatos de experiência.
+- Rede de ex-participantes e recursos de mentoria.
+- Registro e consulta de informações relacionadas ao aproveitamento de créditos, sem presumir integração automática com sistema acadêmico.
 
 **Módulo colaborativo**
 - Tandem para troca de idiomas.
 - Agenda de eventos, workshops e palestras.
-- Fórum de dúvidas e orientações.
+- Fórum de dúvidas e orientações sobre processos de mobilidade.
 
-### 6.2 Fora do escopo
+### 6.2. Fora do escopo
 
-- Integração automática com sistemas acadêmicos, SSO ou plataformas externas sem confirmação técnica e autorização.
-- Decisão oficial automatizada de seleção ou concessão de bolsas.
+- Integrações automáticas com sistemas institucionais, bases acadêmicas ou plataformas de terceiros nesta etapa.
+- Decisões oficiais de seleção ou concessão de bolsas tomadas exclusivamente por algoritmo.
 - Processamento financeiro, emissão de vistos ou contratação de seguros.
 - Operação institucional real nesta entrega acadêmica.
+- Substituição das atribuições institucionais dos responsáveis pelos processos de mobilidade.
 
-### 6.3 Evoluções futuras
+### 6.3. Evoluções futuras — opcional
 
-Integrações institucionais poderão ser avaliadas posteriormente, após levantamento de requisitos, autorização e estudo de viabilidade. Não constituem compromisso desta especificação.
+- Avaliar possíveis integrações institucionais, caso sejam autorizadas e tecnicamente viáveis.
+- Avaliar ampliação dos recursos de acompanhamento e comunicação após levantamento com os responsáveis.
+- Evoluir os recursos colaborativos conforme necessidades que venham a ser confirmadas.
 
-### 6.4 Entregas e marcos
+As possibilidades acima não representam compromisso de implementação nesta demanda acadêmica.
+
+### 6.4. Entregas e marcos — quando conhecidos
 
 | Entrega ou marco | Resultado previsto | Data ou condição | Natureza do prazo |
-|---|---|---|---|
-| P1 | Visão, requisitos iniciais, regras, backlog e UML | Sprint 1 da disciplina | Acadêmico |
-| P2 | SRS, revisão UML e protótipo navegável | Sprint 2 da disciplina | Acadêmico |
+| --- | --- | --- | --- |
+| P1 — primeira parte do projeto | Visão da Demanda, partes interessadas, análise documental/elicitação, requisitos iniciais, regras de negócio, backlog e modelos UML previstos | Etapa P1 da disciplina — concluída/artefatos em revisão | Acadêmico |
+| P2 — segunda parte do projeto | SRS, revisão de consistência UML-requisitos e protótipo navegável com telas e fluxos previstos | Etapa P2 da disciplina — em desenvolvimento | Acadêmico |
 
 ## 7. Necessidades e Catálogo de Funcionalidades
 
-### 7.1 Necessidades
+Apresenta-se o resumo das capacidades da proposta. As fontes indicadas são documentos acadêmicos fornecidos para a disciplina; não representam entrevistas ou validação institucional.
 
-| ID | Necessidade | Fonte ou evidência | Atores |
-|---|---|---|---|
-| NEC-01 | Localizar oportunidades internacionais e compreender suas condições | AD-01, AD-02; EV-02 e EV-07 | AT-01 |
-| NEC-02 | Avaliar preliminarmente a compatibilidade com critérios de uma oportunidade | AD-01; EV-03 | AT-01 |
-| NEC-03 | Organizar preparação, documentos e candidatura | AD-01, AD-02; EV-03 e EV-07 | AT-01 |
-| NEC-04 | Acompanhar situação e pendências da candidatura | AD-02; EV-07 | AT-01, AT-02 |
-| NEC-05 | Administrar oportunidades, convênios, bolsas e candidaturas | AD-01, AD-02; EV-04 e EV-07 | AT-02 |
-| NEC-06 | Disponibilizar conteúdo de preparação linguística, cultural e financeira | AD-01; EV-03 | AT-01 |
-| NEC-07 | Apoiar integração, colaboração e troca de experiências | AD-01; EV-05 e EV-06 | AT-01, AT-05, AT-06 |
-| NEC-08 | Consultar informações gerenciais sobre procura e candidaturas | AD-01; EV-04 | AT-02 |
+| ID | Necessidade | Fonte ou evidência | Públicos ou atores relacionados |
+| --- | --- | --- | --- |
+| NEC-01 | Localizar oportunidades internacionais adequadas ao perfil e interesse do estudante | Material de Projeto de Extensão — Internacionalização; Propostas de Projetos de Sistemas — Internacionalização e ENADE | AT-01 |
+| NEC-02 | Compreender critérios, prazos, benefícios e documentos necessários para cada oportunidade | Documentação acadêmica-base sobre oportunidades, editais e requisitos | AT-01 |
+| NEC-03 | Organizar a preparação, os documentos e a candidatura | Documentação acadêmica-base sobre preparação e candidatura | AT-01 |
+| NEC-04 | Acompanhar o andamento e as pendências da candidatura | Documentação acadêmica-base sobre acompanhamento de candidaturas | AT-01, AT-02 |
+| NEC-05 | Permitir ao NEI administrar oportunidades, convênios, bolsas e candidaturas | Documentação acadêmica-base sobre o módulo de gestão | AT-02 |
+| NEC-06 | Apoiar a preparação linguística, cultural e financeira para a mobilidade | Material de Projeto de Extensão — Internacionalização | AT-01 |
+| NEC-07 | Promover troca de experiências, mentoria, colaboração e integração | Documentação acadêmica-base sobre pós-intercâmbio e módulo colaborativo | AT-01, AT-04, AT-05, AT-06 |
+| NEC-08 | Oferecer visão gerencial sobre candidaturas, perfis e destinos procurados | Documentação acadêmica-base sobre relatórios gerenciais | AT-02 |
 
-### 7.2 Catálogo inicial de funcionalidades
+| ID | Funcionalidade e resultado esperado | Necessidade | Atores (IDs) | Prioridade | Valor | Frequência | Escopo ou entrega | Especificação |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| F-01 | Consultar e filtrar oportunidades internacionais | NEC-01 | AT-01 | Essencial | Alto | Alta | Incluído — módulo do estudante | CDU-01 — consultar oportunidades |
+| F-02 | Consultar detalhes, requisitos, prazos e documentos de uma oportunidade | NEC-02 | AT-01 | Essencial | Alto | Alta | Incluído — módulo do estudante | CDU-01 — consultar oportunidades |
+| F-03 | Realizar autoavaliação inicial de elegibilidade | NEC-02 | AT-01 | Importante | Alto | Média | Incluído — módulo do estudante | CDU-02 — realizar autoavaliação |
+| F-04 | Acessar recursos de preparação linguística, cultural e financeira | NEC-06 | AT-01 | Importante | Médio | Média | Incluído — módulo do estudante | CDU-10 — consultar preparação |
+| F-05 | Registrar candidatura ou manifestação de interesse | NEC-03 | AT-01 | Essencial | Alto | Média | Incluído — módulo do estudante | CDU-03 — registrar candidatura |
+| F-06 | Organizar documentos e consultar pendências e andamento da candidatura | NEC-03, NEC-04 | AT-01 | Essencial | Alto | Alta | Incluído — módulo do estudante | CDU-04 — acompanhar candidatura |
+| F-07 | Cadastrar, editar, publicar e encerrar oportunidades e editais | NEC-05 | AT-02 | Essencial | Alto | Alta | Incluído — módulo de gestão (NEI) | CDU-05 — gerenciar oportunidades |
+| F-08 | Gerenciar convênios, instituições parceiras e bolsas | NEC-05 | AT-02 | Importante | Alto | Média | Incluído — módulo de gestão (NEI) | CDU-06 — gerenciar convênios e bolsas |
+| F-09 | Consultar e apoiar a análise de candidaturas e atualizar sua situação | NEC-04, NEC-05 | AT-02, AT-03 | Essencial | Alto | Alta | Incluído — módulo de gestão (NEI) | CDU-07 — analisar candidaturas |
+| F-10 | Gerenciar e emitir notificações relacionadas às candidaturas | NEC-04, NEC-05 | AT-01, AT-02 | Importante | Médio | Média | Incluído — módulo de gestão (NEI) | CDU-08 — gerenciar notificações |
+| F-11 | Consultar relatórios gerenciais sobre candidaturas, perfis e destinos | NEC-08 | AT-02 | Importante | Médio | Média | Incluído — módulo de gestão (NEI) | CDU-09 — consultar relatórios |
+| F-12 | Publicar relatos de experiência e participar de mentoria | NEC-07 | AT-01, AT-06 | Desejável | Médio | Baixa | Incluído — módulo pós-intercâmbio | CDU-11 — compartilhar experiências |
+| F-13 | Participar de Tandem, eventos e fórum | NEC-07 | AT-01, AT-04, AT-05, AT-06 | Desejável | Médio | Média | Incluído — módulo colaborativo | CDU-12 — participar de atividades colaborativas |
+| F-14 | Consultar recursos de integração destinados a estudantes estrangeiros recebidos | NEC-07 | AT-05 | Importante | Médio | Média | Incluído — módulo colaborativo | CDU-13 — consultar integração |
+| F-15 | Administrar contas, perfis e parâmetros técnicos | NEC-05 | AT-07 | Essencial | Alto | Baixa | Incluído — administração da solução | CDU-14 — gerenciar usuários e permissões |
 
-| ID | Funcionalidade e resultado esperado | Necessidade | Atores | Prioridade | Valor | Frequência | Escopo | Especificação |
-|---|---|---|---|---|---|---|---|---|
-| F-01 | Consultar e filtrar oportunidades | NEC-01 | AT-01 | Essencial | Alto | Alta | Incluído | CDU-01 |
-| F-02 | Consultar detalhes, requisitos e documentos | NEC-01 | AT-01 | Essencial | Alto | Alta | Incluído | CDU-01 |
-| F-03 | Realizar autoavaliação inicial | NEC-02 | AT-01 | Importante | Alto | Média | Incluído | CDU-02 |
-| F-04 | Acessar recursos de preparação | NEC-06 | AT-01 | Importante | Médio | Média | Incluído | CDU-10 |
-| F-05 | Registrar candidatura/manifestação de interesse | NEC-03 | AT-01 | Essencial | Alto | Média | Incluído | CDU-03 |
-| F-06 | Organizar documentos e acompanhar candidatura | NEC-03, NEC-04 | AT-01 | Essencial | Alto | Alta | Incluído | CDU-04 |
-| F-07 | Gerenciar oportunidades e editais | NEC-05 | AT-02 | Essencial | Alto | Alta | Incluído | CDU-05 |
-| F-08 | Gerenciar convênios, instituições e bolsas | NEC-05 | AT-02 | Importante | Alto | Média | Incluído | CDU-06 |
-| F-09 | Analisar candidaturas e atualizar status | NEC-04, NEC-05 | AT-02, AT-03 | Essencial | Alto | Alta | Incluído | CDU-07 |
-| F-10 | Emitir notificações | NEC-04, NEC-05 | AT-01, AT-02 | Importante | Médio | Média | Incluído | CDU-08 |
-| F-11 | Consultar relatórios gerenciais | NEC-08 | AT-02 | Importante | Médio | Média | Incluído | CDU-09 |
-| F-12 | Compartilhar relatos e participar de mentoria | NEC-07 | AT-01, AT-06 | Desejável | Médio | Baixa | Incluído | CDU-11 |
-| F-13 | Participar de Tandem, eventos e fórum | NEC-07 | AT-01, AT-04, AT-05, AT-06 | Desejável | Médio | Média | Incluído | CDU-12 |
-| F-14 | Consultar recursos de integração | NEC-07 | AT-05 | Importante | Médio | Média | Incluído | CDU-13 |
-| F-15 | Gerenciar usuários e permissões | NEC-05 | AT-07 | Essencial | Alto | Baixa | Incluído | CDU-14 |
-
-A prioridade, o valor e a frequência são classificações iniciais de modelagem e deverão ser revisados na priorização da P2. Não representam métricas institucionais.
+As classificações de prioridade, valor e frequência são avaliações iniciais da equipe acadêmica para organização do escopo. Devem ser revisadas durante a especificação da P2. Não representam métricas institucionais ou validação pelo NEI.
 
 ## 8. Visão Geral da Solução e Impactos
 
-A solução é proposta como sistema web/mobile organizado em módulos e perfis de acesso. Em alto nível, contempla interface de usuário, serviços de negócio e persistência de dados. A arquitetura técnica definitiva não está estabelecida nesta visão.
+A solução proposta é um sistema web/mobile organizado por módulos e perfis de acesso. Em alto nível, deverá oferecer recursos de consulta e gestão de oportunidades, preparação, candidatura, acompanhamento, pós-intercâmbio e colaboração. A arquitetura técnica definitiva, as tecnologias, as integrações e as políticas detalhadas de segurança serão especificadas nos artefatos próprios da P2.
 
-- **Responsabilidades:** consulta e gestão de oportunidades, candidaturas, conteúdos de preparação, recursos colaborativos e relatórios.
-- **Sistemas externos:** nenhum sistema externo foi confirmado.
-- **Integrações:** não presumidas; dependem de levantamento e autorização.
-- **Impactos:** processos de divulgação e acompanhamento são contemplados como capacidades da proposta; o processo atual precisa ser confirmado com os responsáveis.
+- **Responsabilidades da solução:** disponibilizar o catálogo de oportunidades; apoiar a preparação e a candidatura dos estudantes; permitir o acompanhamento de registros; apoiar a gestão de oportunidades, convênios, bolsas e candidaturas pelo NEI; oferecer recursos de pós-intercâmbio, integração e colaboração.
+- **Sistemas ou dispositivos externos:** nenhum sistema externo foi confirmado como participante ou ator nesta etapa. O acesso web/mobile é previsto como forma de disponibilização da solução, sem definição tecnológica detalhada.
+- **Integrações principais:** não há integração externa confirmada. Eventuais integrações com sistemas institucionais ou plataformas de terceiros dependem de levantamento, autorização e análise de viabilidade.
+- **Diagrama de contexto — opcional:** poderá ser representado no conjunto de diagramas UML do projeto, caso ajude a delimitar atores e fronteiras da solução.
+- **Arquitetura e contratos detalhados:** a elaborar na especificação técnica da P2, se necessários ao escopo definido.
+
+### 8.1. Sistemas e processos impactados
+
+| Sistema ou processo | Impacto esperado | Responsável ou dependência | Situação |
+| --- | --- | --- | --- |
+| Divulgação e consulta de oportunidades internacionais | A proposta prevê centralizar informações de oportunidades, editais, bolsas, requisitos e prazos | Responsável institucional a definir; documentação acadêmica-base | Proposta acadêmica; processo atual não observado |
+| Gestão de oportunidades, convênios e bolsas | A proposta prevê recursos para cadastro e manutenção dessas informações | NEI — participação e validação institucional ainda a confirmar | Proposta acadêmica |
+| Registro e acompanhamento de candidaturas | A proposta prevê registro, consulta de situação e acompanhamento de pendências | NEI e estudantes; fluxos oficiais a confirmar | Proposta acadêmica |
+| Preparação e integração de estudantes | A proposta prevê conteúdos e recursos de preparação, relatos, mentoria e colaboração | Responsáveis pelos conteúdos e atividades a definir | Proposta acadêmica |
+| Sistemas acadêmicos ou plataformas externas | Não há impacto ou integração definida nesta etapa | Depende de autorização e análise técnica, caso venha a ser considerada | Não confirmado |
+
+### 8.2. Representações visuais — opcionais
+
+- **Mapa de histórias ou diagrama geral de casos de uso:** consultar `../uml/diagramas.puml` no repositório do projeto, quando o diagrama geral de casos de uso estiver representado nesse arquivo. O diagrama deve ser utilizado para comunicar atores e interações de alto nível.
+- **Protótipo de baixa fidelidade:** a elaborar na P2; as telas poderão utilizar o portal público da DRI somente como referência visual, sem representar integração ou participação da DRI no sistema.
+- **Diagramas de componentes/implantação:** consultar `../uml/diagramas.puml` somente para os diagramas técnicos que estiverem efetivamente presentes; seu detalhamento pertence aos artefatos UML/técnicos, não a esta Visão.
 
 ## 9. Condições Gerais da Demanda
 
-| Tipo | Condição e impacto | Responsável ou fonte | Referência |
-|---|---|---|---|
-| Premissa | Critérios e documentos podem variar por oportunidade | Documentação-base; confirmar com responsável | RN-02, RN-03 |
-| Premissa | Autoavaliação não substitui análise oficial | Decisão de modelagem | RN-04 |
-| Restrição | Não presumir integração institucional | Informação não confirmada | DP-05 |
-| Restrição | Dados pessoais e documentos devem ter acesso controlado | LGPD e decisão de modelagem | RN-13 a RN-16 |
-| Dependência | Regras reais de editais precisam ser levantadas | A definir com setor responsável | PQ-01 |
-| Qualidade | Interface deve ser responsiva e acessível | Requisito de qualidade proposto | RNF-02, RNF-03 |
+| Tipo | Condição e impacto na demanda | Responsável ou fonte | Referência, se houver |
+| --- | --- | --- | --- |
+| Premissa | Critérios de elegibilidade, prazos e documentos podem variar conforme a oportunidade ou edital; a solução deverá permitir que essas informações sejam apresentadas por oportunidade | Documentação acadêmica-base; confirmação institucional pendente | Regras de negócio relacionadas |
+| Restrição | A autoavaliação de elegibilidade é indicativa e não substitui análise ou decisão oficial dos responsáveis | Definição de escopo da equipe acadêmica | Regras de negócio relacionadas |
+| Restrição | Não presumir integração automática com sistemas acadêmicos, SSO ou plataformas externas | Ausência de confirmação técnica e institucional | A definir, caso integração seja considerada |
+| Regra geral | O NEI permanece como ator relacionado à gestão, conforme a documentação-base do projeto | Documentação acadêmica-base | Seção 5 e catálogo da seção 7 |
+| Regra geral | A DRI é somente referência visual para a concepção das telas; não é ator, parte interessada, sistema externo ou integração | Delimitação de escopo da equipe acadêmica | Decisão de escopo do projeto |
+| Qualidade | Dados pessoais e documentos de candidatura devem receber proteção compatível com a LGPD | Legislação aplicável e requisito de qualidade proposto | Documento de requisitos não funcionais |
+| Dependência | Regras oficiais de editais, estados de candidatura, documentos exigidos e responsabilidades precisam ser confirmados com os responsáveis institucionais | NEI e áreas relacionadas — responsáveis a confirmar | Questões PQ-01, PQ-02 e PQ-03 |
 
 ## 10. Riscos e Questões em Aberto
 
 | ID | Tipo | Risco ou questão | Impacto | Próxima ação | Responsável e prazo | Situação |
-|---|---|---|---|---|---|---|
-| PQ-01 | Dúvida | Quais critérios de elegibilidade são gerais e quais variam por edital? | Regras e autoavaliação | Analisar editais reais e confirmar com responsável | A definir | Aberto |
-| PQ-02 | Dúvida | Quais são os estados e transições oficiais da candidatura? | Acompanhamento e painel NEI | Detalhar fluxo na SRS | Equipe do projeto | Aberto |
-| PQ-03 | Dúvida | Quais documentos são exigidos por modalidade? | Checklist e candidatura | Levantar por tipo de oportunidade | A definir | Aberto |
-| PQ-04 | Dúvida | Quais canais e prazos de notificação serão utilizados? | Comunicação | Especificar na P2 | Equipe do projeto | Aberto |
-| PQ-05 | Dependência | Há possibilidade autorizada de integração com sistemas institucionais? | Arquitetura e dados | Consultar responsáveis e TI, se aplicável | A definir | Aberto |
-| PQ-06 | Dúvida | Quais dados e indicadores devem compor relatórios? | Gestão | Definir necessidades gerenciais | A definir | Aberto |
-| PQ-07 | Risco | Recursos colaborativos exigem moderação e política de privacidade | Segurança e operação | Especificar regras e permissões | Equipe do projeto | Aberto |
+| --- | --- | --- | --- | --- | --- | --- |
+| PQ-01 | Dúvida | Quais critérios de elegibilidade são gerais e quais variam por edital ou modalidade? | Regras de autoavaliação e informações apresentadas ao estudante | Analisar editais reais e confirmar critérios com o responsável institucional | A definir | Aberto |
+| PQ-02 | Dúvida | Quais são os estados e as transições oficiais de uma candidatura? | Acompanhamento pelo estudante e painel de gestão do NEI | Levantar e documentar o fluxo institucional | A definir | Aberto |
+| PQ-03 | Dúvida | Quais documentos são exigidos por modalidade ou oportunidade? | Checklist e registro da candidatura | Levantar documentos por tipo de oportunidade | A definir | Aberto |
+| PQ-04 | Dúvida | Quais canais, eventos e prazos devem ser utilizados nas notificações? | Comunicação com estudantes e equipe responsável | Definir regras e canais na especificação da P2 | Equipe do projeto; P2 | Aberto |
+| PQ-05 | Dependência | Existe possibilidade autorizada de integração com sistemas institucionais? | Arquitetura, escopo e tratamento de dados | Consultar responsáveis e área técnica, caso a integração seja considerada | A definir | Aberto |
+| PQ-06 | Dúvida | Quais dados e indicadores devem compor os relatórios gerenciais? | Utilidade dos relatórios para a gestão | Levantar necessidades de informação com os responsáveis | A definir | Aberto |
+| PQ-07 | Risco | Recursos colaborativos, relatos e fórum exigem regras de moderação, privacidade e controle de conteúdo | Segurança, privacidade e operação dos recursos colaborativos | Definir regras, permissões e responsabilidades na especificação | Equipe do projeto; P2 | Aberto |
 
 ## 11. Documentos Relacionados
 
+Vinculam-se os documentos gerais e compartilhados da demanda. As especificações por funcionalidade estão indicadas no catálogo da seção 7.
+
 | Documento | Conteúdo sob sua responsabilidade | Referência e situação |
-|---|---|---|
-| Regras de negócio | Políticas e condições comuns | `06-regras-de-negocio.md` — elaborado |
-| Requisitos não funcionais | Qualidade, segurança, privacidade e restrições | `05-requisitos-nao-funcionais.md` — elaborado; métricas pendentes |
-| Glossário | Termos do domínio | `09-glossario.md` — elaborado |
-| Casos de uso | Fluxos e interações por funcionalidade | `08-casos-de-uso.md` — elaborado em nível inicial |
-| UML | Modelos de interação, componentes e implantação | `../uml/diagramas.puml` — elaborado para revisão |
-| Análise documental | Fontes, evidências e limites da elicitação | `03-analise-documental-e-elicitação.md` — elaborado |
-| SRS P2 | Especificação detalhada IEEE 830 | A elaborar/refinar na P2 |
+| --- | --- | --- |
+| Regras de negócio compartilhadas | Políticas e condições comuns às funcionalidades e aos casos de uso | [06-regras-de-negocio.md](06-regras-de-negocio.md) — elaborado; revisar rastreabilidade na P2 |
+| Requisitos não funcionais ou de qualidade | Requisitos detalhados de qualidade, segurança, privacidade e restrições | [05-requisitos-nao-funcionais.md](05-requisitos-nao-funcionais.md) — elaborado; métricas e critérios de verificação a revisar |
+| Arquitetura e contratos de integração | Decisões técnicas, interfaces e integrações, caso sejam definidas | A elaborar na P2, se aplicável; nenhuma integração externa confirmada |
+| Glossário | Termos e definições do domínio da mobilidade internacional | [09-glossario.md](09-glossario.md) — elaborado |
+| Análise documental e elicitação | Fontes consultadas, evidências disponíveis e limites da elicitação | [03-analise-documental-e-elicitação.md](03-analise-documental-e-elicitação.md) — elaborado; não registra entrevista realizada sem evidência |
+| Fontes e decisões | Referências utilizadas e decisões de escopo da equipe | [10-fontes-e-decisoes.md](10-fontes-e-decisoes.md) — elaborado |
+| Diagramas UML | Representações UML da solução e de seus elementos | [../uml/diagramas.puml](../uml/diagramas.puml) — elaborado; revisar consistência com requisitos na P2 |
 
 ## 12. Validação da Visão
 
-### 12.1 Checklist
+### 12.1. Checklist
 
-- [x] Objetivo, contexto e problema descritos.
-- [x] Benefícios e formas de avaliação inicial descritos.
-- [x] Partes interessadas e atores identificados.
-- [x] Escopo, exclusões e possibilidades futuras diferenciados.
-- [x] Necessidades relacionadas a fontes documentais.
-- [x] Funcionalidades vinculadas a necessidades, atores e casos de uso.
-- [x] Premissas, restrições e pendências registradas.
-- [ ] Métricas quantitativas confirmadas com responsáveis.
-- [ ] Processo institucional atual validado com o setor responsável.
-- [ ] Validação pelas partes interessadas realizada.
+- [x] Objetivo, contexto e problema estão claros.
+- [x] Benefícios e condições de sucesso estão descritos, com hipóteses identificadas.
+- [x] Responsáveis por decisões e validação estão identificados, com validação institucional marcada como pendente.
+- [x] Usuários e atores externos relevantes estão representados.
+- [x] Escopo, exclusões e possíveis evoluções estão diferenciados.
+- [x] Necessidades têm identificadores e fontes/evidências documentais indicadas.
+- [x] Funcionalidades têm identificadores, prioridades, atores por ID e vínculo com necessidades.
+- [x] Valor e frequência são tratados separadamente e estimados como classificações iniciais.
+- [x] Cada funcionalidade tem referência à especificação correspondente, sujeita à conferência dos documentos de casos de uso.
+- [x] A visão geral da solução esclarece seus limites, interações externas e impactos em outros sistemas ou processos.
+- [x] Diagramas e protótipos foram referenciados apenas quando agregam clareza, sem detalhamento técnico indevido.
+- [x] Restrições, premissas, dependências e pendências relevantes estão registradas.
+- [x] Informações detalhadas estão referenciadas nos documentos apropriados; a consistência final dos vínculos permanece sujeita à revisão da P2.
+- [ ] O conteúdo foi revisado e confirmado pelos responsáveis institucionais; essa validação ainda não foi realizada/registrada.
 
-### 12.2 Critério de conclusão e encaminhamento
+### 12.2. Critérios de conclusão e encaminhamento
 
-**Condição registrada: Apta para iniciar a especificação acadêmica, com pendências de validação institucional.** Esta condição indica que há material suficiente para detalhar a SRS e o protótipo acadêmico; não equivale a aprovação institucional nem à validação formal da visão.
+**Condição proposta: Apta para iniciar a especificação.** O objetivo acadêmico, os públicos, os limites gerais, as necessidades e o catálogo inicial estão descritos em nível suficiente para orientar o detalhamento da SRS e do protótipo na P2. As pendências institucionais e de processo estão registradas na seção 10 e deverão ser tratadas nas partes afetadas da especificação.
 
-### 12.3 Registro da validação
+Esta condição é um encaminhamento acadêmico da equipe do projeto. **Não equivale a validação pelas partes interessadas nem a aprovação institucional da Unifor ou do NEI.**
+
+### 12.3. Registro da validação
 
 | Versão | Responsável e papel | Data | Condição da VD | Resultado e ressalvas |
-|---|---|---|---|---|
-| 1.1 | Equipe acadêmica do projeto | 26/11/2026 | Apta para iniciar especificação acadêmica | Pendentes validação institucional, métricas e confirmação dos fluxos reais. |
+| --- | --- | --- | --- | --- |
+| 1.2 | Equipe acadêmica responsável pela elaboração | 26/11/2026 | Apta para iniciar a especificação — encaminhamento acadêmico proposto | Documento organizado conforme o template LAPIS v2.1. Permanecem pendentes a confirmação dos fluxos institucionais, critérios de editais, indicadores e eventual integração. Não há registro de validação institucional. |
+
+> Validar a visão confirma o entendimento geral da demanda. As funcionalidades devem ser especificadas e validadas antes de sua implementação; a aceitação do software depende das evidências previstas nesses documentos.
