@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1480" viewBox="0 0 1100 1480">
+<defs><marker id="arr" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0 L10 4 L0 8 Z" fill="#333"/></marker><style>text{font-family:Arial,sans-serif;fill:#222}.ttl{font-size:27px;font-weight:bold}.sub{font-size:15px;fill:#555}.act{fill:#fff;stroke:#333;stroke-width:2}.edge{stroke:#333;stroke-width:2;fill:none;marker-end:url(#arr)}.note{font-size:14px;fill:#444}</style></defs>
+<rect width="100%" height="100%" fill="#fff"/><text x="38" y="45" class="ttl">Atividade — Fluxo de candidatura do estudante</text><text x="38" y="72" class="sub">Fluxo de referência baseado nos CDU-01, CDU-02 e CDU-03; autoavaliação não representa aprovação oficial.</text>
+<path class="edge" d="M530.0,140 L530.0,180"/>
+<path class="edge" d="M530.0,245 L530.0,290"/>
+<path class="edge" d="M530.0,355 L530.0,400"/>
+<path class="edge" d="M530.0,465 L530.0,510"/>
+<path class="edge" d="M530.0,570 L530.0,605.0 L855.0,605.0 L855.0,640"/>
+<text x="701.5" y="598.0" class="note">Sim</text>
+<path class="edge" d="M530.0,570 L530.0,610.0 L240.0,610.0 L240.0,650"/>
+<text x="394.0" y="603.0" class="note">Não</text>
+<path class="edge" d="M855.0,710 L855.0,755"/>
+<path class="edge" d="M855.0,825 L855.0,870"/>
+<path class="edge" d="M855.0,940 L855.0,985"/>
+<path class="edge" d="M855.0,1055 L855.0,1100"/>
+<path class="edge" d="M855.0,1170 L855.0,1215"/>
+<path class="edge" d="M855.0,1285 L855.0,1312.5 L740.0,1312.5 L740.0,1340"/>
+<path class="edge" d="M240.0,720 L240.0,790"/>
+<circle cx="530.0" cy="125.0" r="15" fill="#222"/>
+<rect class="act" x="390" y="180" width="280" height="65" rx="17"/>
+<text x="530.0" y="217.5" text-anchor="middle" font-size="16">Acessar oportunidades</text>
+<rect class="act" x="390" y="290" width="280" height="65" rx="17"/>
+<text x="530.0" y="317.5" text-anchor="middle" font-size="16">Consultar detalhes da</text>
+<text x="530.0" y="337.5" text-anchor="middle" font-size="16">oportunidade</text>
+<rect class="act" x="390" y="400" width="280" height="65" rx="17"/>
+<text x="530.0" y="437.5" text-anchor="middle" font-size="16">Verificar elegibilidade inicial</text>
+<path d="M530.0 510 L560 540.0 L530.0 570 L500 540.0 Z" fill="#fff" stroke="#333" stroke-width="2"/>
+<text x="530.0" y="592" text-anchor="middle" class="note">Elegível?</text>
+<rect class="act" x="720" y="640" width="270" height="70" rx="17"/>
+<text x="855.0" y="670.0" text-anchor="middle" font-size="16">Consultar requisitos e</text>
+<text x="855.0" y="690.0" text-anchor="middle" font-size="16">documentos</text>
+<rect class="act" x="720" y="755" width="270" height="70" rx="17"/>
+<text x="855.0" y="785.0" text-anchor="middle" font-size="16">Preencher dados e anexar</text>
+<text x="855.0" y="805.0" text-anchor="middle" font-size="16">documentos</text>
+<rect class="act" x="720" y="870" width="270" height="70" rx="17"/>
+<text x="855.0" y="910.0" text-anchor="middle" font-size="16">Enviar candidatura</text>
+<rect class="act" x="720" y="985" width="270" height="70" rx="17"/>
+<text x="855.0" y="1025.0" text-anchor="middle" font-size="16">Sistema valida campos e prazo</text>
+<rect class="act" x="720" y="1100" width="270" height="70" rx="17"/>
+<text x="855.0" y="1140.0" text-anchor="middle" font-size="16">Registrar candidatura</text>
+<rect class="act" x="720" y="1215" width="270" height="70" rx="17"/>
+<text x="855.0" y="1245.0" text-anchor="middle" font-size="16">Exibir confirmação e situação</text>
+<text x="855.0" y="1265.0" text-anchor="middle" font-size="16">inicial</text>
+<circle cx="740.0" cy="1360.0" r="19" fill="white" stroke="#333" stroke-width="2"/><path d="M728.0 1348.0 L752.0 1372.0 M752.0 1348.0 L728.0 1372.0" stroke="#333" stroke-width="2.5"/>
+<rect class="act" x="100" y="650" width="280" height="70" rx="17"/>
+<text x="240.0" y="680.0" text-anchor="middle" font-size="16">Consultar outra oportunidade ou</text>
+<text x="240.0" y="700.0" text-anchor="middle" font-size="16">encerrar</text>
+<circle cx="240.0" cy="810.0" r="19" fill="white" stroke="#333" stroke-width="2"/><path d="M228.0 798.0 L252.0 822.0 M252.0 798.0 L228.0 822.0" stroke="#333" stroke-width="2.5"/>
+</svg>

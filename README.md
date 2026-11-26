@@ -16,7 +16,7 @@ Projeto acadêmico — Requisitos e Modelagem de Sistemas, Unifor, 2026.2.
 | Especificação de casos de uso — estrutura LAPIS | [Abrir documento](docs/08-casos-de-uso.md) |
 | Glossário — estrutura LAPIS | [Abrir documento](docs/09-glossario.md) |
 | Fontes, premissas e decisões | [Abrir documento](docs/10-fontes-e-decisoes.md) |
-| Diagramas UML | [Abrir arquivo PlantUML](uml/diagramas.puml) |
+| Diagramas UML e atividades | [Abrir índice visual](uml/diagramas.md) |
 | Guia dos diagramas | [Abrir guia](uml/README.md) |
 
 ## Padrão metodológico
@@ -46,3 +46,7 @@ O NEI permanece como ator. A DRI não é ator, parte interessada, integração n
 ## P2
 
 A SRS deve detalhar os requisitos e critérios verificáveis, revisar a consistência entre requisitos e UML e apresentar wireframes/protótipo navegável. A DRI poderá orientar somente a linguagem visual e a organização das telas.
+
+## Diagramas de atividades
+
+Os fluxos de candidatura, gestão pelo NEI e pós-intercâmbio estão em [uml/diagramas.md](uml/diagramas.md), com versões SVG e fontes PlantUML.

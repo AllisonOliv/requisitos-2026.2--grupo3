@@ -1,12 +1,10 @@
-# Diagramas — ConectaGlobal
+# UML — ConectaGlobal
 
-- [`diagramas.md`](diagramas.md): versão ilustrada em Mermaid, com ícones, cores e organização por módulos, para visualização direta no GitHub.
-- [`diagramas.puml`](diagramas.puml): fonte PlantUML dos três diagramas, também organizada visualmente com ícones, cores e agrupamentos.
+Esta pasta reúne os diagramas estruturais (casos de uso, componentes e implantação) e diagramas de atividades no padrão visual de referência enviado para o projeto.
 
-Os dois arquivos representam a mesma proposta e devem permanecer consistentes com os atores e casos de uso documentados.
+- `diagramas.md`: índice e visualização dos diagramas.
+- `diagramas.puml`: fonte PlantUML dos diagramas estruturais.
+- `atividades.puml`: fonte PlantUML dos fluxos de atividades.
+- `atividade-estudante.svg`, `atividade-gestao-nei.svg`, `atividade-pos-intercambio.svg`: versões vetoriais para visualização direta no GitHub.
 
-- O ator **Equipe do NEI** é mantido.
-- A DRI não aparece como ator, componente ou nó de implantação; é apenas referência visual para telas.
-- Não há sistema externo integrado confirmado.
-- A implantação representa somente um ambiente lógico proposto.
-- Os identificadores CDU seguem a numeração da especificação em `docs/08-casos-de-uso.md`.
+Os fluxos são propostas de modelagem baseadas nas especificações existentes; não afirmam que processos institucionais foram validados.

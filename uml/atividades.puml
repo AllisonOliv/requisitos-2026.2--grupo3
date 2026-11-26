@@ -1,0 +1,57 @@
+' ConectaGlobal — atividades UML (fluxos de referência)
+' A notação segue o estilo de diagrama de atividades UML: nós inicial/final,
+' ações, decisões e sincronização. Fluxos detalhados deverão ser refinados na SRS.
+
+@startuml Atividade_Estudante
+start
+:Acessar oportunidades;
+:Consultar detalhes da oportunidade;
+:Verificar elegibilidade inicial;
+if (Elegível?) then (Sim)
+ :Consultar requisitos e documentos;
+ :Preencher dados e anexar documentos;
+ :Enviar candidatura;
+ :Sistema valida campos e prazo;
+ :Registrar candidatura;
+ :Exibir confirmação e situação inicial;
+else (Não)
+ :Consultar outra oportunidade ou encerrar;
+endif
+stop
+@enduml
+
+@startuml Atividade_Gestao_NEI
+start
+:Acessar módulo de gestão do NEI;
+: Cadastrar ou atualizar oportunidade;
+:Configurar requisitos, prazo e documentos;
+:Publicar oportunidade;
+:Consultar candidaturas recebidas;
+:Analisar informações e documentos;
+if (Há pendências?) then (Sim)
+ :Solicitar complementação ao estudante;
+endif
+:Registrar resultado da análise;
+:Atualizar situação da candidatura;
+:Sistema envia notificação;
+stop
+@enduml
+
+@startuml Atividade_Pos_Intercambio
+start
+:Acessar área colaborativa e pós-intercâmbio;
+:Selecionar atividade desejada;
+if (Qual atividade?) then (Relato)
+ :Compartilhar relato de experiência;
+ :Registrar conteúdo do relato;
+elseif (Mentoria/atividade)
+ :Participar de mentoria ou atividade;
+ :Consultar informações e orientações;
+else (Integração)
+ :Consultar recursos de integração;
+ :Visualizar recursos disponíveis;
+endif
+:Sistema registra participação ou conteúdo;
+:Exibir confirmação;
+stop
+@enduml
