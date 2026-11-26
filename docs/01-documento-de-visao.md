@@ -6,7 +6,7 @@
 |---|---|
 | Nome e identificador da demanda | ConectaGlobal — Gestão de Oportunidades Internacionais |
 | Tipo | Novo sistema |
-| Sistema ou produto relacionado | Não há sistema existente identificado como produto relacionado |
+| Sistema ou produto relacionado | Portal da Diretoria de Relações Internacionais (DRI) da Unifor — https://unifor.br/dri/inicial |
 | Área solicitante | A definir — área institucional responsável por internacionalização |
 | Responsável pela elaboração | Equipe do projeto acadêmico |
 | Responsável pela validação | A definir — representante autorizado do NEI/DRI e responsável acadêmico |
