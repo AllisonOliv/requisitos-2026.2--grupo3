@@ -1,48 +1,34 @@
-# ConectaGlobal — Sistema de Gestão de Oportunidades Internacionais
+# ConectaGlobal — Apoio à Consulta de Oportunidades Internacionais
 
-Projeto da disciplina **Requisitos e Modelagem de Sistemas** — Universidade de Fortaleza (Unifor), 2026.2. Tema 3 do Eixo I (Internacionalização).
+Projeto acadêmico da disciplina Requisitos e Modelagem de Sistemas — Unifor, 2026.2.
 
 ## Objetivo
-Organizar a divulgação e o acompanhamento de oportunidades internacionais, incluindo editais, bolsas, critérios de elegibilidade, prazos, documentação e manifestações de interesse.
+Organizar, em um ambiente de consulta, informações públicas sobre oportunidades e programas de internacionalização da Unifor, ajudando estudantes a compreender modalidades, critérios publicados, documentos e próximos passos oficiais.
 
-## Equipe
-- Allison de Oliveira Girão
-- Maria Rafaele Gomes de Araújo
-
-## Organização dos artefatos
-
+## Organização
 | Artefato | Arquivo |
 |---|---|
-| Visão da Demanda (LAPIS v2.1) | [docs/01-documento-de-visao.md](docs/01-documento-de-visao.md) |
-| Partes interessadas e atores | [docs/02-stakeholders.md](docs/02-stakeholders.md) |
-| Elicitação e roteiros | [docs/03-elicitação.md](docs/03-elicitação.md) |
-| Requisitos funcionais e não funcionais | [docs/04-requisitos.md](docs/04-requisitos.md) |
-| Regras de negócio | [docs/05-regras-de-negocio.md](docs/05-regras-de-negocio.md) |
-| Backlog priorizado | [docs/06-backlog.md](docs/06-backlog.md) |
-| Casos de uso (CDU) | [docs/07-casos-de-uso.md](docs/07-casos-de-uso.md) |
-| Glossário | [docs/08-glossario.md](docs/08-glossario.md) |
-| Diagramas | [uml/diagramas.md](uml/diagramas.md) |
+| Visão da Demanda (LAPIS v2.1) | `docs/01-documento-de-visao.md` |
+| Partes interessadas e atores | `docs/02-stakeholders.md` |
+| Análise documental e elicitação | `docs/03-analise-documental.md` |
+| Requisitos funcionais e não funcionais | `docs/04-requisitos.md` |
+| Regras de negócio | `docs/05-regras-de-negocio.md` |
+| Backlog priorizado | `docs/06-backlog.md` |
+| Casos de uso | `docs/07-casos-de-uso.md` |
+| Glossário | `docs/08-glossario.md` |
+| Fontes e decisões de projeto | `docs/09-fontes-e-decisoes.md` |
+| Diagramas UML em PlantUML | `uml/diagramas.puml` |
+| Orientação dos diagramas | `uml/README.md` |
 
-## Situação da elicitação
-Conforme registro do projeto, o professor informou que as entrevistas com stakeholders não precisam ser realizadas nesta etapa. Os roteiros estão preparados, mas não há resultados de entrevistas. A elicitação inicial foi baseada em análise documental do material didático da disciplina. As hipóteses permanecem identificadas como hipóteses até validação.
+## Critério de evidência
+- **Fato documental:** informação expressamente publicada nas fontes listadas em `docs/09-fontes-e-decisoes.md`.
+- **Decisão de projeto (DP):** escolha de escopo ou comportamento adotada pela equipe para construir o projeto acadêmico; não representa política oficial da Unifor.
+- **Não assumido:** integração, rotina interna, permissão, prazo ou processo que não esteja comprovado nas fontes públicas.
 
-## Convenções de evidência
-- **[D] Documentado:** informação presente no material da disciplina consultado; não significa necessariamente regra institucional validada.
-- **[H] Hipótese:** interpretação ou proposta ainda não validada com os responsáveis pelo processo.
-- **[A definir]:** informação ausente que exige levantamento ou decisão.
-- **[P] Proposta:** estrutura ou detalhamento elaborado para organizar a especificação; requer revisão humana antes de validação.
+Não foram realizadas entrevistas, observações ou validações com a Unifor. Nenhuma resposta de stakeholder foi inventada. O projeto foi delimitado para funcionar com base em conteúdo público e decisões acadêmicas explícitas.
 
-## Rastreabilidade LAPIS
-A rastreabilidade adotada é:
+## Escopo adotado
+ConectaGlobal é uma camada informativa complementar ao portal oficial da DRI. Não substitui o portal, não recebe candidatura oficial, não realiza seleção, não aprova intercâmbio, não acessa histórico acadêmico e não integra sistemas institucionais.
 
-`Fonte/evidência → NEC (necessidade) → F (funcionalidade) → CDU (caso de uso) → critérios/casos de teste`
-
-Os identificadores são estáveis e devem ser preservados ao atualizar os documentos.
-
-## Escopo resumido
-O sistema trata de oportunidades internacionais, editais, bolsas, elegibilidade, prazos, documentos e manifestações de interesse. Gestão completa de convênios, preparação, pós-intercâmbio e funcionalidades colaborativas (Tandem, fórum e eventos) não fazem parte desta fase.
-
-## Referências metodológicas
-Os artefatos foram organizados com base nos templates e orientações do repositório [LAPIS Unifor](https://github.com/marcelobezerra-dotcom/Lapis-unifor), especialmente o template Visão da Demanda v2.1, o template de Caso de Uso, o template de Regras de Negócio e o template de Requisitos Não Funcionais.
-
-> **Atenção:** esta documentação é uma versão de trabalho. Não representa aprovação institucional, validação do NEI/DRI ou autorização de integração com sistemas da Unifor.
+## Método
+A estrutura dos artefatos segue os templates e orientações do repositório LAPIS Unifor. A notação dos diagramas é UML em PlantUML. Os modelos são propostas acadêmicas, não arquitetura aprovada pela Unifor.

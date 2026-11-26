@@ -1,40 +1,17 @@
 # Glossário — ConectaGlobal
 
-| Termo | Definição | Observação |
+| Termo/Sigla | Definição | Fonte/observação |
 |---|---|---|
-| Acordo/convênio | Instrumento institucional de cooperação entre a Unifor e uma instituição parceira. | Gestão jurídica do convênio está fora do escopo desta fase. |
-| Ator | Pessoa, sistema ou dispositivo externo que interage com a solução. | Identificado por AT-xx. |
-| Bolsa | Apoio financeiro associado ou não a uma oportunidade de mobilidade. | Condições e gestão financeira dependem de validação; pagamento está fora do escopo. |
-| CDU | Caso de Uso; artefato que descreve a interação para alcançar um objetivo. | Padrão LAPIS. |
-| Critério de elegibilidade | Condição que o estudante deve atender para ser considerado apto a participar de uma oportunidade. | Pode variar por oportunidade; validar com o setor. |
-| DRI | Sigla utilizada em um dos materiais do projeto para Diretoria/Departamento de Relações Internacionais. | Denominação oficial e equivalência com NEI precisam ser confirmadas. |
-| Edital | Documento que divulga oportunidade e condições de participação em processo de mobilidade. | Campos obrigatórios a confirmar em edital real. |
-| Elegibilidade | Atendimento aos critérios estabelecidos para uma oportunidade. | Não equivale à seleção ou aprovação final. |
-| Estudante incoming | Estudante estrangeiro que ingressa na Unifor em programa de mobilidade. | Inclusão no escopo ainda não confirmada. |
-| F | Identificador de funcionalidade no catálogo da Visão da Demanda. | Ex.: F-01. |
-| LGPD | Lei Geral de Proteção de Dados Pessoais. | Requisitos de privacidade devem ser validados institucionalmente. |
-| Manifestação de interesse | Registro pelo qual o estudante demonstra interesse em participar de uma oportunidade. | Não representa necessariamente candidatura formal ou aprovação. |
-| Mobilidade internacional | Período de estudo ou atividade acadêmica realizado em instituição de outro país. | Termo geral utilizado no projeto. |
-| MVP | Produto Mínimo Viável; conjunto mínimo de capacidades planejadas para a primeira entrega. | Planejamento acadêmico, não compromisso de implantação. |
-| NEC | Identificador de necessidade na Visão da Demanda LAPIS. | Ex.: NEC-01. |
-| NEI | Nome utilizado no material da disciplina para Núcleo de Estratégias Internacionais. | Confirmar nome oficial e relação com DRI. |
-| Oportunidade | Possibilidade de mobilidade internacional divulgada no sistema. | Pode estar associada a edital, bolsa ou instituição parceira. |
-| Pré-elegibilidade | Verificação preliminar dos dados do estudante em relação aos critérios cadastrados. | Não garante aprovação ou seleção. |
-| RF | Requisito funcional; comportamento ou capacidade que o sistema deve oferecer. | Ex.: RF01. |
-| RN | Regra de negócio; política ou restrição que orienta o processo. | Ex.: RN-01. |
-| RNF | Requisito não funcional; característica de qualidade ou restrição da solução. | Ex.: RNF01. |
-| SSO | Single Sign-On; mecanismo de autenticação única institucional. | Integração depende de autorização da TI. |
-| Stakeholder | Parte interessada que influencia, utiliza ou é impactada pela solução. | Identificado por Sxx no documento de stakeholders. |
-| Unifor | Universidade de Fortaleza. | Instituição referida no projeto acadêmico. |
-
-## Pendências terminológicas
-
-1. Confirmar se NEI e DRI representam a mesma unidade institucional.
-2. Confirmar o termo institucional correto para “manifestação de interesse” ou “candidatura”.
-3. Confirmar se “oportunidade”, “edital” e “bolsa” são entidades distintas no processo real.
-
-## Histórico
-
-| Versão | Data | Alteração |
-|---|---|---|
-| 1.0 | 26/11/2026 | Glossário separado conforme organização LAPIS; termos institucionais incertos identificados. |
+| DRI | Diretoria de Relações Internacionais da Unifor. | Portal DRI e Manual 2026 |
+| NEI | Núcleo de Estratégias Internacionais, denominação histórica convertida em DRI em janeiro de 2026 conforme Manual 2026. | Manual DRI 2026 |
+| Mobilidade acadêmica | Deslocamento temporário de estudante para realizar atividades acadêmicas em instituição parceira, conforme programa e convênio aplicáveis. | DRI — Apoio ao Estudante e Manual 2026 |
+| Dupla titulação | Modalidade de cooperação acadêmica mencionada pela DRI. Condições dependem do programa específico. | Portal DRI |
+| Buddy Program | Programa listado pela DRI entre as iniciativas para estudantes. | DRI — Apoio ao Estudante |
+| EducationUSA | Escritório/serviço de orientação sobre estudos nos Estados Unidos mencionado no portal DRI. | DRI — Apoio ao Estudante |
+| Top España | Programa de bolsas/imersão cultural na Espanha divulgado pela DRI; condições seguem edital próprio. | DRI — Apoio ao Estudante e edital específico |
+| PMG | Performance Média Global, indicador acadêmico citado pela DRI nos critérios de mobilidade. | DRI — Apoio ao Estudante |
+| IES | Instituição de Ensino Superior. | Uso acadêmico |
+| Instituição parceira | Instituição estrangeira com acordo ou convênio aplicável à mobilidade. | Manual DRI 2026 |
+| Edital | Documento oficial que estabelece regras, critérios, vagas, prazos e procedimentos de uma seleção específica. | Uso documental |
+| Pré-elegibilidade | Expressão não utilizada como decisão oficial neste projeto; o ConectaGlobal não calcula nem garante elegibilidade. | Decisão de escopo |
+| Fonte oficial | Página, edital, regulamento ou contato publicado pela Unifor/DRI que prevalece sobre resumo do protótipo. | Regra RP-01 |

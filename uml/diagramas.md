@@ -1,134 +1,77 @@
-# Diagramas — ConectaGlobal
+# Diagramas UML — ConectaGlobal
 
-## 1. Observação metodológica
+Os modelos abaixo estão em PlantUML para manter a notação UML explícita. O arquivo-fonte completo está em [`diagramas.puml`](diagramas.puml).
 
-Os diagramas abaixo representam uma visão conceitual da solução. Não são decisões técnicas aprovadas pela TI da Unifor. Componentes, infraestrutura, integrações, disponibilidade e capacidade deverão ser confirmados antes de qualquer implementação.
+## 1. Diagrama de Casos de Uso
 
-Os casos de uso detalhados estão em [docs/07-casos-de-uso.md](../docs/07-casos-de-uso.md).
-
-## 2. Diagrama geral de casos de uso
-
-```mermaid
-flowchart LR
-    Estudante["AT-01 Estudante"]
-    Operador["AT-02 Operador NEI/DRI"]
-    Coordenador["AT-03 Coordenador"]
-    Admin["AT-04 Administrador"]
-    Academico["AT-05 Sistema acadêmico"]
-    SSO["AT-06 SSO institucional"]
-    Mensageria["AT-07 Serviço de mensagens"]
-
-    subgraph CG["ConectaGlobal"]
-      UC1(("CDU-01 Manter oportunidade"))
-      UC2(("CDU-02 Consultar oportunidades"))
-      UC3(("CDU-03 Verificar pré-elegibilidade"))
-      UC4(("CDU-04 Registrar manifestação"))
-      UC5(("CDU-05 Acompanhar manifestação"))
-      UC6(("CDU-06 Analisar manifestação"))
-      UC7(("CDU-07 Consultar documentos"))
-      UC8(("CDU-08 Enviar notificação"))
-      UC9(("CDU-09 Consultar painel/relatórios"))
-      UC10(("CDU-10 Autenticar/controlar acesso"))
-    end
-
-    Estudante --- UC2
-    Estudante --- UC3
-    Estudante --- UC4
-    Estudante --- UC5
-    Estudante --- UC7
-    Operador --- UC1
-    Operador --- UC6
-    Operador --- UC9
-    Coordenador --- UC9
-    Admin --- UC10
-    Estudante --- UC10
-    Operador --- UC10
-    SSO --- UC10
-    Academico --- UC3
-    Mensageria --- UC8
-    UC1 -. evento .-> UC8
-    UC6 -. evento .-> UC8
+```plantuml
+@startuml
+left to right direction
+skinparam packageStyle rectangle
+actor "Estudante da Unifor" as Estudante
+actor "Responsável editorial\n(do protótipo acadêmico)" as Editor
+actor "Portal oficial da DRI" as DRI
+rectangle "ConectaGlobal" {
+  usecase "Consultar Catálogo\nde Programas" as UC01
+  usecase "Pesquisar e Filtrar\nProgramas" as UC02
+  usecase "Consultar Detalhes\ne Critérios" as UC03
+  usecase "Consultar Próximos Passos\ne Acessar Canal Oficial" as UC04
+  usecase "Manter Conteúdo\nInformativo do Protótipo" as UC05
+}
+Estudante --> UC01
+Estudante --> UC02
+Estudante --> UC03
+Estudante --> UC04
+Editor --> UC05
+DRI --> UC04 : link externo / fonte
+@enduml
 ```
 
-## 3. Diagrama conceitual de componentes
+## 2. Diagrama de Componentes
 
-```mermaid
-flowchart TB
-    Browser["Navegador do usuário"]
-    UI["Interface web responsiva"]
-    API["Camada de serviços / API"]
-    Auth["Autenticação e autorização"]
-    Opp["Gestão de oportunidades"]
-    Elig["Critérios e pré-elegibilidade"]
-    Manifest["Manifestações e análise"]
-    Notify["Notificações"]
-    Report["Consultas e relatórios"]
-    Audit["Histórico e auditoria"]
-    DB[("Base de dados")]
-    Files[("Armazenamento de documentos")]
-    SSO["SSO institucional — integração proposta"]
-    Acad["Sistema acadêmico — integração proposta"]
-    Mail["Serviço de mensagens — integração proposta"]
-
-    Browser --> UI
-    UI --> API
-    API --> Auth
-    API --> Opp
-    API --> Elig
-    API --> Manifest
-    API --> Notify
-    API --> Report
-    API --> Audit
-    Auth --> DB
-    Opp --> DB
-    Opp --> Files
-    Elig --> DB
-    Elig -. se autorizado .-> Acad
-    Manifest --> DB
-    Notify -. se aprovado .-> Mail
-    Report --> DB
-    Audit --> DB
-    Auth -. se aprovado .-> SSO
+```plantuml
+@startuml
+skinparam componentStyle rectangle
+actor "Estudante" as Estudante
+component "Interface Web" as UI
+component "Catálogo e Pesquisa" as Catalogo
+component "Detalhes e Conteúdo" as Conteudo
+component "Referências e Links Oficiais" as Links
+database "Repositório de Conteúdo\nacadêmico" as DB
+component "Portal DRI\n(externo)" as DRI
+Estudante --> UI
+UI --> Catalogo
+UI --> Conteudo
+Catalogo --> DB
+Conteudo --> DB
+Conteudo --> Links
+Links ..> DRI : navegação externa\nsem API
+@enduml
 ```
 
-## 4. Diagrama conceitual de implantação
+## 3. Diagrama de Implantação
 
-```mermaid
-flowchart TB
-    User["Estudante / Operador / Coordenador"]
-    Client["Navegador web"]
-    Edge["Camada de acesso web"]
-    App["Ambiente de aplicação"]
-    DB[("Banco de dados")]
-    Storage[("Armazenamento de documentos")]
-    Backup[("Backup")]
-    SSO["SSO institucional (dependência externa)"]
-    Academic["Sistema acadêmico (dependência externa)"]
-    Email["Serviço de mensagens (dependência externa)"]
-
-    User --> Client
-    Client --> Edge
-    Edge --> App
-    App --> DB
-    App --> Storage
-    DB --> Backup
-    Storage --> Backup
-    App -. integração autorizada .-> SSO
-    App -. integração autorizada .-> Academic
-    App -. integração autorizada .-> Email
+```plantuml
+@startuml
+node "Dispositivo do estudante" {
+  artifact "Navegador Web" as Browser
+}
+node "Ambiente de demonstração\n(ConectaGlobal)" {
+  node "Hospedagem do protótipo" {
+    artifact "Aplicação Web" as App
+    database "Conteúdo demonstrativo" as DB
+  }
+}
+cloud "Internet" as Internet
+node "Portal oficial da DRI" as DRI
+Browser --> Internet
+Internet --> App
+App --> DB
+Browser ..> DRI : abre link externo
+@enduml
 ```
 
-## 5. Limitações e decisões em aberto
-
-- Os diagramas de componentes e implantação não determinam tecnologia, provedor, número de servidores, balanceador ou arquitetura de alta disponibilidade.
-- A integração com SSO, sistema acadêmico e serviço de mensagens é hipotética.
-- A camada de armazenamento de documentos é proposta; formato, limite, retenção e acesso precisam de definição.
-- A participação do coordenador é potencial e depende de validação.
-- O diagrama geral não substitui diagramas de atividades UML por fluxo, que podem ser produzidos durante o detalhamento dos casos de uso.
-- A modelagem deve ser revisada quando as regras de negócio e os atores forem confirmados.
-
-## 6. Histórico
-
-| Versão | Data | Alteração |
-|---|---|---|
-| 1.0 | 26/11/2026 | Atualização dos diagramas e explicitação de integrações e arquitetura como hipóteses. |
+## Notas
+- O portal DRI é acessado por navegação externa; não há API ou integração presumida.
+- O repositório de conteúdo é conceitual para o protótipo; não representa banco institucional.
+- O responsável editorial é um papel do protótipo acadêmico, não uma atribuição oficial da DRI.
