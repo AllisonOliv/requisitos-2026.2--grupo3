@@ -199,6 +199,7 @@ O documento [uml/diagramas.md](../uml/diagramas.md) contém representações con
 | Casos de uso | Fluxos e cenários | [07-casos-de-uso.md](07-casos-de-uso.md) |
 | Glossário | Termos do domínio | [08-glossario.md](08-glossario.md) |
 | Diagramas | Modelos conceituais | [../uml/diagramas.md](../uml/diagramas.md) |
+| Portal da Diretoria de Relações Internacionais (DRI) da Unifor | Referência institucional para divulgação de oportunidades internacionais | [Portal da DRI](https://unifor.br/dri/inicial) |
 
 ## 12. Validação da Visão
 
