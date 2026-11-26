@@ -1,145 +1,152 @@
-# 3. Roteiro e Resultados de Entrevistas
+# Elicitação de Requisitos — ConectaGlobal
 
-> **Status (03/11/2026):** o professor Marcelo informou que as entrevistas **não precisam ser realizadas por enquanto**. Os roteiros abaixo seguem prontos para quando forem liberadas. A análise documental (3.2) foi executada com o material já disponível da disciplina. Nenhuma resposta ou achado de entrevista foi inventado — a seção 3.9 (registro de resultados) continua vazia até a coleta real acontecer, e os requisitos hoje marcados **[H]** serão confirmados, ajustados ou descartados quando isso ocorrer.
+## 1. Objetivo e situação atual
 
-## 3.1 Técnicas de elicitação planejadas
+Este documento registra as fontes consultadas, técnicas de elicitação previstas, roteiros de entrevista e hipóteses que ainda precisam de validação.
 
-| Técnica | Público | Objetivo | Situação |
+**Situação registrada no projeto:** o professor informou que entrevistas com stakeholders não precisam ser realizadas nesta etapa. Portanto, os roteiros estão preparados, mas não existem resultados de entrevistas. Nenhuma fala, resposta ou conclusão de entrevistado foi criada.
+
+## 2. Técnicas de elicitação
+
+| Técnica | Público/fonte | Objetivo | Situação |
 |---|---|---|---|
-| Entrevista com o professor (orientador) | Prof. Marcelo | Validar o recorte do projeto e o formato esperado das entregas | Dispensada por ora |
-| Entrevista semiestruturada | Equipe NEI/DRI | Entender processo atual, regras de elegibilidade e rotina de atualização | Dispensada por ora |
-| Entrevista individual | Estudante interessado em intercâmbio | Entender como busca informações e avalia sua elegibilidade | Dispensada por ora |
-| Entrevista individual | Estudante que já voltou de intercâmbio (ex-intercambista) | Entender dificuldades reais já vividas no processo | Dispensada por ora |
-| Entrevista curta | Coordenador de curso | Critérios acadêmicos e acompanhamento | Dispensada por ora |
-| Questionário online | Estudantes em geral | Validar hipóteses em maior escala | Pendente |
-| Análise documental | Material da disciplina (apresentação e documento de propostas) | Extrair regras e campos existentes | **Executada — ver 3.2** |
-| Prototipação (próximas sprints) | NEI/DRI e alunos | Validar telas | Próxima sprint |
+| Análise documental | Apresentação da disciplina e documento de propostas de projetos | Identificar contexto e escopo do Tema 3 | Executada |
+| Entrevista semiestruturada | Equipe NEI/DRI | Entender processo, regras, atualização e acompanhamento | Não realizada; dispensada por ora |
+| Entrevista individual | Estudante interessado em intercâmbio | Entender busca de informações e avaliação de elegibilidade | Não realizada; dispensada por ora |
+| Entrevista individual | Ex-intercambista | Identificar dificuldades vividas | Não realizada; dispensada por ora |
+| Entrevista curta | Coordenador de curso | Confirmar participação e critérios acadêmicos | Não realizada; dispensada por ora |
+| Questionário online | Estudantes | Verificar padrões de consulta e necessidades | Pendente |
+| Prototipação | Estudantes e equipe responsável | Validar organização das informações e fluxos | Planejada para etapa posterior |
 
-## 3.2 Análise documental (executada)
+## 3. Análise documental executada
 
-**Fontes:** apresentação "Projeto de Extensão — Internacionalização" (disciplina Requisitos e Modelagem de Sistemas) e documento "Propostas de Projetos de Sistemas — Internacionalização e ENADE" (semestre 2026.2). Um edital real do NEI/DRI ainda **não** foi obtido — ver limitação ao final desta seção.
+### 3.1 Fontes
 
-**Achados [D]:**
-- A Unifor mantém convênios com mais de 140 instituições em 30 países (apresentação da disciplina).
-- Pesquisa Selo Belta citada na apresentação: 28,6% dos estudantes pretendiam viajar em 2024; 21% planejavam intercâmbio a partir de 2025. Indica demanda, mas não mede diretamente o problema de dispersão de informação investigado aqui.
-- Critério de elegibilidade citado no slide "Requisitos de Elegibilidade" da apresentação: matrícula ativa, 30%–70% do curso concluído, média ≥ 7,0, sem reprovações. Usado como base de RN06 e RF04 — ainda **[H]**, pois o material não esclarece se é um critério institucional único ou varia por edital/instituição parceira.
-- O documento de propostas descreve o escopo inicial do Tema 3 como "cadastro e divulgação de editais, oportunidades de bolsas, requisitos, prazos, documentação necessária e acompanhamento de manifestações de interesse" — usado diretamente para delimitar o MVP do Documento de Visão (seção 1.5).
-- O mesmo documento já aponta, como questões a investigar, exatamente os pontos que viraram premissas e riscos do projeto: "critérios de elegibilidade, responsáveis pela atualização e integração com processos institucionais" (ver P2/P3 e RS3 no Documento de Visão).
+- Apresentação **Projeto de Extensão — Internacionalização**, utilizada na disciplina Requisitos e Modelagem de Sistemas.
+- Documento **Propostas de Projetos de Sistemas — Internacionalização e ENADE**, semestre 2026.2.
 
-**Limitação assumida [H]:** os campos reais de um edital de mobilidade (layout, linguagem, campos obrigatórios) ainda não foram extraídos de um documento primário do NEI/DRI — RF01 e RF05 seguem baseados no material da disciplina, não em um edital real. Tratar como hipótese até acesso a um exemplo concreto.
+Um edital real emitido pelo setor responsável não foi obtido até a elaboração deste documento.
 
-## 3.3 Roteiro 00 — Professor (orientador da disciplina)
-*~20 min. Objetivo: validar o recorte do projeto antes de aprofundar o levantamento.*
+### 3.2 Achados documentais [D]
 
-**Recorte do projeto**
-1. Escolhemos o tema 3 (Gestão de Oportunidades Internacionais). O recorte em editais, bolsas, prazos, documentos e manifestação de interesse está dentro do esperado?
-2. O senhor recomenda restringir ou ampliar algo? Os módulos de pós-intercâmbio e colaborativo do PPT devem ficar de fora desta fase?
+1. O material da disciplina informa que a Unifor mantém convênios com mais de 140 instituições em 30 países.
+2. A apresentação cita pesquisa Selo Belta: 28,6% dos estudantes pretendiam viajar em 2024 e 21% planejavam intercâmbio em 2025 ou depois. Esses dados contextualizam o interesse, mas não medem o problema de dispersão das informações.
+3. O slide de requisitos de elegibilidade menciona matrícula ativa, entre 30% e 70% do curso concluído, média igual ou superior a 7,0 e ausência de reprovações. O material não esclarece se esses critérios são universais ou específicos.
+4. O documento de propostas descreve o escopo do Tema 3 como cadastro e divulgação de editais, oportunidades de bolsas, requisitos, prazos, documentação necessária e acompanhamento de manifestações de interesse.
+5. O documento também aponta como questões a investigar critérios de elegibilidade, responsáveis pela atualização e integração com processos institucionais.
 
-**Acesso ao NEI/DRI e aos estudantes**
-3. É possível indicar um contato no NEI/DRI para agendar a entrevista, ou devemos buscar por conta própria?
-4. Há restrições de acesso a dados de estudantes ou editais (LGPD, sigilo) que devemos observar?
+### 3.3 Limitações
 
-**Entregas e avaliação**
-5. O formato do Documento de Visão, requisitos e diagramas atende ao esperado? Há modelo institucional a seguir?
-6. Qual critério o senhor recomenda priorizar nesta fase?
-7. Existe uma data limite para a conclusão das entrevistas com o NEI/DRI e os estudantes?
-8. O NEI/DRI é o mesmo setor? (O PPT usa "NEI" e o material de propostas usa "DRI".)
+- Não há entrevista realizada ou transcrição disponível.
+- Não há observação direta do processo atual.
+- Não foi analisado edital real do setor.
+- Não foram confirmados nome, estrutura e atribuições do NEI/DRI.
+- Não há confirmação técnica de integração com sistema acadêmico ou SSO.
+- Os indicadores de contexto não comprovam que estudantes perdem prazos ou que a equipe executa tarefas manuais.
 
-## 3.4 Roteiro 01 — Equipe do NEI/DRI
-*~40 min, semiestruturada.*
+## 4. Hipóteses a validar
 
-**Abertura**
-1. Como funciona hoje, passo a passo, a divulgação de um edital ou bolsa de mobilidade?
-2. Quantas manifestações de interesse ou candidaturas vocês recebem, em média, por edital?
-
-**Processo atual e canais**
-3. Quais canais são usados (site, e-mail, redes sociais, murais, WhatsApp)? Qual deles gera mais dúvidas?
-4. Que informações todo edital precisa conter? Existe um modelo padrão?
-5. Quem atualiza as informações e com que frequência?
-
-**Elegibilidade**
-6. Quais critérios de elegibilidade existem? Variam por edital, curso ou destino?
-7. Como a elegibilidade é verificada hoje? Quem faz e com que fonte de dados?
-8. Há critérios de idioma? Como são comprovados?
-
-**Manifestação de interesse e acompanhamento**
-9. Como o estudante demonstra interesse hoje (formulário, e-mail, atendimento)?
-10. Como vocês acompanham cada candidatura e informam o status ao aluno?
-11. Como as bolsas divulgadas são controladas (valor, vigência, fonte)?
-
-**Relatórios, integrações e restrições**
-12. Que relatório ou indicador falta hoje e seria útil (destinos mais procurados, taxa de aprovação por curso)?
-13. Quais sistemas institucionais já são usados (acadêmico, protocolo, e-mail)? Seria possível integrar?
-14. Há restrições de proteção de dados ou política institucional que devemos conhecer?
-
-**Fechamento**
-15. O que seria indispensável nesse sistema? O que seria "bom ter"?
-16. Se pudessem resolver um único problema do processo atual, qual seria?
-17. Há mais alguém da equipe que devemos entrevistar?
-
-## 3.5 Roteiro 02 — Estudante interessado em intercâmbio
-*~25 min, individual.*
-1. Você já considerou fazer intercâmbio pela Unifor? O que te motivou ou te afastou?
-2. Onde você buscaria (ou buscou) informações sobre prazos, requisitos e documentos?
-3. Já perdeu algum prazo ou desistiu por falta de informação? Conte como foi.
-4. Você saberia dizer hoje se é elegível? Como descobriria?
-5. Que dúvidas você imagina que teria durante a candidatura?
-6. Como gostaria de acompanhar o andamento depois de manifestar interesse?
-7. Prefere usar celular ou computador? Quer ser avisado por e-mail, push ou WhatsApp?
-8. O que tornaria esse processo mais simples?
-
-## 3.6 Roteiro 03 — Ex-intercambista
-*~25 min, individual.*
-1. Como foi, em geral, seu processo de candidatura e preparação?
-2. Quais etapas foram mais difíceis de acompanhar ou entender?
-3. Como descobriu os requisitos e documentos? Faltou alguma informação importante?
-4. Como foi acompanhar o resultado da sua candidatura?
-5. Que informação você gostaria de ter tido antes e não teve?
-6. Você recomendaria o processo a um colega hoje? Por quê?
-
-## 3.7 Roteiro 04 — Coordenador de curso
-1. Como você é informado sobre alunos do curso em mobilidade?
-2. Existem critérios acadêmicos próprios do curso para liberar um aluno?
-3. Que informações gostaria de acompanhar no sistema?
-4. Quais prazos do calendário acadêmico impactam a mobilidade?
-
-## 3.8 Mini-questionário (online, ~3 min)
-1. Curso e semestre
-2. Você já pensou em fazer intercâmbio? (sim / não / já fiz)
-3. Onde procura informações sobre oportunidades? (site Unifor, e-mail, Instagram, colegas, NEI/DRI presencial, outro)
-4. Já perdeu prazo ou desistiu por falta de informação? (sim / não)
-5. Qual a maior dificuldade? (achar editais / entender requisitos / saber se sou elegível / reunir documentos / acompanhar status / outra)
-6. Qual funcionalidade seria mais útil? (alerta de prazo / filtro por destino / verificação de elegibilidade / checklist de documentos / acompanhamento de status)
-7. Como prefere ser avisado? (e-mail / push / WhatsApp)
-8. Usaria mais no celular ou no computador?
-
-## 3.9 Registro de resultados (preencher após a coleta)
-
-### Entrevista 1
-- **Entrevistado / papel:** _______
-- **Data / duração / formato:** _______
-- **Principais achados:** _______
-- **Requisitos novos ou alterados:** _______
-- **Hipóteses confirmadas / refutadas:** _______
-
-*(copiar o bloco para cada entrevista)*
-
-### Questionário
-- **Nº de respostas:** _____
-- **Resumo por pergunta:** _____
-- **Impacto no backlog:** _____
-
-## 3.10 Hipóteses a validar
-
-| ID | Hipótese | Origem | Pergunta que valida | Status |
+| ID | Hipótese | Evidência atual | Como validar | Situação |
 |---|---|---|---|---|
-| H1 | Informações sobre editais estão dispersas em vários canais | Análise do problema | NEI 3; Aluno 2; Quest. 3 | Pendente |
-| H2 | Estudantes perdem prazos por falta de alertas | Hipótese da equipe | Aluno 3; Quest. 4 | Pendente |
-| H3 | Critérios de elegibilidade variam por edital | Material da disciplina | NEI 6 | Pendente |
-| H4 | Elegibilidade padrão: 30–70% concluído, média ≥ 7,0, sem reprovações | Apresentação da disciplina | NEI 6–7 | Pendente |
-| H5 | O acompanhamento das manifestações é manual | Hipótese da equipe | NEI 9–10 | Pendente |
-| H6 | É possível integrar com o sistema acadêmico | Hipótese da equipe | NEI 13 | Pendente |
-| H7 | Estudantes preferem acessar pelo celular | Hipótese da equipe | Aluno 7; Quest. 8 | Pendente |
-| H8 | O estudante tem dúvida sobre a própria elegibilidade antes de se inscrever | Análise do problema | Aluno 4; Ex-interc. 3 | Pendente |
-| H9 | Falta retorno claro do status após manifestar interesse | Análise do problema | Aluno 6; Ex-interc. 4; NEI 10 | Pendente |
-| H10 | Faltam relatórios consolidados (destinos, aprovação por curso) | Análise do problema | NEI 12 | Pendente |
+| H-01 | Informações de oportunidades estão distribuídas em diferentes canais | Não há observação do processo; inferência inicial | Entrevista e levantamento dos canais | Aberta |
+| H-02 | Estudantes perdem prazos ou desistem por falta de informação | Não há dado de ocorrência | Entrevistas/questionário e dados do setor | Aberta |
+| H-03 | Critérios de elegibilidade variam por edital ou instituição | Material apresenta critérios, mas não sua abrangência | Analisar editais reais e entrevistar responsável | Aberta |
+| H-04 | A equipe acompanha manifestações manualmente | Não há evidência do processo atual | Entrevista e observação | Aberta |
+| H-05 | A consulta de dados acadêmicos pode ser integrada | Possibilidade técnica não confirmada | Consulta à TI e ao setor acadêmico | Aberta |
+| H-06 | Estudantes preferem utilizar celular para consultar oportunidades | Não há pesquisa com usuários | Questionário e teste de protótipo | Aberta |
+| H-07 | Estudantes precisam de explicação sobre pré-elegibilidade | Inferência a partir da proposta de autoavaliação | Entrevistas e teste de compreensão | Aberta |
+| H-08 | Estudantes precisam de retorno claro sobre a situação da manifestação | Necessidade inferida do escopo de acompanhamento | Entrevistas e validação do processo | Aberta |
+| H-09 | A equipe necessita de relatórios gerenciais | Não há levantamento de indicadores utilizados | Entrevista com responsável | Aberta |
+| H-10 | Coordenadores participam do acompanhamento das manifestações | Stakeholder potencial identificado | Confirmar fluxo com NEI/DRI e coordenações | Aberta |
+
+## 5. Roteiro 00 — Professor da disciplina
+
+Objetivo: confirmar o recorte do projeto e as expectativas acadêmicas.
+
+1. O recorte em editais, bolsas, prazos, documentos e manifestações de interesse está adequado ao Tema 3?
+2. Os módulos de pós-intercâmbio e colaborativo devem permanecer fora desta fase?
+3. Há modelo ou artefato obrigatório além dos modelos LAPIS disponibilizados?
+4. Quais entregas de modelagem são esperadas nesta etapa?
+5. Há orientação sobre o momento adequado para validar requisitos com o setor institucional?
+6. O material utiliza NEI e DRI. Devemos tratar como a mesma unidade ou manter a questão em aberto?
+
+## 6. Roteiro 01 — Equipe NEI/DRI
+
+Objetivo: entender o processo real de divulgação e acompanhamento.
+
+1. Como ocorre hoje a divulgação de um edital ou bolsa, desde o recebimento até a publicação?
+2. Quais canais são utilizados?
+3. Quais informações são obrigatórias em todo edital?
+4. Existe um modelo padronizado de edital ou cadastro?
+5. Quem cadastra, revisa, publica e atualiza as informações?
+6. Com que frequência as oportunidades são revisadas?
+7. Quais critérios de elegibilidade são utilizados? Eles variam por edital, curso ou instituição?
+8. Como a elegibilidade é verificada e quais fontes de dados são consultadas?
+9. Como o estudante demonstra interesse atualmente?
+10. Como a equipe acompanha cada manifestação?
+11. Quais estados ou etapas uma manifestação pode assumir?
+12. Como são solicitados documentos complementares?
+13. Como são divulgadas bolsas, valores, vigência e condições?
+14. Quais relatórios ou indicadores são necessários?
+15. Quais sistemas institucionais participam do processo?
+16. Há restrições de proteção de dados ou segurança?
+17. Qual problema do processo atual deveria ser resolvido primeiro?
+
+## 7. Roteiro 02 — Estudante interessado em intercâmbio
+
+1. Você já considerou participar de uma oportunidade de mobilidade internacional?
+2. Onde procuraria informações sobre editais, prazos e requisitos?
+3. Quais informações considera indispensáveis antes de demonstrar interesse?
+4. Você saberia verificar se atende aos critérios? Como faria isso?
+5. Já teve dificuldade para encontrar informação ou compreender um requisito?
+6. Como gostaria de acompanhar uma manifestação de interesse?
+7. Quais avisos seriam úteis e por qual canal?
+8. Costuma utilizar celular ou computador para esse tipo de consulta?
+9. O que tornaria a busca por oportunidades mais simples?
+
+## 8. Roteiro 03 — Ex-intercambista
+
+1. Como descobriu a oportunidade da qual participou?
+2. Onde encontrou os requisitos e documentos necessários?
+3. Quais etapas foram mais difíceis de entender ou acompanhar?
+4. Como demonstrou interesse e recebeu retorno?
+5. Houve dúvidas ou informações que precisou solicitar mais de uma vez?
+6. Que informação gostaria de ter encontrado em um único local?
+7. O que recomendaria melhorar no processo de divulgação e acompanhamento?
+
+## 9. Roteiro 04 — Coordenador de curso
+
+1. O coordenador participa da avaliação de elegibilidade ou apenas acompanha o estudante?
+2. Existem critérios acadêmicos específicos por curso?
+3. Como o coordenador recebe informações sobre estudantes interessados?
+4. Quais informações poderia consultar?
+5. Há alguma restrição de acesso a dados acadêmicos ou pessoais?
+
+## 10. Questionário proposto a estudantes
+
+Este questionário é uma proposta ainda não aplicada.
+
+1. Você conhece as oportunidades de mobilidade internacional oferecidas pela Unifor?
+2. Onde costuma procurar informações sobre essas oportunidades?
+3. Quais informações são mais difíceis de localizar?
+4. Você entende os critérios de elegibilidade apresentados nos editais?
+5. Já deixou de participar de uma oportunidade por dúvida sobre requisitos ou prazos?
+6. Considera útil uma ferramenta que reúna oportunidades, prazos e documentos?
+7. Considera útil uma verificação preliminar dos critérios?
+8. Como gostaria de receber avisos sobre prazos e atualizações?
+9. Como gostaria de acompanhar uma manifestação de interesse?
+10. Que melhoria seria mais importante?
+
+## 11. Registro de resultados
+
+**Não há resultados de entrevistas ou questionários registrados nesta versão.** Esta seção deverá ser preenchida somente após coleta real, identificando data, perfil do participante, autorização aplicável, síntese das respostas e requisitos afetados.
+
+| Data | Técnica | Perfil | Resultado/achado | Requisitos relacionados |
+|---|---|---|---|---|
+| A realizar | A realizar | A definir | Nenhum resultado coletado até o momento | A definir |
+
+## 12. Histórico
+
+| Versão | Data | Alteração |
+|---|---|---|
+| 1.0 | 26/11/2026 | Consolidação da análise documental, roteiros e hipóteses; ausência de entrevistas preservada. |

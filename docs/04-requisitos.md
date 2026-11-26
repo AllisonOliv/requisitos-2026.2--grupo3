@@ -1,94 +1,93 @@
-# 4. Requisitos
+# Especificação de Requisitos — ConectaGlobal
 
-Legenda: **[D]** base documental · **[H]** hipótese a validar · **[C]** confirmado em entrevista.
-Prioridade (MoSCoW): **M** Must · **S** Should · **C** Could · **W** Won't (nesta fase).
+## 1. Convenções
 
-> **Nota de revisão:** RF01, RNF04 e RNF06 foram decompostos em subitens (ex. RF01.1) para que cada requisito seja atômico e verificável isoladamente, conforme IEEE 830. Os IDs originais foram mantidos para não quebrar a rastreabilidade com as seções 4.3, 5, 6 e `uml/diagramas.md`.
+- **RF:** requisito funcional.
+- **RNF:** requisito não funcional.
+- **[D]:** originado de informação documentada no material da disciplina.
+- **[H]:** hipótese ainda não validada com stakeholders.
+- **[P]:** proposta de especificação para revisão.
+- **MoSCoW:** Must (essencial), Should (importante), Could (desejável), Won't (fora desta entrega).
 
-## 4.1 Requisitos Funcionais
+Os requisitos são propostas acadêmicas baseadas nos artefatos disponíveis. Sua inclusão não significa validação institucional.
 
-### Gestão de editais e bolsas (NEI/DRI)
-| ID | Requisito | Prio. | Status |
-|---|---|---|---|
-| RF01 | O sistema deve permitir cadastrar um edital informando título, tipo, instituição/destino, país, área, número de vagas, período de inscrição e descrição | M | D |
-| RF01.1 | O sistema deve permitir anexar arquivos (ex.: edital em PDF) ao cadastro do edital | M | D |
-| RF02 | O sistema deve permitir editar, publicar, despublicar, encerrar e arquivar um edital | M | D |
-| RF03 | O sistema deve permitir cadastrar uma bolsa (fonte, valor/benefício, vigência), vinculada ou não a um edital | M | D |
-| RF04 | O sistema deve permitir definir, por edital, os critérios de elegibilidade (percentual concluído, média, reprovações, curso, idioma, outros) | M | D |
-| RF05 | O sistema deve permitir definir a lista de documentos exigidos em cada edital | M | D |
-| RF06 | O sistema deve permitir atribuir um responsável pela atualização de cada edital | S | H |
-| RF07 | O sistema deve registrar o histórico de alterações de um edital | S | H |
+## 2. Requisitos Funcionais
 
-### Consulta e acompanhamento (estudante)
-| ID | Requisito | Prio. | Status |
-|---|---|---|---|
-| RF08 | O sistema deve listar oportunidades com busca por texto e filtros (país, área, tipo, status, prazo, curso) | M | D |
-| RF09 | O sistema deve exibir o detalhe da oportunidade: requisitos, prazos, documentos e contato | M | D |
-| RF10 | O sistema deve exibir um calendário/linha do tempo com os prazos das oportunidades | S | H |
-| RF11 | O sistema deve permitir ao estudante verificar sua pré-elegibilidade para uma oportunidade | M | D |
-| RF12 | O sistema deve permitir ao estudante registrar manifestação de interesse em uma oportunidade aberta | M | D |
-| RF13 | O sistema deve permitir ao estudante cancelar sua manifestação enquanto o edital estiver aberto | S | H |
-| RF14 | O sistema deve permitir ao estudante acompanhar o status de suas manifestações | M | D |
-| RF15 | O sistema deve exibir um checklist de documentos e permitir marcar o que já foi reunido | S | H |
-| RF16 | O sistema deve permitir salvar oportunidades como favoritas | C | H |
+| ID | Nome | Descrição | Origem/rastreabilidade | Prioridade | Situação |
+|---|---|---|---|---|---|
+| RF01 | Cadastrar oportunidade | O sistema deve permitir ao perfil autorizado cadastrar uma oportunidade com título, descrição, instituição, modalidade e período. | NEC-05 / F-01 | Must | [P] |
+| RF01.1 | Anexar material da oportunidade | O sistema deve permitir associar documentos e links à oportunidade. | NEC-02 / F-01 | Should | [P] |
+| RF02 | Manter publicação | O sistema deve permitir editar, publicar, retirar de publicação, encerrar e arquivar uma oportunidade conforme permissão. | NEC-05 / F-01 | Must | [P] |
+| RF03 | Cadastrar bolsa | O sistema deve permitir registrar informações de bolsa vinculadas ou não a uma oportunidade, incluindo condições e vigência quando informadas. | NEC-02 / F-01 | Should | [P] |
+| RF04 | Configurar critérios | O sistema deve permitir cadastrar critérios de elegibilidade por oportunidade, incluindo tipo, operador e valor esperado. | NEC-02/03 / F-04 | Must | [D]/[P] |
+| RF05 | Cadastrar documentos requeridos | O sistema deve permitir informar documentos exigidos e instruções por oportunidade. | NEC-02 / F-03/F-10 | Must | [P] |
+| RF06 | Definir responsável pela atualização | O sistema deve permitir associar um responsável à manutenção da oportunidade. | NEC-05 / F-01 | Should | [H] |
+| RF07 | Registrar histórico de alterações | O sistema deve registrar alterações relevantes em oportunidades e critérios, com autor e data. | NEC-05 / F-01 | Should | [P] |
+| RF08 | Pesquisar oportunidades | O sistema deve permitir pesquisar oportunidades por texto e filtros disponíveis. | NEC-01 / F-02 | Must | [P] |
+| RF09 | Consultar detalhes | O sistema deve apresentar detalhes, instituição, critérios, prazos, documentos e situação de publicação. | NEC-01/02 / F-02/F-03 | Must | [D]/[P] |
+| RF10 | Consultar calendário | O sistema deve apresentar prazos de oportunidades em calendário ou listagem cronológica. | NEC-02 / F-03 | Could | [P] |
+| RF11 | Verificar pré-elegibilidade | O sistema deve comparar os dados disponíveis do estudante com os critérios configurados e apresentar resultado preliminar e justificativa. | NEC-03 / F-05 | Should | [D]/[H] |
+| RF12 | Registrar manifestação | O sistema deve permitir ao estudante registrar manifestação de interesse enquanto a oportunidade aceitar manifestações. | NEC-04 / F-06 | Must | [D]/[P] |
+| RF13 | Cancelar manifestação | O sistema deve permitir ao estudante cancelar sua manifestação enquanto as regras da oportunidade permitirem. | NEC-04 / F-06 | Should | [P] |
+| RF14 | Consultar situação | O sistema deve permitir ao estudante consultar a situação atual de sua manifestação. | NEC-04 / F-07 | Must | [D]/[P] |
+| RF15 | Consultar checklist documental | O sistema deve apresentar documentos exigidos e o estado de entrega de cada documento, quando essa etapa estiver habilitada. | NEC-02/04 / F-10 | Should | [P] |
+| RF16 | Favoritar oportunidade | O sistema poderá permitir ao estudante salvar oportunidades para consulta posterior. | NEC-01 / evolução | Could | [P] |
+| RF17 | Consultar manifestações | O sistema deve permitir ao perfil autorizado listar e filtrar manifestações por oportunidade, estudante e situação. | NEC-06 / F-08 | Must | [P] |
+| RF18 | Analisar manifestação | O sistema deve permitir ao perfil autorizado atualizar a situação de uma manifestação e registrar justificativa quando aplicável. | NEC-06 / F-08 | Must | [P] |
+| RF19 | Solicitar complementação | O sistema deve permitir ao responsável solicitar documento ou informação complementar e registrar a pendência. | NEC-06 / F-09 | Should | [P] |
+| RF20 | Gerar relatórios | O sistema deve permitir consultar e exportar relatórios básicos de oportunidades e manifestações, conforme permissões. | NEC-08 / F-12 | Should | [H] |
+| RF21 | Notificar eventos relevantes | O sistema deve notificar usuários sobre eventos configurados, como prazo próximo, mudança de situação ou nova oportunidade compatível, conforme preferências e canal aprovado. | NEC-07 / F-11 | Should | [H] |
+| RF22 | Notificar alterações em oportunidade | O sistema deve notificar estudantes com manifestação ativa quando mudanças relevantes em prazo ou critérios forem publicadas. | NEC-07 / F-11 | Should | [P] |
+| RF23 | Autenticar usuário | O sistema deve autenticar usuários antes de permitir acesso a funções restritas. | Transversal / F-13 | Must | [P] |
+| RF24 | Controlar permissões | O sistema deve restringir operações conforme perfil e autorização atribuída. | Transversal / F-13 | Must | [P] |
+| RF25 | Consultar por curso | O sistema poderá permitir ao coordenador autorizado consultar manifestações vinculadas ao seu curso. | NEC-08 / F-14 | Could | [H] |
+| RF26 | Relacionar instituição parceira | O sistema deve permitir associar oportunidade à instituição parceira e, se aplicável, registrar referência à vigência do acordo. | NEC-02 / F-01 | Should | [H] |
 
-### Análise de manifestações (NEI/DRI)
-| ID | Requisito | Prio. | Status |
-|---|---|---|---|
-| RF17 | O sistema deve listar as manifestações por edital com filtros por status, curso e elegibilidade | M | D |
-| RF18 | O sistema deve permitir ao NEI/DRI avaliar uma manifestação, alterar seu status e registrar justificativa (obrigatória em caso de recusa ou inelegibilidade) | M | D |
-| RF19 | O sistema deve permitir solicitar complementação de documentos ao estudante | S | H |
-| RF20 | O sistema deve gerar relatórios (manifestações por edital, curso, destino) e permitir exportar em CSV ou PDF | S | D |
+### 2.1 Observações sobre requisitos funcionais
 
-### Comunicação e acesso
-| ID | Requisito | Prio. | Status |
-|---|---|---|---|
-| RF21 | O sistema deve notificar o estudante sobre novas oportunidades compatíveis, prazos próximos e mudanças de status | M | D |
-| RF22 | O sistema deve notificar os interessados quando prazo ou requisito de um edital for alterado | S | H |
-| RF23 | O sistema deve autenticar usuários com credenciais institucionais | M | H |
-| RF24 | O sistema deve controlar permissões por perfil (estudante, NEI/DRI, coordenador, administrador) | M | H |
-| RF25 | O sistema deve permitir ao coordenador consultar manifestações dos alunos do seu curso | C | H |
-| RF26 | O sistema deve permitir informar, em cada edital, a instituição parceira e a vigência do convênio associado | S | H |
+- RF11 não pode ser interpretado como decisão de aprovação. A pré-elegibilidade é apenas uma indicação preliminar.
+- RF26 não pressupõe que o sistema gerencie convênios. O cadastro de referência à instituição e eventual validade do acordo depende de confirmação.
+- RF03 foi classificado como Should/R2 para manter coerência com o roadmap original, no qual o módulo de bolsas aparece em R2.
+- RF25 permanece Could, pois a participação dos coordenadores não foi confirmada.
 
-## 4.2 Requisitos Não Funcionais
+## 3. Requisitos Não Funcionais
 
-| ID | Categoria | Requisito | Prio. | Status |
+Os RNFs abaixo foram reorganizados nas categorias LAPIS. Metas quantitativas sem evidência institucional são propostas a validar, não níveis de serviço aprovados.
+
+| ID | Categoria LAPIS | Requisito | Verificação proposta | Situação |
 |---|---|---|---|---|
-| RNF01 | Usabilidade | O estudante deve conseguir encontrar uma oportunidade e iniciar a manifestação em no máximo 4 passos, e concluir o fluxo completo em até 10 minutos sem treinamento prévio | M | H |
-| RNF02 | Acessibilidade | A interface deve atender WCAG 2.1 nível AA | M | D |
-| RNF03 | Portabilidade | O sistema deve ser responsivo (celular iOS/Android, tablet, desktop) e compatível com as duas últimas versões de Chrome, Edge, Safari e Firefox | M | D |
-| RNF04 | Desempenho | Listagens e buscas devem responder em até 2 s em 95% das requisições, com até 500 usuários simultâneos | S | H |
-| RNF04.1 | Desempenho | O painel do NEI/DRI deve suportar consultas sobre até 5.000 manifestações sem degradação perceptível de tempo de resposta | S | H |
-| RNF05 | Disponibilidade | Disponibilidade mínima de 99% mensal, reforçada em períodos de inscrição | S | H |
-| RNF06 | Segurança | Toda comunicação entre cliente e servidor deve usar HTTPS com TLS 1.2 ou superior | M | H |
-| RNF06.1 | Segurança | Dados pessoais sensíveis (ex.: média, percentual concluído, documentos) devem ser armazenados criptografados em repouso | M | H |
-| RNF06.2 | Segurança | O sistema não deve armazenar senhas de usuários; a autenticação é delegada ao provedor de SSO institucional (ver RF23) | M | H |
-| RNF07 | Privacidade (LGPD) | Dados pessoais devem ser tratados com base legal e consentimento explícito quando aplicável, finalidade definida, mínimo necessário, e possibilidade de solicitar exclusão, anonimização ou portabilidade | M | D |
-| RNF08 | Auditoria | Ações de criação, edição e mudança de status devem ser registradas com usuário e data/hora | S | H |
-| RNF09 | Interoperabilidade | O sistema deve expor/consumir dados por API REST para integrar com autenticação e sistema acadêmico | S | H |
-| RNF10 | Internacionalização | A interface deve suportar, no mínimo, português e inglês (espanhol desejável) | C | D |
-| RNF11 | Manutenibilidade | O sistema deve ter arquitetura modular e documentação de API | S | H |
-| RNF12 | Confiabilidade | Backup diário dos dados com retenção mínima de 30 dias | S | H |
-| RNF13 | Notificações | E-mails devem ser enviados em até 5 minutos após o evento gerador | C | H |
+| RNF01 | Capacidade de interação / usabilidade | A interface deve permitir que um estudante encontre os detalhes de uma oportunidade a partir do catálogo sem navegação desnecessária e com rótulos compreensíveis. | Teste de usabilidade com tarefas definidas; meta de passos a validar | [P] |
+| RNF02 | Capacidade de interação / acessibilidade | A interface deve buscar conformidade com WCAG 2.1 nível AA. | Avaliação automatizada e inspeção manual de acessibilidade | [P] |
+| RNF03 | Flexibilidade / compatibilidade | A interface deve adaptar-se a dispositivos móveis e desktop e funcionar nos navegadores suportados pela instituição. | Testes nos navegadores e dispositivos definidos pela TI | [P] |
+| RNF04 | Eficiência de desempenho | Consultas ao catálogo devem responder em até 2 segundos para 95% das requisições sob carga de referência. | Teste de carga; volume de usuários simultâneos a definir com TI | [P] |
+| RNF04.1 | Eficiência de desempenho | O painel gerencial deve suportar o volume de manifestações definido pela área responsável, sem degradação incompatível com o uso. | Teste de carga com volume realista; base de 5.000 registros é hipótese a validar | [H] |
+| RNF05 | Confiabilidade | A disponibilidade esperada deve ser definida pela instituição antes de eventual implantação. A meta de 99% registrada anteriormente permanece proposta não validada. | Monitoramento e cálculo de disponibilidade após definição de janela e exclusões | [H] |
+| RNF06 | Segurança | A comunicação entre cliente e servidor deve utilizar protocolo seguro com configuração aprovada pela TI. | Inspeção de configuração TLS | [P] |
+| RNF06.1 | Segurança | Dados pessoais e documentos armazenados devem possuir proteção adequada em repouso, conforme arquitetura e política institucional. | Revisão de arquitetura e configuração de armazenamento | [P] |
+| RNF06.2 | Segurança | A solução não deve armazenar senhas institucionais localmente quando utilizar provedor SSO. | Revisão de arquitetura e teste de autenticação | [H] |
+| RNF07 | Privacidade | O tratamento de dados pessoais deve observar a LGPD e as políticas institucionais, com finalidade, acesso e retenção definidos. | Revisão de privacidade e validação pelo responsável institucional | [D]/[P] |
+| RNF08 | Confiabilidade / auditabilidade | Operações relevantes de cadastro, publicação e alteração de situação devem manter registro de autor, data e ação. | Inspeção dos registros de auditoria | [P] |
+| RNF09 | Flexibilidade / interoperabilidade | Integrações externas, se aprovadas, devem utilizar interfaces documentadas e autorizadas pela instituição. | Revisão de contrato e teste de integração | [H] |
+| RNF10 | Capacidade de interação / internacionalização | O idioma inicial deve ser definido com a área responsável. Português é a proposta inicial; inglês e espanhol dependem de validação de escopo. | Revisão das telas e conteúdo | [H] |
+| RNF11 | Manutenibilidade | A solução deve manter documentação atualizada de seus componentes e interfaces, caso seja implementada. | Revisão da documentação técnica | [P] |
+| RNF12 | Confiabilidade | A política de backup, retenção e restauração deve seguir os padrões institucionais. A retenção de 30 dias registrada anteriormente é proposta a validar. | Teste de restauração e inspeção da política | [H] |
+| RNF13 | Eficiência / confiabilidade | O prazo de entrega de notificações deve ser definido conforme canal e serviço institucional. A meta anterior de até 5 minutos é hipótese. | Teste de envio e medição de latência após definição do serviço | [H] |
 
-## 4.3 Rastreabilidade (resumo)
-| Objetivo específico | Requisitos |
-|---|---|
-| OE1 — Cadastro e manutenção pelo NEI/DRI | RF01–RF07, RF24 |
-| OE2 — Encontrar oportunidade, verificar elegibilidade, manifestar interesse | RF08–RF13, RF16 |
-| OE3 — Acompanhamento de status | RF14, RF17–RF19, RF21–RF22 |
-| OE4 — Reduzir perda de prazo e retrabalho | RF10, RF15, RF20–RF22, RF26, RNF01 |
+## 4. Rastreabilidade funcional
 
-## 4.4 Funcionalidades identificadas e deixadas fora do escopo (Won't nesta fase)
-
-Origem: apresentação da disciplina e outras propostas do Eixo I. São registradas para mostrar que foram consideradas e para orientar releases futuras.
-
-| Funcionalidade | Origem | Motivo de ficar fora |
+| Necessidade | Funcionalidades | Casos de uso |
 |---|---|---|
-| Gestão completa de convênios (cadastro, vigência, vagas) | Apresentação / escopo NEI | Foge do foco em editais e oportunidades; o sistema só referencia a instituição e a vigência (RF26) |
-| Controle de concessão de bolsas (valor, beneficiário, orçamento) | Apresentação | O tema trata de divulgar e acompanhar oportunidades de bolsa; a gestão financeira exige integração com outro setor |
-| Central de preparação (idioma, cultura, planejamento financeiro) e simulação de custos | Apresentação | Escopo de portal de informações (tema 4) |
-| Portfólio digital do estudante | Apresentação | Valor secundário para o problema investigado |
-| Aproveitamento de créditos e pós-intercâmbio (relatos, mentoria) | Apresentação / tema 1 | Fase posterior ao acompanhamento de oportunidades |
-| Módulo colaborativo (Tandem, eventos, fórum) | Apresentação / tema 1 | Escopo de rede social acadêmica (tema 1) |
-| Ranqueamento e resultado final da seleção | Apresentação | Exige regras de seleção ainda não conhecidas |
+| NEC-01 | F-02 | CDU-02 |
+| NEC-02 | F-03, F-04, F-10 | CDU-01, CDU-02, CDU-07 |
+| NEC-03 | F-05 | CDU-03 |
+| NEC-04 | F-06, F-07, F-10 | CDU-04, CDU-05, CDU-07 |
+| NEC-05 | F-01 | CDU-01 |
+| NEC-06 | F-08, F-09 | CDU-06 |
+| NEC-07 | F-11 | CDU-08 |
+| NEC-08 | F-12, F-14 | CDU-09 |
+
+## 5. Histórico
+
+| Versão | Data | Alteração |
+|---|---|---|
+| 1.0 | 26/11/2026 | Reorganização dos requisitos, ajuste de prioridades e classificação de RNFs por categorias LAPIS; metas sem validação identificadas como hipóteses. |

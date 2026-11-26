@@ -1,36 +1,48 @@
 # ConectaGlobal — Sistema de Gestão de Oportunidades Internacionais
 
-Projeto da disciplina **Requisitos e Modelagem de Sistemas** (Unifor, 2026.2) — Tema 3 do Eixo I (Internacionalização).
+Projeto da disciplina **Requisitos e Modelagem de Sistemas** — Universidade de Fortaleza (Unifor), 2026.2. Tema 3 do Eixo I (Internacionalização).
 
-> **Problema investigado:** como tornar mais acessível e organizado o acompanhamento de editais, bolsas e oportunidades de mobilidade internacional?
+## Objetivo
+Organizar a divulgação e o acompanhamento de oportunidades internacionais, incluindo editais, bolsas, critérios de elegibilidade, prazos, documentação e manifestações de interesse.
 
 ## Equipe
-- Allison de Oliveira Girão — 2612756
-- Maria Rafaele Gomes de Araújo — 2618240
+- Allison de Oliveira Girão
+- Maria Rafaele Gomes de Araújo
 
-## Sprint 1 (Milestone M1) — 20/10 a 02/11/2026
+## Organização dos artefatos
 
-| Entregável | Arquivo |
+| Artefato | Arquivo |
 |---|---|
-| Documento de Visão (+ glossário) | [docs/01-documento-de-visao.md](docs/01-documento-de-visao.md) |
-| Stakeholders | [docs/02-stakeholders.md](docs/02-stakeholders.md) |
-| Roteiro e resultados de entrevistas | [docs/03-entrevistas.md](docs/03-entrevistas.md) |
+| Visão da Demanda (LAPIS v2.1) | [docs/01-documento-de-visao.md](docs/01-documento-de-visao.md) |
+| Partes interessadas e atores | [docs/02-stakeholders.md](docs/02-stakeholders.md) |
+| Elicitação e roteiros | [docs/03-elicitação.md](docs/03-elicitação.md) |
 | Requisitos funcionais e não funcionais | [docs/04-requisitos.md](docs/04-requisitos.md) |
 | Regras de negócio | [docs/05-regras-de-negocio.md](docs/05-regras-de-negocio.md) |
 | Backlog priorizado | [docs/06-backlog.md](docs/06-backlog.md) |
-| UML: casos de uso, componentes, implantação | [uml/diagramas.md](uml/diagramas.md) |
+| Casos de uso (CDU) | [docs/07-casos-de-uso.md](docs/07-casos-de-uso.md) |
+| Glossário | [docs/08-glossario.md](docs/08-glossario.md) |
+| Diagramas | [uml/diagramas.md](uml/diagramas.md) |
 
-## Status da entrega
-O professor Marcelo informou que as entrevistas com stakeholders **não precisam ser realizadas nesta etapa**. Os roteiros em [docs/03-entrevistas.md](docs/03-entrevistas.md) seguem prontos para quando forem liberadas; nesta sprint, a elicitação se apoiou em **análise documental** do material da disciplina (seção 3.2 do mesmo arquivo).
+## Situação da elicitação
+Conforme registro do projeto, o professor informou que as entrevistas com stakeholders não precisam ser realizadas nesta etapa. Os roteiros estão preparados, mas não há resultados de entrevistas. A elicitação inicial foi baseada em análise documental do material didático da disciplina. As hipóteses permanecem identificadas como hipóteses até validação.
 
-## Convenções
-- **[D]** base documental (material da disciplina), ainda a confirmar com o NEI/DRI.
-- **[H]** hipótese ainda não validada com stakeholders.
-- **[C]** confirmado em entrevista (será usado após a coleta).
+## Convenções de evidência
+- **[D] Documentado:** informação presente no material da disciplina consultado; não significa necessariamente regra institucional validada.
+- **[H] Hipótese:** interpretação ou proposta ainda não validada com os responsáveis pelo processo.
+- **[A definir]:** informação ausente que exige levantamento ou decisão.
+- **[P] Proposta:** estrutura ou detalhamento elaborado para organizar a especificação; requer revisão humana antes de validação.
 
-## Escopo em uma frase
-O sistema cobre **editais, bolsas, critérios de elegibilidade, prazos, documentação e manifestações de interesse**. Módulos de convênios, preparação, pós-intercâmbio e colaborativo (Tandem, fórum) aparecem apenas como **evolução futura (fora do escopo)**.
+## Rastreabilidade LAPIS
+A rastreabilidade adotada é:
 
-## Fontes consultadas
-- Material didático "Propostas de Projetos de Sistemas — Internacionalização e ENADE" (Unifor, 2026.2).
-- Apresentação "Projeto de Extensão — Internacionalização" (disciplina Requisitos e Modelagem de Sistemas).
+`Fonte/evidência → NEC (necessidade) → F (funcionalidade) → CDU (caso de uso) → critérios/casos de teste`
+
+Os identificadores são estáveis e devem ser preservados ao atualizar os documentos.
+
+## Escopo resumido
+O sistema trata de oportunidades internacionais, editais, bolsas, elegibilidade, prazos, documentos e manifestações de interesse. Gestão completa de convênios, preparação, pós-intercâmbio e funcionalidades colaborativas (Tandem, fórum e eventos) não fazem parte desta fase.
+
+## Referências metodológicas
+Os artefatos foram organizados com base nos templates e orientações do repositório [LAPIS Unifor](https://github.com/marcelobezerra-dotcom/Lapis-unifor), especialmente o template Visão da Demanda v2.1, o template de Caso de Uso, o template de Regras de Negócio e o template de Requisitos Não Funcionais.
+
+> **Atenção:** esta documentação é uma versão de trabalho. Não representa aprovação institucional, validação do NEI/DRI ou autorização de integração com sistemas da Unifor.
