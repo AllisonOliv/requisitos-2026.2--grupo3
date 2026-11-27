@@ -1,0 +1,269 @@
+' ConectaGlobal — diagramas UML estruturais
+' Os identificadores dos casos de uso são os mesmos de docs/08-casos-de-uso.md (CDU-01 a CDU-18),
+' para que o diagrama seja rastreável ao documento de especificação.
+' Ícones são recursos visuais; atores, funcionalidades e relações seguem a documentação.
+
+@startuml ConectaGlobal_Casos_de_Uso
+left to right direction
+skinparam shadowing false
+skinparam packageStyle rectangle
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam actorStyle awesome
+skinparam usecase {
+  BackgroundColor #EAF2FF
+  BorderColor #3976C8
+  FontColor #17365D
+}
+skinparam actor {
+  BorderColor #3976C8
+  FontColor #17365D
+}
+skinparam note {
+  BackgroundColor #FFFDF0
+  BorderColor #C9A227
+}
+
+actor "🎓 Estudante\n(AT-01)" as Estudante
+actor "🏢 Equipe do NEI\n(AT-02)" as NEI
+actor "🧑‍🏫 Coordenador de curso\n(AT-03)" as Coordenador
+actor "👩‍🏫 Professor\n(AT-04)" as Professor
+actor "🌎 Estudante estrangeiro\nrecebido (AT-05)" as Incoming
+actor "🧳 Ex-intercambista\n(AT-06)" as Alumni
+actor "⚙️ Administrador\ndo sistema (AT-07)" as Admin
+
+rectangle "🌐 ConectaGlobal — Sistema de Gestão de Oportunidades Internacionais" {
+
+  package "🔐 Acesso" #F7F7F7 {
+    usecase "🔑 CDU-15\nAcessar o sistema" as CDU15
+  }
+
+  package "🎓 Módulo do Estudante" #EAF2FF {
+    usecase "🔎 CDU-01\nConsultar oportunidades\ninternacionais" as CDU01
+    usecase "📝 CDU-02\nVerificar elegibilidade\ninicial" as CDU02
+    usecase "📨 CDU-03\nRegistrar candidatura" as CDU03
+    usecase "📍 CDU-04\nAcompanhar candidatura" as CDU04
+    usecase "📚 CDU-10\nConsultar recursos\nde preparação" as CDU10
+    usecase "🗂️ CDU-16\nManter portfólio digital" as CDU16
+  }
+
+  package "🏢 Módulo de Gestão — NEI" #FFF1DF {
+    usecase "📢 CDU-05\nGerenciar oportunidades" as CDU05
+    usecase "🤝 CDU-06\nGerenciar convênios\ne bolsas" as CDU06
+    usecase "📋 CDU-07\nAnalisar candidaturas" as CDU07
+    usecase "🔔 CDU-08\nGerenciar notificações" as CDU08
+    usecase "📊 CDU-09\nConsultar relatórios\ngerenciais" as CDU09
+  }
+
+  package "🌍 Pós-intercâmbio e colaboração" #E9F7EF {
+    usecase "💬 CDU-11\nCompartilhar relatos e\nparticipar de mentoria" as CDU11
+    usecase "🤝 CDU-12\nParticipar de atividades\ncolaborativas" as CDU12
+    usecase "🧭 CDU-13\nConsultar recursos\nde integração" as CDU13
+    usecase "🎓 CDU-17\nRegistrar aproveitamento\nde créditos" as CDU17
+    usecase "🛡️ CDU-18\nModerar conteúdo\ncolaborativo" as CDU18
+  }
+
+  package "🛠️ Administração" #F0EAFE {
+    usecase "🔐 CDU-14\nGerenciar usuários\ne permissões" as CDU14
+  }
+}
+
+' --- Acesso: pré-condição comum a todos os perfis (RF-21, RN-19) ---
+Estudante --> CDU15
+NEI --> CDU15
+Coordenador --> CDU15
+Professor --> CDU15
+Incoming --> CDU15
+Alumni --> CDU15
+Admin --> CDU15
+
+' --- Estudante ---
+Estudante --> CDU01
+Estudante --> CDU03
+Estudante --> CDU04
+Estudante --> CDU10
+Estudante --> CDU11
+Estudante --> CDU12
+Estudante --> CDU16
+Estudante --> CDU17
+
+' --- Equipe do NEI ---
+NEI --> CDU05
+NEI --> CDU06
+NEI --> CDU07
+NEI --> CDU08
+NEI --> CDU09
+NEI --> CDU18
+
+' --- Demais atores ---
+Coordenador --> CDU07
+Coordenador --> CDU17
+Professor --> CDU12
+Incoming --> CDU13
+Incoming --> CDU12
+Alumni --> CDU11
+Alumni --> CDU12
+Admin --> CDU14
+
+' --- Relações entre casos de uso ---
+CDU02 .> CDU01 : <<extend>>
+CDU16 .> CDU03 : <<extend>>
+
+note right of CDU15
+  CDU-15 é pré-condição das demais
+  funções restritas (RF-21, RN-19).
+  A consulta pública do catálogo
+  sem identificação é questão
+  aberta (PQ-09).
+end note
+
+note bottom of CDU18
+  RN-12 e RN-18: o conteúdo de
+  CDU-11 e CDU-12 só fica visível
+  após decisão registrada em CDU-18.
+end note
+@enduml
+
+@startuml ConectaGlobal_Componentes
+skinparam shadowing false
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam component {
+  BackgroundColor #EAF7F0
+  BorderColor #39865B
+  FontColor #174B30
+}
+skinparam database {
+  BackgroundColor #FFF1DF
+  BorderColor #C77B20
+  FontColor #653B0B
+}
+
+package "🌐 ConectaGlobal" {
+  package "📱 Camada de apresentação" #E8F2FF {
+    component "🖥️ Interface Web/Mobile" as UI
+  }
+  package "⚙️ Serviços da aplicação" #EAF7F0 {
+    component "🔐 Autenticação e Autorização" as AUTH
+    component "🌐 Serviço de Oportunidades" as OPORT
+    component "🤝 Serviço de Convênios e Bolsas" as CONV
+    component "✅ Serviço de Elegibilidade" as ELEG
+    component "📨 Serviço de Candidaturas" as CAND
+    component "🗂️ Portfólio e Gestão de Documentos" as DOC
+    component "🎓 Aproveitamento de Créditos" as CRED
+    component "🔔 Serviço de Notificações" as NOTIF
+    component "📊 Relatórios Gerenciais" as REL
+    component "📚 Preparação e Conteúdos" as PREP
+    component "💬 Colaborativo e Pós-intercâmbio" as COL
+    component "🛡️ Moderação de Conteúdo" as MOD
+  }
+  package "🗄️ Persistência" #FFF1DF {
+    database "🗃️ Banco de Dados" as DB
+    database "📁 Armazenamento de Arquivos" as FS
+  }
+}
+
+' A interface acessa todos os serviços cujas funções são exercidas por algum perfil.
+UI --> AUTH
+UI --> OPORT
+UI --> CONV
+UI --> ELEG
+UI --> CAND
+UI --> DOC
+UI --> CRED
+UI --> NOTIF
+UI --> REL
+UI --> PREP
+UI --> COL
+UI --> MOD
+
+' Dependências entre serviços
+AUTH --> DB
+OPORT --> CONV
+CAND --> ELEG
+CAND --> DOC
+CAND --> NOTIF
+CAND --> REL
+CRED --> CAND
+MOD --> COL
+MOD --> NOTIF
+
+' Persistência
+OPORT --> DB
+CONV --> DB
+ELEG --> DB
+CAND --> DB
+DOC --> DB
+CRED --> DB
+NOTIF --> DB
+REL --> DB
+PREP --> DB
+COL --> DB
+MOD --> DB
+DOC --> FS
+
+note right of MOD
+  Dá execução a RN-12/RN-18
+  (CDU-18).
+end note
+
+note right of FS
+  Armazenamento dos documentos
+  de portfólio e candidatura
+  (RF-07, RF-22). Tecnologia
+  a definir na P2.
+end note
+@enduml
+
+@startuml ConectaGlobal_Implantacao
+skinparam shadowing false
+skinparam backgroundColor #FFFFFF
+skinparam defaultFontName Arial
+skinparam node {
+  BackgroundColor #E8F2FF
+  BorderColor #3676C8
+  FontColor #17365D
+}
+skinparam artifact {
+  BackgroundColor #EAF7F0
+  BorderColor #39865B
+  FontColor #174B30
+}
+skinparam database {
+  BackgroundColor #FFF1DF
+  BorderColor #C77B20
+  FontColor #653B0B
+}
+
+node "👤 Dispositivo do usuário" as CLIENT #E8F2FF {
+  artifact "🌐 Navegador ou aplicativo"
+  artifact "🖼️ Interface ConectaGlobal"
+}
+
+node "☁️ Ambiente de aplicação proposto" as APP #EAF7F0 {
+  node "🖥️ Servidor de aplicação" as WEB {
+    artifact "📦 Aplicação Web (front-end)"
+  }
+  node "⚙️ Servidor de serviços" as API {
+    artifact "🔌 API / Serviços de negócio"
+    artifact "🔐 Serviço de autenticação"
+  }
+}
+
+database "🗃️ Servidor de banco de dados proposto" as DB
+node "📁 Serviço de armazenamento de arquivos proposto" as STORAGE #FFF1DF
+
+CLIENT --> WEB : 🔒 HTTPS (proposto)
+WEB --> API : 🔒 HTTPS (proposto)
+API --> DB : 🔐 conexão segura (proposta)
+API --> STORAGE : 🔐 conexão segura (proposta)
+
+note bottom of APP
+  Ambiente real de hospedagem não
+  definido nesta etapa (RNF-26).
+  Nenhuma integração com sistema
+  institucional é presumida (PQ-05).
+end note
+@enduml
